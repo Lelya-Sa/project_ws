@@ -1,0 +1,44 @@
+controller_list:
+  - name: gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - f_joint1
+      - f_joint2
+  - name: arm_follow_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+  - name: arm_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+  - name: gripper_follow_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - f_joint1
+      - f_joint2
+  - name: gripper_grip_controller
+    action_ns: gripper_action
+    type: GripperCommand
+    default: True
+    joints:
+      - f_joint1
+      - f_joint2

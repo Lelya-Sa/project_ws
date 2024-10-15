@@ -1,0 +1,70 @@
+/home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+
+---------------------------------------------------
+xacro `rospack find my_simulations`/models/urdf/delivery_robot.xacro -o ./mixed_robot.urdf
+
+
+--------------------------------------------------
+    
+  <link name="note_base">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <mass value="15"/>
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.22812500000000002" ixy="0" ixz="0" iyy="0.340625" iyz="0" izz="0.5125000000000001"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy=" 0 0 0" xyz="0 0 0.15"/>
+      <geometry>
+        <box size="0.8 0.8 0.15"/>
+      </geometry>
+    </collision>
+    <visual name="note_base_visual">
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.8 0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="note_lower">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <mass value="15"/>
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.22812500000000002" ixy="0" ixz="0" iyy="0.340625" iyz="0" izz="0.5125000000000001"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy=" 0 0 0" xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.8 0.6 0.15"/>
+      </geometry>
+    </collision>
+    <visual name="note_mid_visual">
+      <origin rpy=" 0 0 0" xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.6 0.5 0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="mid_lower">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <mass value="15"/>
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.22812500000000002" ixy="0" ixz="0" iyy="0.340625" iyz="0" izz="0.5125000000000001"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy=" 0 0 0" xyz="0 0 0.2"/>
+      <geometry>
+        <box size="0.9 0.8 0.15"/>
+      </geometry>
+    </collision>
+    <visual name="note_mid_visual">
+      <origin rpy=" 0 0 0" xyz="0 0 0.2"/>
+      <geometry>
+        <box size="0.9 0.8 0"/>
+      </geometry>
+    </visual>
+  </link>    
+
+
