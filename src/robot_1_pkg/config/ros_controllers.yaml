@@ -1,0 +1,136 @@
+arm_controller_position:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - joint1
+    - joint2
+    - joint3
+    - joint4
+    - joint5
+    - joint6
+  gains:
+    joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+gripper_controller_effort:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - f_joint1
+    - f_joint2
+  gains:
+    f_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    f_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+mobile_controller_position:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - back_left_caster_hinge
+    - back_right_caster_hinge
+    - front_left_caster_hinge
+    - front_right_caster_hinge
+    - left_wheel_hinge
+    - right_wheel_hinge
+  gains:
+    back_left_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    back_right_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    front_left_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    front_right_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_wheel_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_wheel_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+mobile_controller_velocity:
+  type: velocity_controllers/JointTrajectoryController
+  joints:
+    - back_left_caster_hinge
+    - back_right_caster_hinge
+    - front_left_caster_hinge
+    - front_right_caster_hinge
+    - left_wheel_hinge
+    - right_wheel_hinge
+  gains:
+    back_left_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    back_right_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    front_left_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    front_right_caster_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_wheel_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_wheel_hinge:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

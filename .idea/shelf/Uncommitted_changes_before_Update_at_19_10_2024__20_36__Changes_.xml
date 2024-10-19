@@ -1,0 +1,28 @@
+<changelist name="Uncommitted_changes_before_Update_at_19_10_2024,_20_36_[Changes]" date="1729359361805" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2024,_20_36_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19/10/2024, 20:36 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="src/my_simulations/models/urdf/mixed_robot.urdf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="models/mixed_robot_copy.urdf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="rosgraph_demo_gazebo.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="models/urdf/mixed_robot.urdf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="rosgraph_arm_moveit.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/my_simulations/models/urdf/.ipynb_checkpoints/mixed_robot-checkpoint.urdf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="rosgraph_demo.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="models/urdf/delivery_robot.urdf" />
+  </binary>
+</changelist>
