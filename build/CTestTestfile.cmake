@@ -7,5 +7,7 @@
 subdirs("gtest")
 subdirs("arm_moveit_config")
 subdirs("my_simulations")
+subdirs("robot_1_pkg")
 subdirs("arm_description")
 subdirs("pysdf")
+subdirs("diff_drive")

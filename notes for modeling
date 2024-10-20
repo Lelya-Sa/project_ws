@@ -1,14 +1,29 @@
 /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
-
+/home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot_1.urdf
 ---------------------------------------------------
 xacro `rospack find my_simulations`/models/urdf/delivery_robot.xacro -o ./mixed_robot.urdf
+--------------------------------------------------
+ roslaunch moveit_setup_assistant setup_assistant.launch
+--------------------------------------------------
+check_urdf /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+--------------------------------------------------
+urdf_to_graphiz /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+--------------------------------------------------
+suggested point cloud topic:
+/head_mount_kinect/depth_registered/points
+-----------------------------------------------------
+catkin_create_pkg diff_drive roscpp rospy urdf rviz xacro std_msgs sensor_msgs tf
+-----------------------------------------------------
+sudo apt install ros-noetic-tf2-tools
+-----------------------------------------------------
+roswtf plugin
+roswtf tf comes with a plugin for roswtf that automatically runs whenever you run roswtf. This plugin will analyze your current tf configuration and attempt to find common problems. To run, just invoke roswtf normally:
+$ roswtf
+------------------------------------------------------
+
 
 
 --------------------------------------------------
-(base) lelyasa@lelyasa-IdeaPad-Flex-5-14ARE05:~/project_ws/models/urdf$ check_urdf mixed_robot_2.urdf 
-Error:   Could not parse visual element for Link [base_link]
-         at line 453 in /build/urdfdom-VnCcob/urdfdom-1.0.4+ds/urdf_parser/src/link.cpp
-robot name is: mixed_robot_2
 ---------- Successfully Parsed XML ---------------
 root Link: robot_footprint has 1 child(ren)
     child(1):  base_chassis
@@ -36,7 +51,8 @@ root Link: robot_footprint has 1 child(ren)
         child(13):  right_wheel
 
 --------------------------------------------------
-    
+
+--------------------------------------------------
   <link name="note_base">
     <pose>0 0 0 0 0 0</pose>
     <inertial>
