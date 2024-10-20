@@ -5,6 +5,37 @@ xacro `rospack find my_simulations`/models/urdf/delivery_robot.xacro -o ./mixed_
 
 
 --------------------------------------------------
+(base) lelyasa@lelyasa-IdeaPad-Flex-5-14ARE05:~/project_ws/models/urdf$ check_urdf mixed_robot_2.urdf 
+Error:   Could not parse visual element for Link [base_link]
+         at line 453 in /build/urdfdom-VnCcob/urdfdom-1.0.4+ds/urdf_parser/src/link.cpp
+robot name is: mixed_robot_2
+---------- Successfully Parsed XML ---------------
+root Link: robot_footprint has 1 child(ren)
+    child(1):  base_chassis
+        child(1):  back_container_side
+        child(2):  back_left_caster
+        child(3):  back_right_caster
+        child(4):  base_link
+            child(1):  link1
+                child(1):  link2
+                    child(1):  link3
+                        child(1):  link4
+                            child(1):  link5
+                                child(1):  link6
+                                    child(1):  finger1
+                                    child(2):  finger2
+        child(5):  camera_link
+            child(1):  camera_link_optical
+        child(6):  front_container_side
+        child(7):  front_left_caster
+        child(8):  front_right_caster
+        child(9):  hokuyo
+        child(10):  left_container_side
+        child(11):  left_wheel
+        child(12):  right_container_side
+        child(13):  right_wheel
+
+--------------------------------------------------
     
   <link name="note_base">
     <pose>0 0 0 0 0 0</pose>
