@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ""
+    relative_path: /home/lelyasa/project_ws/models/urdf/mixed_robot.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/mixed_robot.srdf
+  CONFIG:
+    author_name: lesa
+    author_email: lelyasa1999@gmail.com
+    generated_timestamp: 1729731701
