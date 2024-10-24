@@ -144,12 +144,36 @@
         </plugin>
     </gazebo>
     <!-- Robot definitions -->
+    <!-- ROBOT BASE LINK -->
     <link name="robot_footprint" />
-    <joint name="robot_footprint_joint" type="fixed">
-        <origin rpy="0 0 0" xyz="0 0 0" />
-        <parent link="robot_footprint" />
-        <child link="base_chassis" />
-    </joint>
+    <!-- arm BASE LINK -->
+    <link name="arm_base_link">
+     <!--    <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <material name="silver">
+                <color rgba="0.75 0.75 0.75 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+                <cylinder length="0.02" radius="0.3" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.1" />
+            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </inertial> 
+    -->
+    </link>
+    <gazebo reference="arm_base_link">
+        <material>Gazebo/White</material>
+        <turnGravityOff>false</turnGravityOff>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/mixed_robot_2</robotNamespace>
+        </plugin>
+    </gazebo>
     <link name="base_chassis">
         <pose>0 0 0 0 0 0</pose>
         <inertial>
@@ -170,6 +194,18 @@
             </geometry>
         </visual>
     </link>
+    <!-- joint -->
+    <joint name="base_link_joint" type="fixed">
+        <parent link="base_chassis" />
+        <child link="arm_base_link" />
+        <origin rpy="0 0 0" xyz="0 0 0.075" />
+    </joint>
+    
+    <joint name="robot_footprint_joint" type="fixed">
+        <origin rpy="0 0 0" xyz="0 0 0.1175" />
+        <parent link="robot_footprint" />
+        <child link="base_chassis" />
+    </joint>
     <!-- Wheels definitions -->
     <link name="left_wheel">
         <inertial>
@@ -340,7 +376,7 @@
                 <box size="0.5 0.01 0.1" />
             </geometry>
         </collision>
-        <visual name="base_chassis_visual">
+        <visual name="left_container_side_visual">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
             <geometry>
                 <box size="0.5 0.01 0.1" />
@@ -365,7 +401,7 @@
                 <box size="0.5 0.01 0.1" />
             </geometry>
         </collision>
-        <visual name="base_chassis_visual">
+        <visual name="right_container_side_visual">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
             <geometry>
                 <box size="0.5 0.01 0.1" />
@@ -390,7 +426,7 @@
                 <box size="0.1 0.4 0.1" />
             </geometry>
         </collision>
-        <visual name="base_chassis_visual">
+        <visual name="front_container_side_visual">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
             <geometry>
                 <box size="0.1 0.4 0.1" />
@@ -415,7 +451,7 @@
                 <box size="0.01 0.4 0.1" />
             </geometry>
         </collision>
-        <visual name="base_chassis_visual">
+        <visual name="back_container_side_visual">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
             <geometry>
                 <box size="0.01 0.4 0.1" />
@@ -449,7 +485,7 @@
     </link>
     <link name="camera_link_optical" />
     <joint name="camera_joint" type="fixed">
-        <origin rpy="0 0 0" xyz="0.275 0 0.1" />
+        <origin rpy="0 0 0" xyz="0.275 0 0.15" />
         <child link="camera_link" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0.02" xyz="0 1 0" />
@@ -500,54 +536,22 @@
     <material name="white">
         <color rgba="0.0 0.0 0.0 1.0" />
     </material>
-    <!-- BASE LINK -->
-    <link name="base_link">
-        <visual>
-            <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <material name="silver">
-                <color rgba="0.75 0.75 0.75 1" />
-            </material>
-        </visual>
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <geometry>
-                <cylinder length="0.02" radius="0.5" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-        </inertial>
-    </link>
-    <gazebo reference="base_link">
-        <material>Gazebo/White</material>
-        <turnGravityOff>false</turnGravityOff>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/mixed_robot_2</robotNamespace>
-        </plugin>
-    </gazebo>
-    <!-- joint -->
-    <joint name="base_link" type="fixed">
-        <parent link="base_chassis" />
-        <child link="base_link" />
-    </joint>
     <!-- LINK 1 -->
     <link name="link1">
         <visual>
-            <origin rpy="0 0 0" xyz="0 0 0.05" />
+            <origin rpy="0 0 0" xyz="0 0 0.075" />
             <!-- linknte paathi distance -->
             <geometry>
-                <cylinder length="0.10" radius="0.10" />
+                <cylinder length="0.10" radius="0.05" />
             </geometry>
             <material name="silver">
                 <color rgba="0.75 0.75 0.75 1" />
             </material>
         </visual>
         <collision>
-            <origin rpy="0 0 0" xyz="0 0 0.05" />
+            <origin rpy="0 0 0" xyz="0 0 0.075" />
             <geometry>
-                <cylinder length="0.10" radius="0.10" />
+                <cylinder length="0.10" radius="0.05" />
             </geometry>
         </collision>
         <inertial>
@@ -562,9 +566,9 @@
     </gazebo>
     <!-- JOINT 1 -->
     <joint name="joint1" type="continuous">
-        <origin rpy="0 0 0" xyz="0 0 0.01" />
+        <origin rpy="0 0 0" xyz="0 0 0.0 " />
         <!--parent linknte distance -->
-        <parent link="base_link" />
+        <parent link="arm_base_link" />
         <child link="link1" />
         <axis xyz="0 0 1" />
     </joint>

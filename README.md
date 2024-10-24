@@ -47,7 +47,7 @@ then source the project workspace:
       
       sudo apt install ros-noetic-turtlebot3-msgs
       
-      sudo apt install ros-noetic-turtlebot3  
+      sudo apt install ros-noetic-turtlebot3
       
       sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
       
@@ -57,9 +57,11 @@ then source the project workspace:
           ros-noetic-object-recognition-msgs \
           ros-noetic-roslint
           
+      sudo apt-get install ros-noetic-trac-ik-kinematics-plugin
+          
       rosdep update
       
-      rosdep install --from-paths src --ignore-src -r -y --rosdistro noetic    
+      rosdep install --from-paths src --ignore-src -r -y --rosdistro noetic
 
 
 ---------------------------

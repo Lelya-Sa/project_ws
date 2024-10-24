@@ -555,7 +555,7 @@ joint_limits_interface_DIR:PATH=/opt/ros/noetic/share/joint_limits_interface/cma
 laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/librosconsole_bridge.so
+lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/noetic/share/map_msgs/cmake
@@ -618,10 +618,28 @@ robot_1_pkg_BINARY_DIR:STATIC=/home/lelyasa/project_ws/build/robot_1_pkg
 robot_1_pkg_SOURCE_DIR:STATIC=/home/lelyasa/project_ws/src/robot_1_pkg
 
 //Value Computed by CMake
+robot_2_BINARY_DIR:STATIC=/home/lelyasa/project_ws/build/robot_2
+
+//Value Computed by CMake
+robot_2_SOURCE_DIR:STATIC=/home/lelyasa/project_ws/src/robot_2
+
+//Value Computed by CMake
 robot_2_pkg_BINARY_DIR:STATIC=/home/lelyasa/project_ws/build/robot_2_pkg
 
 //Value Computed by CMake
 robot_2_pkg_SOURCE_DIR:STATIC=/home/lelyasa/project_ws/src/robot_2_pkg
+
+//Value Computed by CMake
+robot_3_BINARY_DIR:STATIC=/home/lelyasa/project_ws/build/robot_3
+
+//Value Computed by CMake
+robot_3_SOURCE_DIR:STATIC=/home/lelyasa/project_ws/src/robot_3
+
+//Value Computed by CMake
+robot_BINARY_DIR:STATIC=/home/lelyasa/project_ws/build/robot
+
+//Value Computed by CMake
+robot_SOURCE_DIR:STATIC=/home/lelyasa/project_ws/src/robot
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -855,7 +873,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

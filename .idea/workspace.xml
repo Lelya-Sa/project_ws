@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="init" />
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_make.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/diff_drive/catkin_generated/stamps/diff_drive/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/diff_drive/catkin_generated/stamps/diff_drive/package.xml.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robot_2_pkg/catkin_generated/installspace/robot_2_pkgConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2_pkg/catkin_generated/installspace/robot_2_pkgConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robot_2_pkg/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2_pkg/catkin_generated/package.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robot_2_pkg/catkin_generated/stamps/robot_2_pkg/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2_pkg/catkin_generated/stamps/robot_2_pkg/package.xml.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/robot_2_pkg/cmake/robot_2_pkgConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/robot_2_pkg/cmake/robot_2_pkgConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/.ipynb_checkpoints/mixed_robot_2-checkpoint.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/models/urdf/.ipynb_checkpoints/mixed_robot_2-checkpoint.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/models/urdf/mixed_robot.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/mixed_robot_1.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/mixed_robot_2.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes for modeling" beforeDir="false" afterPath="$PROJECT_DIR$/notes for modeling" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosgraph_demo_gazebo.png" beforeDir="false" afterPath="$PROJECT_DIR$/rosgraph_demo_gazebo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diff_drive/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diff_drive/package.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diff_drive/urdf/mixed_robot_1.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/.setup_assistant" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/.ipynb_checkpoints/mixed_robot_1-checkpoint.srdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/cartesian_limits.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/chomp_planning.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/fake_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/gazebo_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/joint_limits.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/kinematics.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/mixed_robot_1.srdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/ompl_planning.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/ros_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/sensors_3d.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/simple_moveit_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/config/stomp_planning.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/chomp_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/default_warehouse_db.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/demo.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/demo_gazebo.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/fake_moveit_controller_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/gazebo.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/joystick_control.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/mixed_robot_1_moveit_sensor_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/move_group.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/moveit.rviz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/moveit_rviz.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/ompl-chomp_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/ompl_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/pilz_industrial_motion_planner_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/planning_context.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/ros_controllers.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/run_benchmark_ompl.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/sensor_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/setup_assistant.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/simple_moveit_controller_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/stomp_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/trajectory_execution.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/warehouse.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/launch/warehouse_settings.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_1_pkg/package.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,14 +93,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -46,6 +121,8 @@
       <option name="presentableId" value="Default" />
       <updated>1728998669096</updated>
       <workItem from="1728998670479" duration="3000" />
+      <workItem from="1729597644696" duration="173000" />
+      <workItem from="1729703328367" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -63,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729359495697</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1729467424420</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729467424420</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

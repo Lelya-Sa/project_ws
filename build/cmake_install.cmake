@@ -133,10 +133,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/lelyasa/project_ws/build/gtest/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/arm_moveit_config/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/my_simulations/cmake_install.cmake")
-  include("/home/lelyasa/project_ws/build/robot_1_pkg/cmake_install.cmake")
+  include("/home/lelyasa/project_ws/build/robot_2/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/arm_description/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/pysdf/cmake_install.cmake")
-  include("/home/lelyasa/project_ws/build/diff_drive/cmake_install.cmake")
 
 endif()
 

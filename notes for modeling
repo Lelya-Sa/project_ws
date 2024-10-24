@@ -6,6 +6,8 @@ xacro `rospack find my_simulations`/models/urdf/delivery_robot.xacro -o ./mixed_
  roslaunch moveit_setup_assistant setup_assistant.launch
 --------------------------------------------------
 check_urdf /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+check_urdf /home/lelyasa/project_ws/models/urdf/mixed_robot_2.urdf
+/home/lelyasa/project_ws/models/urdf/mixed_robot.urdf
 --------------------------------------------------
 urdf_to_graphiz /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
 --------------------------------------------------
@@ -20,6 +22,7 @@ roswtf plugin
 roswtf tf comes with a plugin for roswtf that automatically runs whenever you run roswtf. This plugin will analyze your current tf configuration and attempt to find common problems. To run, just invoke roswtf normally:
 $ roswtf
 ------------------------------------------------------
+sudo apt-get install ros-kinetic-trac-ik-kinematics-plugin
 
 
 
