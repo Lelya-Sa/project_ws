@@ -58,7 +58,6 @@ all: arm_moveit_config/all
 all: my_simulations/all
 all: robot_2/all
 all: arm_description/all
-all: pysdf/all
 
 .PHONY : all
 
@@ -68,7 +67,6 @@ preinstall: arm_moveit_config/preinstall
 preinstall: my_simulations/preinstall
 preinstall: robot_2/preinstall
 preinstall: arm_description/preinstall
-preinstall: pysdf/preinstall
 
 .PHONY : preinstall
 
@@ -83,7 +81,6 @@ clean: arm_moveit_config/clean
 clean: my_simulations/clean
 clean: robot_2/clean
 clean: arm_description/clean
-clean: pysdf/clean
 
 .PHONY : clean
 
@@ -211,24 +208,6 @@ my_simulations/preinstall:
 my_simulations/clean:
 
 .PHONY : my_simulations/clean
-
-#=============================================================================
-# Directory level rules for directory pysdf
-
-# Recursive "all" directory target.
-pysdf/all:
-
-.PHONY : pysdf/all
-
-# Recursive "preinstall" directory target.
-pysdf/preinstall:
-
-.PHONY : pysdf/preinstall
-
-# Recursive "clean" directory target.
-pysdf/clean:
-
-.PHONY : pysdf/clean
 
 #=============================================================================
 # Directory level rules for directory robot_2

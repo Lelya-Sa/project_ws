@@ -5,7 +5,7 @@
   <rosparam file="$(find robot_2)/config/ros_controllers.yaml" command="load"/>
 
   <!-- Load the controllers -->
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-    output="screen" args="gripper_controller_effort arm_controller_pos mobile_controller_velocity robot_base_velocity_controller "/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="true"
+    output="screen" args="joint_state_controller diff_drive_controller gripper_controller_effort arm_controller_pos mobile_controller_velocity "/>
 
 </launch>

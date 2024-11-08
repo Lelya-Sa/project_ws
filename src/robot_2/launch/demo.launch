@@ -2,7 +2,7 @@
 <launch>
 
   <!-- specify the planning pipeline -->
-  <arg name="pipeline" default="ompl" />
+  <arg name="pipeline" default="ompl" doc="Planning pipeline to use with MoveIt"/>
 
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />

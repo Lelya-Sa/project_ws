@@ -77,6 +77,8 @@ To see the environment in gazebo type in termenal:
 
 ---------------------------
 
+roslaunch robot_2 demo_gazebo.launch
+
 ---------------------------
 note if you encounter gazebo initiation problems type in terminal:
 
