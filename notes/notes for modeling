@@ -1,0 +1,129 @@
+/home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+/home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot_1.urdf
+---------------------------------------------------
+xacro `rospack find my_simulations`/models/urdf/delivery_robot.xacro -o ./mixed_robot.urdf
+--------------------------------------------------
+ roslaunch moveit_setup_assistant setup_assistant.launch
+--------------------------------------------------
+check_urdf /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+check_urdf /home/lelyasa/project_ws/models/urdf/mixed_robot_2.urdf
+/home/lelyasa/project_ws/models/urdf/mixed_robot.urdf
+--------------------------------------------------
+urdf_to_graphiz /home/lelyasa/project_ws/src/my_simulations/models/urdf/mixed_robot.urdf
+--------------------------------------------------
+suggested point cloud topic:
+/head_mount_kinect/depth_registered/points
+-----------------------------------------------------
+catkin_create_pkg diff_drive roscpp rospy urdf rviz xacro std_msgs sensor_msgs tf
+-----------------------------------------------------
+sudo apt install ros-noetic-tf2-tools
+-----------------------------------------------------
+roswtf plugin
+roswtf tf comes with a plugin for roswtf that automatically runs whenever you run roswtf. This plugin will analyze your current tf configuration and attempt to find common problems. To run, just invoke roswtf normally:
+$ roswtf
+------------------------------------------------------
+sudo apt-get install ros-kinetic-trac-ik-kinematics-plugin
+--------------------------------------------------------
+rosrun rqt_gui rqt_gui
+----------------------------------------------------------------------
+killall -9 gzserver
+
+--------------------------------------------------
+---------- Successfully Parsed XML ---------------
+root Link: robot_footprint has 1 child(ren)
+    child(1):  base_chassis
+        child(1):  back_container_side
+        child(2):  back_left_caster
+        child(3):  back_right_caster
+        child(4):  base_link
+            child(1):  link1
+                child(1):  link2
+                    child(1):  link3
+                        child(1):  link4
+                            child(1):  link5
+                                child(1):  link6
+                                    child(1):  finger1
+                                    child(2):  finger2
+        child(5):  camera_link
+            child(1):  camera_link_optical
+        child(6):  front_container_side
+        child(7):  front_left_caster
+        child(8):  front_right_caster
+        child(9):  hokuyo
+        child(10):  left_container_side
+        child(11):  left_wheel
+        child(12):  right_container_side
+        child(13):  right_wheel
+
+--------------------------------------------------
+rosrun rviz rviz 
+[ INFO] rviz version 1.14.25 
+[ INFO]  compiled against Qt version 5.12.8 
+[ INFO]  compiled against OGRE version 1.9.0 (Ghadamon) 
+[ INFO]  Forcing OpenGl version 0. 
+[ INFO]  Stereo is NOT SUPPORTED 
+[ INFO]  OpenGL device: AMD RENOIR (DRM 3.42.0, 5.15.0-124-generic, LLVM 12.0.0)
+[ INFO] OpenGl version: 4.6 (GLSL 4.6) limited to GLSL 1.4 on Mesa system.
+--------------------------------------------------
+  <link name="note_base">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <mass value="15"/>
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.22812500000000002" ixy="0" ixz="0" iyy="0.340625" iyz="0" izz="0.5125000000000001"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy=" 0 0 0" xyz="0 0 0.15"/>
+      <geometry>
+        <box size="0.8 0.8 0.15"/>
+      </geometry>
+    </collision>
+    <visual name="note_base_visual">
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.8 0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="note_lower">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <mass value="15"/>
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.22812500000000002" ixy="0" ixz="0" iyy="0.340625" iyz="0" izz="0.5125000000000001"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy=" 0 0 0" xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.8 0.6 0.15"/>
+      </geometry>
+    </collision>
+    <visual name="note_mid_visual">
+      <origin rpy=" 0 0 0" xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.6 0.5 0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="mid_lower">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <mass value="15"/>
+      <origin rpy=" 0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.22812500000000002" ixy="0" ixz="0" iyy="0.340625" iyz="0" izz="0.5125000000000001"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy=" 0 0 0" xyz="0 0 0.2"/>
+      <geometry>
+        <box size="0.9 0.8 0.15"/>
+      </geometry>
+    </collision>
+    <visual name="note_mid_visual">
+      <origin rpy=" 0 0 0" xyz="0 0 0.2"/>
+      <geometry>
+        <box size="0.9 0.8 0"/>
+      </geometry>
+    </visual>
+  </link>    
+
+

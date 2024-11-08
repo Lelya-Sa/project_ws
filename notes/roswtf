@@ -1,0 +1,41 @@
+roswtf
+Loaded plugin tf.tfwtf
+No package or stack in the current directory
+================================================================================
+Static checks summary:
+
+No errors or warnings
+================================================================================
+Beginning tests of your ROS graph. These may take a while...
+analyzing graph...
+... done analyzing graph
+running graph rules...
+... done running graph rules
+running tf checks, this will take a second...
+... tf checks complete
+
+Online checks summary:
+
+Found 2 warning(s).
+Warnings are things that may be just fine, but are sometimes at fault
+
+WARNING The following node subscriptions are unconnected:
+ * /move_group:
+   * /collision_object
+   * /depth/points
+   * /sequence_move_group/goal
+   * /sequence_move_group/cancel
+ * /rviz_lelyasa_IdeaPad_Flex_5_14ARE05_13107_2332652073966781736:
+   * /recognized_object_array
+ * /gazebo:
+   * /gazebo/set_link_state
+   * /gazebo/set_model_state
+   * /cmd_vel
+   * /gripper_controller_effort/command
+   * /arm_controller_pos/command
+   * /mobile_controller_velocity/command
+
+WARNING These nodes have died:
+ * spawn_gazebo_model-3
+
+

@@ -1,0 +1,1 @@
+This is a known issue, we are looking into resolving this. In the meantime you can add this snippet 2> >(grep -v TF_REPEATED_DATA)to any command to suppress these warnings. For example to run RViz you can use this command: rosrun rviz rviz 2> >(grep -v TF_REPEATED_DATA)

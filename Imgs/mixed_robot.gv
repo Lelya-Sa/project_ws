@@ -1,0 +1,80 @@
+digraph G {
+node [shape=box];
+"robot_footprint" [label="robot_footprint"];
+"base_chassis" [label="base_chassis"];
+"back_container_side" [label="back_container_side"];
+"back_left_caster" [label="back_left_caster"];
+"back_right_caster" [label="back_right_caster"];
+"arm_base_link" [label="arm_base_link"];
+"link1" [label="link1"];
+"link2" [label="link2"];
+"link3" [label="link3"];
+"link4" [label="link4"];
+"link5" [label="link5"];
+"link6" [label="link6"];
+"finger1" [label="finger1"];
+"finger2" [label="finger2"];
+"base_scan" [label="base_scan"];
+"camera_link" [label="camera_link"];
+"camera_link_optical" [label="camera_link_optical"];
+"front_container_side" [label="front_container_side"];
+"front_left_caster" [label="front_left_caster"];
+"front_right_caster" [label="front_right_caster"];
+"hokuyo" [label="hokuyo"];
+"imu_link" [label="imu_link"];
+"left_container_side" [label="left_container_side"];
+"left_wheel" [label="left_wheel"];
+"right_container_side" [label="right_container_side"];
+"right_wheel" [label="right_wheel"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"robot_footprint" -> "robot_footprint_joint" [label="xyz: 0 0 0.1175 \nrpy: 0 -0 0"]
+"robot_footprint_joint" -> "base_chassis"
+"base_chassis" -> "back_container_side_hinge" [label="xyz: -0.245 0 0.125 \nrpy: 0 -0 0"]
+"back_container_side_hinge" -> "back_container_side"
+"base_chassis" -> "back_left_caster_hinge" [label="xyz: -0.234375 0.184375 -0.09625 \nrpy: 0 -0 0"]
+"back_left_caster_hinge" -> "back_left_caster"
+"base_chassis" -> "back_right_caster_hinge" [label="xyz: -0.234375 -0.184375 -0.09625 \nrpy: 0 -0 0"]
+"back_right_caster_hinge" -> "back_right_caster"
+"base_chassis" -> "base_link_joint" [label="xyz: 0 0 0.075 \nrpy: 0 -0 0"]
+"base_link_joint" -> "arm_base_link"
+"arm_base_link" -> "joint1" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"joint1" -> "link1"
+"link1" -> "joint2" [label="xyz: 0 0 0.08 \nrpy: 0 -0 0"]
+"joint2" -> "link2"
+"link2" -> "joint3" [label="xyz: 0 0 0.28 \nrpy: 0 -0 0"]
+"joint3" -> "link3"
+"link3" -> "joint4" [label="xyz: 0 0 0.28 \nrpy: 0 -0 0"]
+"joint4" -> "link4"
+"link4" -> "joint5" [label="xyz: 0 0 0.08 \nrpy: 0 -0 0"]
+"joint5" -> "link5"
+"link5" -> "joint6" [label="xyz: 0 0 0.08 \nrpy: 0 -0 0"]
+"joint6" -> "link6"
+"link6" -> "f_joint1" [label="xyz: 0 -0.025 0.1 \nrpy: 0 -0 0"]
+"f_joint1" -> "finger1"
+"link6" -> "f_joint2" [label="xyz: 0 0.025 0.1 \nrpy: 0 -0 0"]
+"f_joint2" -> "finger2"
+"base_chassis" -> "base_scan_joint" [label="xyz: 0.25 0 0.075 \nrpy: 0 -0 0"]
+"base_scan_joint" -> "base_scan"
+"base_chassis" -> "camera_joint" [label="xyz: 0.275 0 0.15 \nrpy: 0 -0 0"]
+"camera_joint" -> "camera_link"
+"camera_link" -> "camera_optical_joint" [label="xyz: 0 0 0 \nrpy: -1.5707 5.55112e-17 -1.5707"]
+"camera_optical_joint" -> "camera_link_optical"
+"base_chassis" -> "front_container_side_hinge" [label="xyz: 0.225 0 0.125 \nrpy: 0 -0 0"]
+"front_container_side_hinge" -> "front_container_side"
+"base_chassis" -> "front_left_caster_hinge" [label="xyz: 0.234375 0.184375 -0.09625 \nrpy: 0 -0 0"]
+"front_left_caster_hinge" -> "front_left_caster"
+"base_chassis" -> "front_right_caster_hinge" [label="xyz: 0.234375 -0.184375 -0.09625 \nrpy: 0 -0 0"]
+"front_right_caster_hinge" -> "front_right_caster"
+"base_chassis" -> "hokuyo_joint" [label="xyz: 0.225 0 0.225 \nrpy: 0 -0 0"]
+"hokuyo_joint" -> "hokuyo"
+"base_chassis" -> "imu_joint" [label="xyz: 0.25 0 0.1 \nrpy: 0 -0 0"]
+"imu_joint" -> "imu_link"
+"base_chassis" -> "left_container_side_hinge" [label="xyz: 0 0.195 0.125 \nrpy: 0 -0 0"]
+"left_container_side_hinge" -> "left_container_side"
+"base_chassis" -> "left_wheel_hinge" [label="xyz: 0 0.215 -0.0375 \nrpy: 0 -0 0"]
+"left_wheel_hinge" -> "left_wheel"
+"base_chassis" -> "right_container_side_hinge" [label="xyz: 0 -0.195 0.125 \nrpy: 0 -0 0"]
+"right_container_side_hinge" -> "right_container_side"
+"base_chassis" -> "right_wheel_hinge" [label="xyz: 0 -0.215 -0.0375 \nrpy: 0 -0 0"]
+"right_wheel_hinge" -> "right_wheel"
+}

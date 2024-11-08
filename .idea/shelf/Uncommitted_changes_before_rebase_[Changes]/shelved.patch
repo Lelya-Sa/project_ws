@@ -1,0 +1,98 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"f70608d0-ba65-4cd7-9e51-18934404274b\" name=\"Changes\" comment=\"robot_2 works\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2nTYjdJt9TYuFWtEQekExE19LB3\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19\" />\n        <option value=\"bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"f70608d0-ba65-4cd7-9e51-18934404274b\" name=\"Changes\" comment=\"\" />\n      <created>1728998669096</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1728998669096</updated>\n      <workItem from=\"1728998670479\" duration=\"3000\" />\n      <workItem from=\"1729597644696\" duration=\"173000\" />\n      <workItem from=\"1729703328367\" duration=\"2833000\" />\n      <workItem from=\"1730441112538\" duration=\"1067000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"init\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1729359415390</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1729359415390</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"init\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1729359495697</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1729359495697</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"init\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1729467424420</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1729467424420</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"robot_2 works\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1729744208687</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1729744208687</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"robot_2 works\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1729744224494</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1729744224494</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"init\" />\n    <MESSAGE value=\"robot_2 works\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"robot_2 works\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ba75179e3c8b060e02c679b2a163b87f0bf62986)
++++ b/.idea/workspace.xml	(date 1730443709106)
+@@ -13,6 +13,7 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_COMMON_BRANCH" value="master" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="ROOT_SYNC" value="SYNC" />
+     <option name="UPDATE_TYPE" value="REBASE" />
+@@ -26,17 +27,17 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "robot__2",
++    "node.js.detected.package.eslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -56,7 +57,7 @@
+       <workItem from="1728998670479" duration="3000" />
+       <workItem from="1729597644696" duration="173000" />
+       <workItem from="1729703328367" duration="2833000" />
+-      <workItem from="1730441112538" duration="1067000" />
++      <workItem from="1730441112538" duration="2484000" />
+     </task>
+     <task id="LOCAL-00001" summary="init">
+       <option name="closed" value="true" />
+@@ -98,15 +99,41 @@
+       <option name="project" value="LOCAL" />
+       <updated>1729744224494</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="robot_2 works">
++      <option name="closed" value="true" />
++      <created>1730442225309</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1730442225309</updated>
++    </task>
++    <task id="LOCAL-00007" summary="robot_2 works">
++      <option name="closed" value="true" />
++      <created>1730442241187</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1730442241187</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
++    <option name="OPEN_GENERIC_TABS">
++      <map>
++        <entry key="3fe988ce-0c31-452e-8a20-fca6d22648ad" value="TOOL_WINDOW" />
++      </map>
++    </option>
+     <option name="TAB_STATES">
+       <map>
++        <entry key="3fe988ce-0c31-452e-8a20-fca6d22648ad">
++          <value>
++            <State />
++          </value>
++        </entry>
+         <entry key="MAIN">
+           <value>
+             <State />
