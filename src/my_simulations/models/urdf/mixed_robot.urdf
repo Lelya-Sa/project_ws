@@ -1061,19 +1061,6 @@
       </plugin>
     </sensor>
   </gazebo>
-    <!-- ........................ Gazebo state control ........................ -->
-    <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        <!-- -->
-            <static>false</static> 
-            <robotNamespace>/</robotNamespace>
-            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-           <!-- -->
-           <controlPeriod>0.001</controlPeriod>
-
-            <legacyModeNS>false</legacyModeNS>
-        </plugin>
-    </gazebo>
     <!--################################### joint_state_publisher ###################################-->
   <gazebo>
     <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
@@ -1262,7 +1249,20 @@
                 <frameName>hokuyo</frameName>
             </plugin>
         </sensor>
-    </gazebo>    
+    </gazebo>
+        <!-- ........................ Gazebo state control ........................ -->
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+        <!-- -->
+            <static>false</static>
+            <robotNamespace>/</robotNamespace>
+            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+           <!-- -->
+           <controlPeriod>0.001</controlPeriod>
+
+            <legacyModeNS>false</legacyModeNS>
+        </plugin>
+    </gazebo>
 </robot>
 
 <!-- ........................  ........................ -->

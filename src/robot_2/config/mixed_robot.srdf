@@ -26,7 +26,6 @@
         <joint name="joint1"/>
         <joint name="joint2"/>
         <joint name="joint3"/>
-        <joint name="base_link_joint"/>
         <joint name="joint4"/>
         <joint name="joint5"/>
         <joint name="joint6"/>
@@ -36,12 +35,11 @@
         <link name="right_wheel"/>
         <joint name="left_wheel_hinge"/>
         <joint name="right_wheel_hinge"/>
-        <joint name="robot_footprint_joint"/>
     </group>
     <group name="footprint_group">
         <link name="robot_footprint"/>
     </group>
-<!--
+<!--     -->
     <group name="manipulator">
         <link name="link1"/>
         <link name="link2"/>
@@ -52,7 +50,6 @@
         <joint name="joint1"/>
         <joint name="joint2"/>
         <joint name="joint3"/>
-        <joint name="base_link_joint"/>
         <joint name="joint4"/>
         <joint name="joint5"/>
         <joint name="joint6"/>
@@ -61,7 +58,8 @@
         <joint name="f_joint1"/>
         <joint name="f_joint2"/>
     </group>    
-    <group name="mobile_base">
+ <!--
+   <group name="mobile_base">
     -->
 <!-- VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot) 
     	<virtual_joint name="planar_joint" parent_frame="odom" child_link="robot_footprint"> 

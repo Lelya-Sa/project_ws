@@ -6,6 +6,8 @@
 
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="true"
-    output="screen" args="joint_state_controller diff_drive_controller gripper_controller_effort arm_controller_pos mobile_controller_velocity "/>
+    output="screen" args="joint_state_controller diff_drive_controller
+                            gripper_controller_effort arm_controller_pos mobile_controller_velocity
+                            manipulator_controller_pos"/>
 
 </launch>

@@ -14,6 +14,7 @@ gripper_controller_effort:
       d: 1
       i: 1
       i_clamp: 1
+
 arm_controller_pos:
   type: position_controllers/JointTrajectoryController
   joints:
@@ -116,3 +117,57 @@ mobile_base_controller:
       max_acceleration       : 1.5  # rad/s^2
       has_jerk_limits        : true
       max_jerk               : 2.5  # rad/s^3
+
+
+manipulator_controller_pos:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - joint1
+    - joint2
+    - joint3
+    - joint4
+    - joint5
+    - joint6
+    - f_joint1
+    - f_joint2
+  gains:
+    joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    f_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    f_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

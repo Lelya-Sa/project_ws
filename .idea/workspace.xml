@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="robot_2 works">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/models/urdf/mixed_robot.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/12_world_gazebo.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_gazebo_options.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_moveit.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,22 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;robot__2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "robot__2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
-        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
@@ -60,6 +67,7 @@
       <workItem from="1730441112538" duration="1067000" />
       <workItem from="1730485113833" duration="1216000" />
       <workItem from="1730509908160" duration="31000" />
+      <workItem from="1731223168334" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
