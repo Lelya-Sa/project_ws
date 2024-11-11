@@ -154,6 +154,8 @@ source /home/lelyasa/project_ws/devel/setup.bash
 # source /media/lelyasa/亲人之爱-家/cog_rob_project_ws/devel/setup.bash
 
 # ROS related lines
+
+# ROS related lines
 # export TURTLEBOT3_MODEL=burger
 export TURTLEBOT3_MODEL=waffle_pi
 

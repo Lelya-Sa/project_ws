@@ -19,31 +19,34 @@
                 <arg name="use_sim_time" value="true" />
 	</include>
 	-->
-	
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam file="$(find robot_2)/config/ros_controllers.yaml" command="load" />
+    <rosparam file="$(find robot_2)/config/gazebo_controllers.yaml"  command="load" />
+
+<!-- Given the published joint states, publish tf for the robot links   -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
+
 <!-- Set the robot urdf on the parameter server -->
 	<param name="robot_description" textfile="$(find my_simulations)/models/urdf/mixed_robot.urdf" />
 
-<!-- Send fake joint values-->
-    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-          <param name="use_gui" value="true"/>
-    </node>
+<!-- Load joint controller configurations from YAML file to parameter server -->
+    <include file="$(dirname)/ros_controllers.launch"/>
 
-<!-- Given the published joint states, publish tf for the robot links   -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
-
+<!-- Spawn the Gazebo ROS controllers we will load later
+	<node name="gazebo_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller" />
+-->
 <!-- Unpause the simulation after loading the robot model -->
 	<arg name="unpause" value="$(eval '' if arg('paused') else '-unpause')" />
 
 <!-- Spawn the robot in Gazebo -->
 	<node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot $(arg unpause) $(arg world_pose) $(arg initial_joint_positions)" respawn="false" output="screen" />
 
-<!-- Load the controller parameters onto the parameter server -->
-	<rosparam file="$(find robot_2)/config/gazebo_controllers.yaml" />
-	<include file="$(dirname)/ros_controllers.launch"/>
 
-<!-- Spawn the Gazebo ROS controllers -->
-	<node name="gazebo_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller" />
-
+<!-- Send fake joint values-->
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+          <param name="use_gui" value="true"/>
+    </node>
 
 </launch>
 

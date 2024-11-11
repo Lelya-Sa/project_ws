@@ -3,11 +3,16 @@
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
   <rosparam file="$(find robot_2)/config/ros_controllers.yaml" command="load"/>
+  <rosparam file="$(find robot_2)/config/gazebo_controllers.yaml"  command="load" />
 
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="true"
     output="screen" args="joint_state_controller diff_drive_controller
-                            gripper_controller_effort arm_controller_pos mobile_controller_velocity
-                            manipulator_controller_pos"/>
+                            gripper_controller_effort arm_controller_pos mobile_controller_velocity "/>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+  </node>
 
 </launch>

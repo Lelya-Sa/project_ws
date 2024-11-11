@@ -5,13 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="robot_2 works">
-      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/12_world_gazebo.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bashrc" beforeDir="false" afterPath="$PROJECT_DIR$/.bashrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project_ws.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_ws.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2024__20_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2024__20_36__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/arm_description/catkin_generated/installspace/arm_descriptionConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/arm_description/catkin_generated/installspace/arm_descriptionConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/arm_moveit_config/catkin_generated/installspace/arm_moveit_configConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/arm_moveit_config/catkin_generated/installspace/arm_moveit_configConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/env_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/env_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_make.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/my_simulations/catkin_generated/installspace/my_simulationsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/my_simulations/catkin_generated/installspace/my_simulationsConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robot_2/catkin_generated/installspace/robot_2Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/catkin_generated/installspace/robot_2Config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/devel/env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/arm_description/cmake/arm_descriptionConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/arm_description/cmake/arm_descriptionConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/arm_moveit_config/cmake/arm_moveit_configConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/arm_moveit_config/cmake/arm_moveit_configConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/my_simulations/cmake/my_simulationsConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/my_simulations/cmake/my_simulationsConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/robot_2/cmake/robot_2Config.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/robot_2/cmake/robot_2Config.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes for modeling" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosgraph_arm_moveit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosgraph_demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosgraph_demo_gazebo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/scripts/move_to_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/scripts/move_to_point.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/kinematics.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/kinematics.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_gazebo_options.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_moveit.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +71,18 @@
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Lelya-Sa"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lelya-Sa/project_ws.git&quot;,
+    &quot;accountId&quot;: &quot;b35f04f4-9f15-4f52-8ad1-33c6512e258a&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -33,23 +92,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "robot__2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;11bd7383&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
-        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -68,6 +127,7 @@
       <workItem from="1730485113833" duration="1216000" />
       <workItem from="1730509908160" duration="31000" />
       <workItem from="1731223168334" duration="42000" />
+      <workItem from="1731350295571" duration="4002000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

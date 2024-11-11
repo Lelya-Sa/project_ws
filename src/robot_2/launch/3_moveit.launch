@@ -21,6 +21,8 @@
   <!-- If needed, broadcast static tf for robot root -->
   <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames -->
   <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 world map 50"/>
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 50"/>
+
   <node pkg="tf" type="static_transform_publisher" name="base_link_broadcaster" args="0 0 0.075 0 0 0 base_chassis arm_base_link 50" />
   <node pkg="tf" type="static_transform_publisher" name="base_foot_broadcaster" args="0 0 0.075 0 0 0 robot_footprint base_chassis 50" />
 
@@ -42,6 +44,8 @@
 
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(dirname)/move_group.launch">
+  <!-- Load the controller parameters onto the parameter server -->
+
     <arg name="allow_trajectory_execution" value="true"/>
     <arg name="moveit_controller_manager" value="$(arg moveit_controller_manager)" />
     <arg name="fake_execution_type" value="$(arg fake_execution_type)"/>
@@ -50,4 +54,5 @@
     <arg name="pipeline" value="$(arg pipeline)"/>
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
   </include>
+
 </launch>

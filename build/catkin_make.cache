@@ -1,2 +1,2 @@
-arm_description:arm_moveit_config:my_simulations:robot_2
+arm_description:arm_moveit_config:gazebo_ros_pkgs/gazebo_dev:gazebo_ros_pkgs/gazebo_msgs:gazebo_ros_pkgs/gazebo_plugins:gazebo_ros_pkgs/gazebo_ros:gazebo_ros_pkgs/gazebo_ros_control:gazebo_ros_pkgs/gazebo_ros_pkgs:my_simulations:robot_2:slam_gmapping/gmapping:slam_gmapping/slam_gmapping:teleop_twist_keyboard
 -DCATKIN_DEVEL_PREFIX=/home/lelyasa/project_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lelyasa/project_ws/install -G Unix Makefiles

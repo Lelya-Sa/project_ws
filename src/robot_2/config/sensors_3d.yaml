@@ -6,9 +6,8 @@ sensors:
     padding_offset: 0.1
     padding_scale: 1.0
     max_update_rate: 1.0
-    filtered_cloud_topic: filtered_cloud
-    ns: kinect
-    
+    filtered_cloud_topic: filtered_cloud_pts
+
   - sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
     image_topic: /camera/depth_registered/image_raw
     queue_size: 5
@@ -18,5 +17,4 @@ sensors:
     padding_scale: 4.0
     padding_offset: 0.03
     max_update_rate: 1.0
-    filtered_cloud_topic: filtered_cloud
-    ns: kinect
+    filtered_cloud_topic: filtered_cloud_img
