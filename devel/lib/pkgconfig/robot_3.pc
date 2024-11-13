@@ -1,8 +1,0 @@
-prefix=/home/lelyasa/project_ws/devel
-
-Name: robot_3
-Description: Description of robot_3
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

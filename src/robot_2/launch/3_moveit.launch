@@ -16,15 +16,16 @@
   <arg name="fake_execution_type" default="interpolate" />
 
   <!-- By default, hide joint_state_publisher's GUI in 'fake' controller_manager mode -->
-  <arg name="use_gui" default="true" />
+  <arg name="use_gui" default="false" />
 
   <!-- If needed, broadcast static tf for robot root -->
-  <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames -->
+  <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames
   <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 world map 50"/>
   <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 50"/>
-
-  <node pkg="tf" type="static_transform_publisher" name="base_link_broadcaster" args="0 0 0.075 0 0 0 base_chassis arm_base_link 50" />
-  <node pkg="tf" type="static_transform_publisher" name="base_foot_broadcaster" args="0 0 0.075 0 0 0 robot_footprint base_chassis 50" />
+  <node pkg="tf" type="static_transform_publisher" name="odom_to_foot" args="0 0 0 0 0 0 odom robot_footprint 50"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_foot_broadcaster" args="0 0 0.075 0 0 0 robot_footprint base_chassis 50" />-->
+<!--   <node pkg="tf" type="static_transform_publisher" name="base_link_broadcaster" args="0 0 0.075 0 0 0 base_chassis arm_base_link 50" />
+-->
 
   <group if="$(eval arg('moveit_controller_manager') == 'fake')">
     <!-- We do not have a real robot connected, so publish fake joint states via a joint_state_publisher
@@ -39,7 +40,7 @@
     </node>
 
     <!-- Given the published joint states, publish tf for the robot links -->
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen" />
   </group>
 
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->

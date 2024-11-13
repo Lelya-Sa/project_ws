@@ -5,12 +5,17 @@
   <rosparam file="$(find robot_2)/config/ros_controllers.yaml" command="load"/>
   <rosparam file="$(find robot_2)/config/gazebo_controllers.yaml"  command="load" />
 
+    <!-- Load Joint State Publisher -->
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen">
+        <param name="use_gui" value="false"/>
+    </node>
+
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="true"
     output="screen" args="joint_state_controller diff_drive_controller
                             gripper_controller_effort arm_controller_pos mobile_controller_velocity "/>
 
-  <!-- convert joint states to TF transforms for rviz, etc -->
+  <!-- convert joint states to TF transforms for rviz, etc-->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
   </node>

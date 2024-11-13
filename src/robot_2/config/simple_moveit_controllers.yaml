@@ -49,3 +49,4 @@ controller_list:
     joints:
       - left_wheel_hinge
       - right_wheel_hinge
+

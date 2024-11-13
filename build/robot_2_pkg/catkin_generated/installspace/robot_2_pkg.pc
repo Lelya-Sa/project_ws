@@ -1,8 +1,0 @@
-prefix=/home/lelyasa/project_ws/install
-
-Name: robot_2_pkg
-Description: Description of robot_2_pkg
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

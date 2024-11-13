@@ -7951,7 +7951,7 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    <model name='item1'>
+    <model name='red1'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
@@ -8032,7 +8032,7 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>0.583518 0.007 6e-06 6e-06 -4.8e-05 -2.1e-05</pose>
     </model>
-    <model name='item3'>
+    <model name='red3'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
@@ -8615,6 +8615,7 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
+
     <state world_name='default'>
       <sim_time>3627 810000000</sim_time>
       <real_time>458 781783901</real_time>
@@ -9151,6 +9152,7 @@
           <wrench>0 0 -0.98 0 -0 0</wrench>
         </link>
       </model>
+      <!--
       <model name='warehouse_pallet_0'>
         <pose>1 -15.4002 -0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -9161,6 +9163,8 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      -->
+      <!--
       <model name='warehouse_walls'>
         <pose>0 -0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -9261,10 +9265,14 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      -->
+
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
     </state>
+
+    <!--
     <model name='warehouse_pallet_0'>
       <link name='warehouse_pallet::link'>
         <pose>0 0 0 0 -0 1.57</pose>
@@ -10155,6 +10163,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>1.00003 -15 0.099305 -0.000183 0.000337 0</pose>
     </model>
+    -->
     <model name='pallet_set6_clone_0'>
       <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose>0 0 0 0 -0 1.57</pose>

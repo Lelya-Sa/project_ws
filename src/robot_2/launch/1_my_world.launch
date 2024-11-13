@@ -8,7 +8,7 @@
 		<arg name="world_pose" default="-x 0 -y 0 -z 0 -R 0 -P 0 -Y 0" doc="Pose to spawn the robot at"/>      
 		<arg name="debug" default="false" />
 		<arg name="world_name" default="$(find my_simulations)/world/warehouse_world.world"  doc="Gazebo world file"/>
-	    <arg name="initial_joint_positions" default=" -J f_joint1 0 -J f_joint2 0 -J joint1 0 -J joint2 0 -J joint3 0 -J joint4 0 -J joint5 0 -J joint6 0 -J left_wheel_hinge 0 -J right_wheel_hinge 0 " doc="Initial joint configuration of the robot"/>
+	    <arg name="initial_joint_positions" default="-J f_joint1 0 -J f_joint2 0 -J joint1 0 -J joint2 0 -J joint3 0 -J joint4 0 -J joint5 0 -J joint6 0" doc="Initial joint configuration of the robot"/>
 
         <!-- include gazebo_ros launcher -->
         <!-- Start Gazebo paused to allow the controllers to pickup the initial pose -->

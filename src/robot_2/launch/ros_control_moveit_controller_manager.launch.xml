@@ -2,6 +2,6 @@
 	<!-- Define MoveIt controller manager plugin -->
 	<param name="moveit_controller_manager" value="moveit_ros_control_interface::MoveItControllerManager" />
     <rosparam file="$(find robot_2)/config/gazebo_controllers.yaml"/>
-    <rosparam file="$(find robot_2)/config/controller_list.yaml"/>
+    <rosparam file="$(find robot_2)/config/ros_controllers.yaml"/>
 
 </launch>

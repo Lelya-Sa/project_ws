@@ -27,7 +27,8 @@ sudo apt-get install ros-kinetic-trac-ik-kinematics-plugin
 rosrun rqt_gui rqt_gui
 ----------------------------------------------------------------------
 killall -9 gzserver
-
+----------------------------------------------------
+/opt/ros/noetic/lib/python3/dist-packages
 --------------------------------------------------
 ---------- Successfully Parsed XML ---------------
 root Link: robot_footprint has 1 child(ren)
