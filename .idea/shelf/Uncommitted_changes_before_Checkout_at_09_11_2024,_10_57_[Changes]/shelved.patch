@@ -1,0 +1,15 @@
+Index: build/catkin_make.cache
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>arm_description:arm_moveit_config:my_simulations:pysdf\n-DCATKIN_DEVEL_PREFIX=/home/lelyasa/project_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lelyasa/project_ws/install -G Unix Makefiles
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/catkin_make.cache b/build/catkin_make.cache
+--- a/build/catkin_make.cache	(revision 40ccf514d9f58cc1ee6aee2b3f218af1c71bae9f)
++++ b/build/catkin_make.cache	(date 1731142151018)
+@@ -1,2 +1,2 @@
+-arm_description:arm_moveit_config:my_simulations:pysdf
++arm_description:arm_moveit_config:my_simulations
+ -DCATKIN_DEVEL_PREFIX=/home/lelyasa/project_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lelyasa/project_ws/install -G Unix Makefiles
+\ No newline at end of file

@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="don&quot;t know">
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="camkelist">
+      <change afterPath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world (copy).world" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/amcl.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/slam_gmapping.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/12_world_gazebo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_move_group_moveit.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_RViz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/4_RViz.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ae728cb2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "0c5e88a6",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +82,7 @@
       <workItem from="1731393135329" duration="11688000" />
       <workItem from="1731488841728" duration="22153000" />
       <workItem from="1731596931256" duration="8816000" />
-      <workItem from="1731660651746" duration="3881000" />
+      <workItem from="1731660651746" duration="7023000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -148,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731525300792</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="camkelist">
+      <option name="closed" value="true" />
+      <created>1731665625399</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731665625399</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +169,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="robot_2 works" />
     <MESSAGE value="don&quot;t know" />
-    <option name="LAST_COMMIT_MESSAGE" value="don&quot;t know" />
+    <MESSAGE value="camkelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="camkelist" />
   </component>
 </project>
