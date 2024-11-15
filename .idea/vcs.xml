@@ -3,6 +3,21 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-cmake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-fuel-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-gui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-launch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-math" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-msgs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-physics" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-rendering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-sensors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-sim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/gz-transport" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/sdformat" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/slam_gmapping" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/teleop_twist_keyboard" vcs="Git" />
   </component>

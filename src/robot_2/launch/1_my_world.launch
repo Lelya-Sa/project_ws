@@ -31,7 +31,7 @@
                 <arg name="debug" value="$(arg debug)" />
                 <arg name="gui" value="$(arg gazebo_gui)" />
                 <arg name="paused" value="$(arg paused)" />
-                <arg name="use_sim_time" value="true" />
+                <arg name="use_sim_time" value="$(arg use_sim_time)" />
 	</include>
 
 </launch>

@@ -127,4 +127,27 @@ rosrun rviz rviz
     </visual>
   </link>    
 
+--------------------------------------------- 
+sudo apt-get install -y ros-noetic-gazebo-ros
+
+sudo apt-get install -y ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
+
+sudo apt-get install -y ros-noetic-position-controllers
+sudo apt-get install -y ros-noetic-effort-controllers
+sudo apt-get install -y ros-noetic-joint-state-controller
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

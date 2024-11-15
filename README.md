@@ -57,6 +57,21 @@ then source the project workspace:
           ros-noetic-object-recognition-msgs \
           ros-noetic-roslint
           
+	sudo apt-get install ros-noetic-amcl
+	
+	sudo apt-get install ros-noetic-move-base
+	
+	sudo apt-get install ros-noetic-dwa-local-planner
+	
+	sudo apt-get install ros-noetic-map-server
+	
+	sudo apt-get install ros-noetic-teleop-twist-keyboard 
+	
+	sudo apt-get install ros-noetic-gmapping
+	
+	sudo apt-get install ros-noetic-slam-gmapping
+	
+          
       sudo apt-get install ros-noetic-trac-ik-kinematics-plugin
           
       rosdep update

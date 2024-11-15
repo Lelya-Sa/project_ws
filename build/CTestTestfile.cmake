@@ -7,7 +7,6 @@
 subdirs("gtest")
 subdirs("arm_moveit_config")
 subdirs("my_simulations")
-subdirs("robot")
 subdirs("robot_2")
 subdirs("slam_gmapping/slam_gmapping")
 subdirs("teleop_twist_keyboard")

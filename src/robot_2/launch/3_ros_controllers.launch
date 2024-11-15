@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+<!-- Load joint controller configurations from YAML file to parameter server-->
+  <rosparam file="$(find robot_2)/config/gazebo_controllers.yaml"  command="load" />
+  <rosparam file="$(find robot_2)/config/ros_controllers.yaml" command="load"/>
+
+<!-- Set the robot urdf on the parameter server -->
+	<param name="robot_description" textfile="$(find my_simulations)/models/urdf/mixed_robot.urdf" />
+
+  <!-- Load Joint State Publisher-->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"
+        output="screen" respawn="false" >
+    </node>
+
+
+
+  <!-- Load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen"
+    ns = "mixed_robot"
+    args="--timeout 50
+    gripper_controller_effort
+    arm_controller_pos
+    mobile_controller_velocity
+    joint_state_controller
+    diff_drive_controller
+    " />
+ <!--
+<node name="load_controller"
+      pkg="controller_manager"
+      type="controller_manager"
+      respawn="false"
+      output="screen"
+      args="load controller_spawner
+        " />
+   -->
+
+  <!-- convert joint states to TF transforms for rviz, etc-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+  </node>
+
+
+
+
+</launch>

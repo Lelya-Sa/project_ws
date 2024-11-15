@@ -8,16 +8,12 @@
 	<arg name="world_pose" default="-x 0 -y 0 -z 0 -R 0 -P 0 -Y 0" doc="Pose to spawn the robot at"/>
 	<arg name="initial_joint_positions"
 	    default="
-	    -J f_joint1 0
-	    -J f_joint2 0
 	    -J joint1 0
 	    -J joint2 0
 	    -J joint3 0
 	    -J joint4 0
 	    -J joint5 0
 	    -J joint6 0
-	    -J left_wheel_hinge 0
-	    -J right_wheel_hinge 0
 	    "
 	    doc="Initial joint configuration of the robot"/>
     <arg name="use_ekf" default="false"/>
@@ -33,7 +29,7 @@
                 <arg name="debug" value="$(arg debug)" />-->
         <!--        <arg name="gui" value="$(arg gazebo_gui)" />  \gazebo
                 <arg name="paused" value="$(arg paused)" />-->
-        <!--         <arg name="use_sim_time" value="use_sim_time" /> \clock
+        <!--         <arg name="use_sim_time" value="$(arg use_sim_time)" /> \clock
 	</include>
  -->
 
@@ -59,11 +55,26 @@
     <include file="$(dirname)/ros_controllers.launch"/>
 -->
 <!-- Spawn the robot in Gazebo -->
-	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"  respawn="false" output="screen"
-	 args="-urdf -param robot_description
-	 -model mixed_robot
-	 $(arg world_pose)
-	 $(arg initial_joint_positions)" />
+	<node name="urdf_spawner"
+	        pkg="gazebo_ros"
+	        type="spawn_model"
+	        respawn="false"
+	        output="screen"
+	        args="-urdf -param robot_description
+	        -model mixed_robot
+	        $(arg world_pose)
+	        $(arg initial_joint_positions) " />
 
+	     <!-- Spawn the robot in Gazebo
+	<node name="urdf_spawner"
+	        pkg="gazebo_ros"
+	        type="spawn_model"
+	        respawn="false"
+	        output="screen"
+	        ns="/"
+	        args="-urdf -param robot_description
+	        -model mixed_robot
+	        $(arg world_pose)
+	        $(arg initial_joint_positions)" />   -->
 </launch>
 
