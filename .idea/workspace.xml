@@ -4,13 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="camkelist">
-      <change afterPath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world (copy).world" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/amcl.launch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/slam_gmapping.launch" afterDir="false" />
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/3_spawn_robot.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/launch/6_view_navigation.launch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/navigation.rviz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/robot_check.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_make.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_move_group_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/4_RViz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_RViz.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_db.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/6_optional_db.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/amcl.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/moveit.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_ros_controllers.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/slam_gmapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/mapping_slam.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/mapping_slam.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +45,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="0c5e88a6b0911b8ee91dbf370f2728cc8fa81fee" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -46,7 +78,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "0c5e88a6",
+    "git-widget-placeholder": "detached3",
+    "last_opened_file_path": "/home/lelyasa/project_ws/src/robot_2",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -55,6 +88,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/robot_2" />
+      <recent name="$PROJECT_DIR$/src/robot_2/launch" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/robot_2/rvizConfig" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +124,7 @@
       <workItem from="1731393135329" duration="11688000" />
       <workItem from="1731488841728" duration="22153000" />
       <workItem from="1731596931256" duration="8816000" />
-      <workItem from="1731660651746" duration="7023000" />
+      <workItem from="1731660651746" duration="14968000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -148,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731665625399</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <option name="closed" value="true" />
+      <created>1731670712903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731670712903</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +220,7 @@
     <MESSAGE value="robot_2 works" />
     <MESSAGE value="don&quot;t know" />
     <MESSAGE value="camkelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="camkelist" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>

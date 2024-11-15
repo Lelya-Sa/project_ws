@@ -1,0 +1,4 @@
+<launch>
+  <!-- Launch Rviz with predefined configuration for navigate -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_2)/rvizConfig/navigation.rviz"/>
+</launch>

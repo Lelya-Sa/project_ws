@@ -1,2 +1,2 @@
-arm_description:arm_moveit_config:my_simulations:robot:robot_2
+arm_description:arm_moveit_config:my_simulations:robot:robot_2:slam_gmapping/gmapping:slam_gmapping/slam_gmapping:teleop_twist_keyboard
 -DCATKIN_DEVEL_PREFIX=/home/lelyasa/project_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lelyasa/project_ws/install -G Unix Makefiles

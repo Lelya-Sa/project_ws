@@ -1186,7 +1186,7 @@
             <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
             <wheelTorque>20</wheelTorque>
             <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
-            <commandTopic>cmd_vel</commandTopic>
+            <commandTopic>/cmd_vel</commandTopic>
             <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
             <odometryTopic>odom</odometryTopic>
             <!-- Odometry frame, defaults to `odom` -->
@@ -1208,7 +1208,6 @@
             <robotNamespace>/</robotNamespace>
             <alwaysOn>true</alwaysOn>
             <legacyMode>false</legacyMode>
-            <torque>20</torque>
             <rosDebugLevel>na</rosDebugLevel>
             <publishTf>1</publishTf>
         </plugin>
@@ -1295,7 +1294,7 @@
                 </noise>
             </ray>
             <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_head_hokuyo_controller">
-                <topicName>/hokuyo_scan</topicName>
+                <topicName>/scan</topicName>
                 <frameName>hokuyo</frameName>
             </plugin>
         </sensor>
