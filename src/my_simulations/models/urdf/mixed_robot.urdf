@@ -1,17 +1,6 @@
 <?xml version="1.0" ?>
-<robot name="mixed_robot">    <!-- ........................ Gazebo state control ........................ -->
-    <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <!-- -->
-            <static>false</static>
-            <robotNamespace>/</robotNamespace>
-            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-            <!-- -->
-            <controlPeriod>0.009</controlPeriod>
-            <legacyModeNS>false</legacyModeNS>
-        </plugin>
-    </gazebo>
-    
+<robot name="mixed_robot">
+
     <!--########################## Robot definitions ############################################-->
     <!-- ROBOT BASE LINK -->
     <link name="robot_footprint" />
@@ -1183,29 +1172,45 @@
     <!-- ........................Differential drive. Set param "wheelSeparation" accordingly!........................ -->
     <gazebo>
         <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
-            <frameId>/diff_drive</frameId>
+            <!-- Plugin update rate in Hz -->
+            <updateRate>50</updateRate>
+            <!-- Name of left joint, defaults to `left_joint` -->
+            <leftJoint>left_wheel_hinge</leftJoint>
+            <!-- Name of right joint, defaults to `right_joint` -->
+            <rightJoint>right_wheel_hinge</rightJoint>
+            <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+            <wheelSeparation>0.43</wheelSeparation>
+            <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+            <wheelDiameter>0.16</wheelDiameter>
+            <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+            <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+            <wheelTorque>20</wheelTorque>
+            <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+            <commandTopic>cmd_vel</commandTopic>
+            <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+            <odometryTopic>odom</odometryTopic>
+            <!-- Odometry frame, defaults to `odom` -->
+            <odometryFrame>odom</odometryFrame>
+            <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+            <robotBaseFrame>robot_footprint</robotBaseFrame>
+            <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+            <odometrySource>world</odometrySource>
+            <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+            <publishWheelTF>false</publishWheelTF>
+            <!-- Set to true to publish transforms for the odometry, defaults to true -->
+            <publishOdomTF>1</publishOdomTF>
+            <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+            <publishWheelJointState>true</publishWheelJointState>
+            <!-- Set to true to swap right and left wheels, defaults to true -->
             <legacyMode>false</legacyMode>
+            <wheelAcceleration>1.0</wheelAcceleration>
+            <frameName>robot_footprint</frameName>
+            <robotNamespace>/</robotNamespace>
             <alwaysOn>true</alwaysOn>
             <legacyMode>false</legacyMode>
-            <robotNamespace></robotNamespace>
-            <updateRate>100</updateRate>
-            <leftJoint>left_wheel_hinge</leftJoint>
-            <rightJoint>right_wheel_hinge</rightJoint>
-            <wheelSeparation>0.43</wheelSeparation>
-            <wheelDiameter>0.16</wheelDiameter>
             <torque>20</torque>
-            <commandTopic>mobile_controller_velocity/cmd_vel</commandTopic>
-            <odometryTopic>odom</odometryTopic>
-            <odometrySource>world</odometrySource>
-            <odometryFrame>odom</odometryFrame>
-            <robotBaseFrame>robot_footprint</robotBaseFrame>
-            <publishWheelTF>false</publishWheelTF>
-            <publishWheelJointState>false</publishWheelJointState>
-            <rosDebugLevel>Debug</rosDebugLevel>
-            <wheelAcceleration>1.0</wheelAcceleration>
-            <wheelTorque>20</wheelTorque>
+            <rosDebugLevel>na</rosDebugLevel>
             <publishTf>1</publishTf>
-            <publishOdomTF>1</publishOdomTF>
         </plugin>
     </gazebo>
     <!-- ........................RGBD Camera........................ -->
@@ -1237,12 +1242,12 @@
             </camera>
             <plugin filename="libgazebo_ros_openni_kinect.so" name="camera_controller">
                 <alwaysOn>true</alwaysOn>
-                <updateRate>10.0</updateRate>
+                <updateRate>50.0</updateRate>
                 <cameraName>camera</cameraName>
                 <frameName>camera_link_optical</frameName>
                 <imageTopicName>rgb/image_raw</imageTopicName>
-                <depthImageTopicName>depth_registered/image_raw</depthImageTopicName>
-                <pointCloudTopicName>depth_registered/points</pointCloudTopicName>
+                <depthImageTopicName>depth/image_raw</depthImageTopicName>
+                <pointCloudTopicName>depth/points</pointCloudTopicName>
                 <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
                 <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
                 <pointCloudCutoff>0.4</pointCloudCutoff>
@@ -1337,7 +1342,27 @@
         </actuator>
     </transmission>
 -->
-    
+    <gazebo>
+      <plugin name="gazebo_ros_bumper_controller" filename="libgazebo_ros_bumper.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>50</updateRate>
+        <bumperTopicName>bumper</bumperTopicName>
+        <frameName>world</frameName>
+      </plugin>
+    </gazebo>
+    <!-- ........................ Gazebo state control ........................ -->
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <!-- -->
+            <static>false</static>
+            <robotNamespace>/</robotNamespace>
+            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+            <!-- -->
+            <controlPeriod>0.009</controlPeriod>
+            <legacyModeNS>false</legacyModeNS>
+        </plugin>
+    </gazebo>
+
 </robot>
 
 
