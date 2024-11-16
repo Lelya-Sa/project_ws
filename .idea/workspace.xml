@@ -4,152 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers work!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_cpp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_eus.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_eus.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_lisp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_nodejs.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_py.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/roscpp_generate_messages_py.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_eus.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_nodejs.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_py.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/arm_description/CMakeFiles/std_msgs_generate_messages_py.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_make.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/installspace/robot.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/installspace/robotConfig-version.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/installspace/robotConfig.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/package.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/pkg.develspace.context.pc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/pkg.installspace.context.pc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/stamps/robot/package.xml.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/catkin_generated/stamps/robot/pkg.pc.em.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/catkin_generated/ordered_paths.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/catkin_generated/package.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/catkin_generated/stamps/robot_2/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/catkin_generated/stamps/robot_2/package.xml.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/gmapping/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/gmapping/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/lib/pkgconfig/robot.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/robot/cmake/robotConfig-version.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/robot/cmake/robotConfig.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/notes for modeling" beforeDir="false" afterPath="$PROJECT_DIR$/notes/notes for modeling" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/rosgraph.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/.setup_assistant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/cartesian_limits.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/chomp_planning.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/fake_controllers.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/gazebo_controllers.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/gazebo_mixed_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/joint_limits.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/kinematics.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/mixed_robot.srdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/ompl_planning.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/ros_controllers.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/sensors_3d.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/simple_moveit_controllers.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/config/stomp_planning.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/chomp_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/default_warehouse_db.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/demo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/demo_gazebo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/fake_moveit_controller_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/gazebo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/joystick_control.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/mixed_robot_moveit_sensor_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/move_group.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/moveit.rviz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/moveit_rviz.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/ompl-chomp_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/ompl_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/pilz_industrial_motion_planner_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/planning_context.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/ros_controllers.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/run_benchmark_ompl.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/sensor_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/setup_assistant.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/simple_moveit_controller_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/stomp_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/trajectory_execution.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/warehouse.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/launch/warehouse_settings.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot/package.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/fake_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/fake_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_RViz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/6_RViz.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/moveit_rviz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/moveit_rviz.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +110,7 @@
       <workItem from="1731488841728" duration="22153000" />
       <workItem from="1731596931256" duration="8816000" />
       <workItem from="1731660651746" duration="14968000" />
-      <workItem from="1731691081126" duration="14626000" />
+      <workItem from="1731691081126" duration="24827000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -311,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731670712903</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="controllers work!">
+      <option name="closed" value="true" />
+      <created>1731710159872</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731710159872</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +215,7 @@
     <MESSAGE value="don&quot;t know" />
     <MESSAGE value="camkelist" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="controllers work!" />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers work!" />
   </component>
 </project>

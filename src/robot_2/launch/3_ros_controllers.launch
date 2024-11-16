@@ -17,11 +17,10 @@
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
     output="screen"
-    ns = "mixed_robot"
+    ns = "/mixed_robot"
     args="--timeout 50
     gripper_controller_effort
     arm_controller_pos
-    mobile_controller_velocity
     joint_state_controller
     diff_drive_controller
     " />
@@ -32,6 +31,8 @@
       respawn="false"
       output="screen"
       args="load controller_spawner
+          ns = "/mixed_robot"
+
         " />
    -->
 

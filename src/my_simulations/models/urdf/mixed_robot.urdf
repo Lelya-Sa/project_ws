@@ -5,7 +5,7 @@
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
             <!--
             <static>false</static>-->
-            <robotNamespace>mixed_robot</robotNamespace>
+            <robotNamespace>mixed_robot/</robotNamespace>
             <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
             <!--
             <controlPeriod>0.009</controlPeriod>
@@ -159,7 +159,7 @@
                 </noise>
             </camera>
             <plugin filename="libgazebo_ros_openni_kinect.so" name="camera_controller">
-                <robotNamespace>mixed_robot</robotNamespace>
+                <robotNamespace>mixed_robot/</robotNamespace>
                 <alwaysOn>true</alwaysOn>
                 <updateRate>10.0</updateRate>
                 <cameraName>camera</cameraName>
@@ -214,8 +214,8 @@
                 </noise>
             </ray>
             <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_head_hokuyo_controller">
-                <robotNamespace>mixed_robot</robotNamespace>
-                <topicName>/scan</topicName>
+                <robotNamespace>mixed_robot/</robotNamespace>
+                <topicName>mixed_robot/scan</topicName>
                 <frameName>hokuyo</frameName>
             </plugin>
         </sensor>
@@ -223,47 +223,46 @@
         <!-- ........................Differential drive. Set param "wheelSeparation" accordingly!........................ -->
     <gazebo>
         <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
-            <!-- Plugin update rate in Hz -->
+        <!-- Plugin update rate in Hz -->
             <updateRate>50</updateRate>
-            <!-- Name of left joint, defaults to `left_joint` -->
+        <!-- Name of left joint, defaults to `left_joint` -->
             <leftJoint>left_wheel_hinge</leftJoint>
-            <!-- Name of right joint, defaults to `right_joint` -->
+        <!-- Name of right joint, defaults to `right_joint` -->
             <rightJoint>right_wheel_hinge</rightJoint>
-            <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+        <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
             <wheelSeparation>0.43</wheelSeparation>
-            <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+        <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
             <wheelDiameter>0.16</wheelDiameter>
-            <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+       <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
             <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
-            <wheelTorque>20</wheelTorque>
-            <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
-            <commandTopic>cmd_vel</commandTopic>
-            <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
-            <odometryTopic>odom</odometryTopic>
-            <!-- Odometry frame, defaults to `odom` -->
+            <wheelTorque>10</wheelTorque>
+       <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+            <commandTopic>/diff_drive_controller/cmd_vel</commandTopic>
+       <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+            <odometryTopic>/odom</odometryTopic>
+       <!-- Odometry frame, defaults to `odom` -->
             <odometryFrame>odom</odometryFrame>
-            <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+       <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
             <robotBaseFrame>robot_footprint</robotBaseFrame>
-            <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+       <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
             <odometrySource>world</odometrySource>
-            <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+       <!-- Set to true to publish transforms for the wheel links, defaults to false -->
             <publishWheelTF>false</publishWheelTF>
-            <!-- Set to true to publish transforms for the odometry, defaults to true -->
+       <!-- Set to true to publish transforms for the odometry, defaults to true -->
             <publishOdomTF>1</publishOdomTF>
-            <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
-            <publishWheelJointState>true</publishWheelJointState>
-            <!-- Set to true to swap right and left wheels, defaults to true -->
+       <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+            <publishWheelJointState>false</publishWheelJointState>
+       <!-- Set to true to swap right and left wheels, defaults to true -->
             <legacyMode>false</legacyMode>
             <wheelAcceleration>1.0</wheelAcceleration>
             <frameName>robot_footprint</frameName>
             <alwaysOn>true</alwaysOn>
             <legacyMode>false</legacyMode>
             <rosDebugLevel>na</rosDebugLevel>
-            <publishTf>1</publishTf>
+            <publishTf>0</publishTf>
             <robotNamespace>mixed_robot</robotNamespace>
         </plugin>
     </gazebo>
-
     <!--########################## Robot definitions ############################################-->
     <!-- ROBOT BASE LINK -->
     <link name="robot_footprint" />

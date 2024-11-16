@@ -384,7 +384,7 @@ Visualization Manager:
     - Class: rviz/Camera
       Enabled: false
       Image Rendering: background and overlay
-      Image Topic: /camera/rgb/image_raw
+      Image Topic: /mixed_robot/camera/rgb/image_raw
       Name: Camera
       Overlay Alpha: 0.5
       Queue Size: 2
@@ -416,7 +416,7 @@ Visualization Manager:
       Color Transformer: ""
       Color Transport Hint: raw
       Decay Time: 0
-      Depth Map Topic: /camera/depth_registered/image_raw
+      Depth Map Topic: /mixed_robot/camera/depth/image_raw
       Depth Map Transport Hint: raw
       Enabled: true
       Invert Rainbow: false
