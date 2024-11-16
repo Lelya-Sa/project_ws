@@ -71,7 +71,7 @@
 	        type="spawn_model"
 	        respawn="false"
 	        output="screen"
-	        ns="/"
+	        ns="/mixed_robot"
 	        args="-urdf -param robot_description
 	        -model mixed_robot
 	        $(arg world_pose)

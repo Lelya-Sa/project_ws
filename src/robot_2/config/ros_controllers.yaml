@@ -1,5 +1,5 @@
-mixed_robot:
-  gripper_controller_effort:
+#mixed_robot:
+gripper_controller_effort:
     type: effort_controllers/JointTrajectoryController
     joints:
       - f_joint1
@@ -16,7 +16,7 @@ mixed_robot:
         i: 1
         i_clamp: 1
 
-  arm_controller_pos:
+arm_controller_pos:
     type: position_controllers/JointTrajectoryController
     joints:
       - joint1
@@ -75,7 +75,7 @@ mixed_robot:
 #        i_clamp: 1
 
 
-  diff_drive_controller:
+diff_drive_controller:
     type: diff_drive_controller/DiffDriveController
     publish_rate: 50
 
@@ -101,7 +101,8 @@ mixed_robot:
     base_frame_id: robot_footprint
     odom_frame_id: odom
     open_loop: true
-    enable_odom_tf: true
+#    enable_odom_tf: true
+
      #Velocity and acceleration limits for the robot
     linear:
       x:

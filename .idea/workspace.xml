@@ -4,25 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers work!">
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader....">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/ICRA2013_MoveIt-Workshop_MoveIt-at-IPA.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/Kinematic-joint-types-in-3-D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/frames.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/mixed_robot.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/mixed_robot_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/mobile_base_design-" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/project_zip.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/robot_pkg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_arm_moveit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_arm_moveit_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_gazebo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_gazebo_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_gazebo_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024__10_57__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/notes for modeling" beforeDir="false" afterPath="$PROJECT_DIR$/notes/notes for modeling" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rosgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/rosgraph.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/fake_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/fake_controllers.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_RViz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/6_RViz.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/fake_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/fake_moveit_controller_manager.launch.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/moveit_rviz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/moveit_rviz.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/sensor_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/sensor_manager.launch.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +129,8 @@
       <workItem from="1731488841728" duration="22153000" />
       <workItem from="1731596931256" duration="8816000" />
       <workItem from="1731660651746" duration="14968000" />
-      <workItem from="1731691081126" duration="24827000" />
+      <workItem from="1731691081126" duration="25155000" />
+      <workItem from="1731759954666" duration="10459000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -192,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731710159872</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader....">
+      <option name="closed" value="true" />
+      <created>1731720674037</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731720674037</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +244,7 @@
     <MESSAGE value="camkelist" />
     <MESSAGE value="commit" />
     <MESSAGE value="controllers work!" />
-    <option name="LAST_COMMIT_MESSAGE" value="controllers work!" />
+    <MESSAGE value="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader...." />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader...." />
   </component>
 </project>

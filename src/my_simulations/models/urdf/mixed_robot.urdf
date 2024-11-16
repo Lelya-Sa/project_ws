@@ -4,52 +4,74 @@
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
             <!--
-            <static>false</static>-->
-            <robotNamespace>mixed_robot/</robotNamespace>
+            <static>false</static>
+            -->
+            
+            <robotNamespace>/</robotNamespace>
             <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+            
             <!--
             <controlPeriod>0.009</controlPeriod>
-            <legacyModeNS>true</legacyModeNS>-->
+            <legacyModeNS>true</legacyModeNS>
+            -->
         </plugin>
     </gazebo>
+    
  <!--########################## SENSORS and Gazebo controllers ############################################-->
   <gazebo reference="link1">
         <material>Gazebo/Black</material>
         <turnGravityOff>false</turnGravityOff>
+	<mu1>0.2</mu1>
+	<mu2>0.2</mu2>
   </gazebo>
     <gazebo reference="link2">
         <material>Gazebo/Blue</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>
     <gazebo reference="link3">
         <material>Gazebo/Black</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>    
     <gazebo reference="link4">
         <material>Gazebo/Blue</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>    
     <gazebo reference="link5">
         <material>Gazebo/Black</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>    
      <gazebo reference="link6">
         <material>Gazebo/Blue</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>   
     <gazebo reference="finger1">
         <material>Gazebo/White</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>  
     <gazebo reference="finger2">
         <material>Gazebo/White</material>
         <turnGravityOff>false</turnGravityOff>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>  
     <!-- ........................ Camera ........................ -->
     <gazebo reference="camera_link">
         <material>Gazebo/Grey</material>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>
-
     <!-- ........................ wheels ........................ -->
     <gazebo reference="left_wheel">
         <material>Gazebo/Indigo</material>
@@ -108,9 +130,11 @@
     <!-- ........................ base ........................ -->
     <gazebo reference="base_chassis">
         <material>Gazebo/DarkGrey</material>
+        <mu1>0.2</mu1>
+	<mu2>0.2</mu2>
     </gazebo>
     <gazebo reference="robot_footprint" />
-  
+    <gazebo reference="world" />
     <!-- .......... GAZEBO PLUGINS ..................... -->
     <!-- ........................ grasp ........................ -->
     <gazebo>
@@ -159,7 +183,7 @@
                 </noise>
             </camera>
             <plugin filename="libgazebo_ros_openni_kinect.so" name="camera_controller">
-                <robotNamespace>mixed_robot/</robotNamespace>
+                <robotNamespace>/</robotNamespace>
                 <alwaysOn>true</alwaysOn>
                 <updateRate>10.0</updateRate>
                 <cameraName>camera</cameraName>
@@ -214,8 +238,8 @@
                 </noise>
             </ray>
             <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_head_hokuyo_controller">
-                <robotNamespace>mixed_robot/</robotNamespace>
-                <topicName>mixed_robot/scan</topicName>
+                <robotNamespace>/</robotNamespace>
+                <topicName>/scan</topicName>
                 <frameName>hokuyo</frameName>
             </plugin>
         </sensor>
@@ -260,12 +284,26 @@
             <legacyMode>false</legacyMode>
             <rosDebugLevel>na</rosDebugLevel>
             <publishTf>0</publishTf>
-            <robotNamespace>mixed_robot</robotNamespace>
+            <robotNamespace>/</robotNamespace>
         </plugin>
     </gazebo>
     <!--########################## Robot definitions ############################################-->
-    <!-- ROBOT BASE LINK -->
-    <link name="robot_footprint" />
+    <!-- ROBOT BASE LINK -->   
+     <link name="robot_footprint">
+	     <inertial>
+	    <origin xyz="0 0 0" rpy="0 0 0" />
+	    <mass value="3.06" />
+	    <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3" />
+	    </inertial>
+     </link>
+     
+    <link name="world"/>
+    
+   <joint name="world_joint" type="fixed">
+	    <origin xyz="0 0 0" rpy="0 0 0"/>  <!-- Place the robot wherever you want -->
+	    <parent link="world"/>
+	    <child link="robot_footprint"/>  <!-- replace this name with your robot's base link -->
+</joint>
     <link name="base_chassis">
         <pose>0 0 0 0 0 0</pose>
         <inertial>
@@ -318,7 +356,8 @@
         <child link="left_wheel" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="0 1 0" />
-        <dynamics damping="0" friction="1.0" />
+	<dynamics damping="1.0" friction="1.0"/>
+
     </joint>
     <link name="right_wheel">
         <inertial>
@@ -344,7 +383,7 @@
         <child link="right_wheel" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="0 1 0" />
-        <dynamics damping="0" friction="1.0" />
+        <dynamics damping="1.0" friction="1.0" />
     </joint>
     <link name="front_left_caster">
         <inertial>
@@ -370,7 +409,8 @@
         <child link="front_left_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0" friction="0" />
+	<dynamics damping="0.01" friction="0.01"/>
+
     </joint>
     <link name="front_right_caster">
         <inertial>
@@ -396,7 +436,7 @@
         <child link="front_right_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0" friction="0" />
+	<dynamics damping="0.01" friction="0.01"/>
     </joint>
     <link name="back_left_caster">
         <inertial>
@@ -422,7 +462,7 @@
         <child link="back_left_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0" friction="0" />
+        <dynamics damping="0.01" friction="0.01" />
     </joint>
     <link name="back_right_caster">
         <inertial>
@@ -448,7 +488,7 @@
         <child link="back_right_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0" friction="0" />
+        <dynamics damping="0.01" friction="0.01" />
     </joint>
     <link name="left_container_side">
         <pose>0 0 0 0 0 0</pose>
@@ -655,6 +695,7 @@
         <parent link="base_chassis" />
         <child link="link1" />
         <axis xyz="0 0 1" />
+        <dynamics damping="1.0" friction="1.0"/>
     </joint>
     <!-- .....................LINK 2..................... -->
     <link name="link2">
@@ -852,6 +893,7 @@
         <parent link="link6" />
         <child link="finger1" />
         <origin rpy="0 0 0" xyz="0 -0.025 0.1" />
+        <dynamics damping="1.0" friction="1.0"/>
     </joint>
     <!-- ..................... finger2 ..................... -->
     <link name="finger2">
@@ -883,6 +925,7 @@
         <parent link="link6" />
         <child link="finger2" />
         <origin rpy="0 0 0" xyz="0 0.025 0.1" />
+        <dynamics damping="1.0" friction="1.0"/>
     </joint>
     <!--########################## TRANSMISSIONS ############################################-->
     <!-- ...................................... grip Effort ...................................... -->

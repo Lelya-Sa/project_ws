@@ -1,5 +1,5 @@
-mixed_robot:
-  controller_list:
+#mixed_robot:
+controller_list:
     - name: fake_gripper_controller
       type: $(arg fake_execution_type)
       joints:
@@ -23,7 +23,8 @@ mixed_robot:
       type: $(arg fake_execution_type)
       joints:
         []
-  initial:  # Define initial robot poses per group
+
+initial:  # Define initial robot poses per group
     - group: gripper
       pose: open
     - group: arm
