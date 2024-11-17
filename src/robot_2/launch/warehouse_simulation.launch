@@ -1,0 +1,5 @@
+<launch>
+  <!-- The GazeboSpawnObject node -->
+  <node name="WarehouseSimulation" type="WarehouseSimulation" pkg="robot_2" output="screen">
+  </node>
+</launch>
