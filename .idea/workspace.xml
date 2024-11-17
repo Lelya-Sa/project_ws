@@ -4,49 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader....">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/ICRA2013_MoveIt-Workshop_MoveIt-at-IPA.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/Kinematic-joint-types-in-3-D.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/frames.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/mixed_robot.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/mixed_robot_2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/mobile_base_design-" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/project_zip.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/robot_pkg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_arm_moveit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_arm_moveit_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_gazebo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_gazebo_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/rosgraph_demo_gazebo_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024,_10_57_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09_11_2024__10_57__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers work but diff not!">
+      <change afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/worl_odom_joints.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project_ws.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_ws.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_make.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/my_simulations/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/my_simulations/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/.setup_assistant" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/cartesian_limits.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/chomp_planning.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/fake_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/gazebo_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/joint_limits.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/kinematics.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/manipulator.srdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/ompl_planning.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/ros_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/sensors_3d.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/simple_moveit_controllers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/config/stomp_planning.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/chomp_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/default_warehouse_db.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/demo.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/demo_gazebo.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/fake_moveit_controller_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/gazebo.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/joystick_control.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/manipulator_moveit_sensor_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/move_group.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/moveit.rviz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/moveit_rviz.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/ompl-chomp_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/ompl_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/pilz_industrial_motion_planner_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/planning_context.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/ros_controllers.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/run_benchmark_ompl.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/sensor_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/setup_assistant.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/simple_moveit_controller_manager.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/stomp_planning_pipeline.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/trajectory_execution.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/warehouse.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/launch/warehouse_settings.launch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arm_moveit_config/package.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/fake_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/fake_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/gazebo_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/sensors_3d.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/stomp_planning.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/stomp_planning.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_slam_gmapping.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/fake_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/fake_moveit_controller_manager.launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/move_group.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/moveit_rviz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/moveit_rviz.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/ros_control_moveit_controller_manager.launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/sensor_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/sensor_manager.launch.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/6_optional_db.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/7_optional_db.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/moveit.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/mapping_slam.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/mapping_slam.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/warehouse_simulation.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/warehouse_simulation.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teleop_twist_keyboard/teleop_twist_keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teleop_twist_keyboard/teleop_twist_keyboard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -79,27 +121,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;detached3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lelyasa/project_ws/src/robot_2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.dynamic_tf_broadcaster.executor": "Run",
+    "Python.dynamic_tf_broadcaster.py..executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "detached3",
+    "last_opened_file_path": "/home/lelyasa/project_ws/src/robot_2/scripts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/robot_2/scripts" />
       <recent name="$PROJECT_DIR$/src/robot_2" />
       <recent name="$PROJECT_DIR$/src/robot_2/launch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/robot_2/rvizConfig" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="project_ws" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dynamic_tf_broadcaster" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="project_ws" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/robot_2/scripts/dynamic_tf_broadcaster.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -130,7 +221,8 @@
       <workItem from="1731596931256" duration="8816000" />
       <workItem from="1731660651746" duration="14968000" />
       <workItem from="1731691081126" duration="25155000" />
-      <workItem from="1731759954666" duration="10459000" />
+      <workItem from="1731759954666" duration="18840000" />
+      <workItem from="1731830022711" duration="15036000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -220,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731720674037</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="controllers work but diff not!">
+      <option name="closed" value="true" />
+      <created>1731772769172</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731772769172</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +345,10 @@
     <MESSAGE value="commit" />
     <MESSAGE value="controllers work!" />
     <MESSAGE value="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader...." />
-    <option name="LAST_COMMIT_MESSAGE" value="controllers nearly work! need to add namespace to move group. and call from mixed_robot/controller_manager/controller_loader...." />
+    <MESSAGE value="controllers work but diff not!" />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers work but diff not!" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project_ws$dynamic_tf_broadcaster.coverage" NAME="dynamic_tf_broadcaster Coverage Results" MODIFIED="1731836976692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

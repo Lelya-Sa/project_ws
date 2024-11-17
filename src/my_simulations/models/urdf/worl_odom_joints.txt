@@ -1,0 +1,13 @@
+    <link name="world"/>
+    <link name="odom"/>
+
+   <joint name="odom_foot_joint" type="planer">
+	    <origin xyz="0 0 0" rpy="0 0 0"/>  <!-- Place the robot wherever you want -->
+	    <parent link="odom"/>
+	    <child link="robot_footprint"/>  <!-- replace this name with your robot's base link -->
+    </joint>
+   <joint name="world_odom_joint" type="fixed">
+	    <origin xyz="0 0 0" rpy="0 0 0"/>  <!-- Place the robot wherever you want -->
+	    <parent link="world"/>
+	    <child link="odom"/>  <!-- replace this name with your robot's base link -->
+    </joint>

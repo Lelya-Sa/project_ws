@@ -9,11 +9,43 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+
+    <group name="finger_1">
+    <chain base_link="link6" tip_link="finger1" />
+    </group>
+    <group name="finger_2">
+    <chain base_link="link6" tip_link="finger2" />
+    </group>
     <group name="gripper">
-        <link name="finger1"/>
-        <link name="finger2"/>
-        <joint name="f_joint1"/>
-        <joint name="f_joint2"/>
+        <group name="finger_1" />
+        <group name="finger_2" />
+    </group>
+
+    <group name="joint1">
+        <joint name="joint1"/>
+    </group>
+    <group name="joint2">
+        <joint name="joint2"/>
+    </group>
+    <group name="joint3">
+        <joint name="joint3"/>
+    </group>
+    <group name="joint4">
+        <joint name="joint4"/>
+    </group>
+    <group name="joint5">
+        <joint name="joint5"/>
+    </group>
+    <group name="joint6">
+        <joint name="joint6"/>
+    </group>
+    <group name="end_effector_arm">
+        <group name="joint1" />
+        <group name="joint2" />
+        <group name="joint3" />
+        <group name="joint4" />
+        <group name="joint5" />
+        <group name="joint6" />
     </group>
     <group name="arm">
         <link name="link1"/>
@@ -29,6 +61,17 @@
         <joint name="joint5"/>
         <joint name="joint6"/>
     </group>
+
+    <group name="left_wheel">
+        <joint name="left_wheel_hinge"/>
+    </group>
+    <group name="right_wheel">
+        <joint name="right_wheel_hinge"/>
+    </group>
+    <group name="end_effector_mobile">
+        <group name="left_wheel" />
+        <group name="right_wheel" />
+    </group>
     <group name="mobile">
         <link name="left_wheel"/>
         <link name="right_wheel"/>
@@ -36,8 +79,8 @@
         <joint name="right_wheel_hinge"/>
     </group>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)
-    <virtual_joint name="planer_joint" type="planar" parent_frame="odom" child_link="robot_footprint"/>
-    <joint_property joint_name="planar_joint" property_name="motion_model" value="diff_drive"/>
+    <virtual_joint name="virtual_foot_joint" type="planar" parent_frame="robot_footprint" child_link="base_chassis"/>-->
+    <!--<joint_property joint_name="planar_joint" property_name="motion_model" value="diff_drive"/>
     <joint_property joint_name="planar_joint" property_name="min_translational_distance" value="0.01" />
     <joint_property joint_name="planar_joint" property_name="angular_distance_weight" value="0.5" />-->
 
@@ -83,6 +126,7 @@
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="grip" parent_link="link6" group="gripper" parent_group="arm"/>
     <end_effector name="mobile" parent_link="robot_footprint" group="mobile" parent_group="footprint_group"/>
+    <end_effector name="mobile_end_effector" parent_link="robot_footprint" group="end_effector_mobile" parent_group="footprint_group"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="back_container_side" link2="back_left_caster" reason="Never"/>
     <disable_collisions link1="back_container_side" link2="back_right_caster" reason="Never"/>

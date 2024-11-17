@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/lelyasa/project_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: arm_moveit_config/all
 all: my_simulations/all
 all: robot_2/all
 all: slam_gmapping/slam_gmapping/all
@@ -66,7 +65,6 @@ all: slam_gmapping/gmapping/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: arm_moveit_config/preinstall
 preinstall: my_simulations/preinstall
 preinstall: robot_2/preinstall
 preinstall: slam_gmapping/slam_gmapping/preinstall
@@ -83,7 +81,6 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: arm_moveit_config/clean
 clean: my_simulations/clean
 clean: robot_2/clean
 clean: slam_gmapping/slam_gmapping/clean
@@ -110,24 +107,6 @@ arm_description/preinstall:
 arm_description/clean:
 
 .PHONY : arm_description/clean
-
-#=============================================================================
-# Directory level rules for directory arm_moveit_config
-
-# Recursive "all" directory target.
-arm_moveit_config/all:
-
-.PHONY : arm_moveit_config/all
-
-# Recursive "preinstall" directory target.
-arm_moveit_config/preinstall:
-
-.PHONY : arm_moveit_config/preinstall
-
-# Recursive "clean" directory target.
-arm_moveit_config/clean: arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : arm_moveit_config/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -200,7 +179,7 @@ my_simulations/preinstall:
 .PHONY : my_simulations/preinstall
 
 # Recursive "clean" directory target.
-my_simulations/clean:
+my_simulations/clean: my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : my_simulations/clean
 
@@ -700,31 +679,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target my_simulations/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/build.make arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/build.make arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/build
+my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/build.make my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/build.make my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lelyasa/project_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lelyasa/project_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lelyasa/project_ws/build/CMakeFiles 0
-.PHONY : arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/build.make arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/clean
+my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/build.make my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target robot_2/CMakeFiles/controller_manager_msgs_generate_messages_py.dir
@@ -4734,7 +4713,7 @@ slam_gmapping/gmapping/CMakeFiles/gmapping_test_replay_crash.bag.dir/clean:
 # Target rules for target slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir
 
 # All Build rule for target.
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/all
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: robot_2/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: robot_2/CMakeFiles/nodelet_generate_messages_py.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: robot_2/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
@@ -4949,7 +4928,7 @@ slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_indexed.bag.
 # Target rules for target slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir
 
 # All Build rule for target.
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: arm_moveit_config/CMakeFiles/_catkin_empty_exported_target.dir/all
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: my_simulations/CMakeFiles/_catkin_empty_exported_target.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: robot_2/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: robot_2/CMakeFiles/nodelet_generate_messages_py.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: robot_2/CMakeFiles/geometry_msgs_generate_messages_py.dir/all

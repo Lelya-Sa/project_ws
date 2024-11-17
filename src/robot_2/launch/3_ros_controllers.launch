@@ -15,12 +15,36 @@
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
     output="screen"
+    ns="/"
     args="--timeout 50
     gripper_controller_effort
     arm_controller_pos
     joint_state_controller
     diff_drive_controller
     " />
+
+
+   <!-- Load the controllers
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen"
+    ns="/"
+    args="
+    gripper_controller_effort
+    arm_controller_pos
+    joint_state_controller
+    diff_drive_controller
+    mobile_controller_velocity
+    l_wheel_controller_velocity
+    r_wheel_controller_velocity
+    joint_1_controller_effort
+    joint_2_controller_effort
+    joint_3_controller_effort
+    joint_4_controller_effort
+    joint_5_controller_effort
+    joint_6_controller_effort
+    " />
+     -->
+
  <!--
 <node name="load_controller"
       pkg="controller_manager"
@@ -38,8 +62,5 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
   </node>
-
-
-
 
 </launch>

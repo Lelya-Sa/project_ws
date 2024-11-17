@@ -128,7 +128,19 @@ COMPONENTS
 	class_loader
 	warehouse_ros_mongo
  )
- 
+catkin_package()
+
+install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  PATTERN "setup_assistant.launch" EXCLUDE)
+
+install(DIRECTORY config DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+include_directories(${catkin_INCLUDE_DIRS}
+  )
+
+
  # https://wiki.ros.org/octomap
 find_package(octomap REQUIRED)
 include_directories(${OCTOMAP_INCLUDE_DIRS})
@@ -138,14 +150,6 @@ include_directories(${OCTOMAP_INCLUDE_DIRS})
 
 find_package(Threads REQUIRED)
 
-catkin_package()
-
-install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-  PATTERN "setup_assistant.launch" EXCLUDE)
-
-install(DIRECTORY config DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
-
-include_directories(include ${catkin_INCLUDE_DIRS})
 
 # add_executable()
 

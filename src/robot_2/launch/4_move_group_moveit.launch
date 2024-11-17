@@ -18,12 +18,12 @@
       <arg name="use_gui" default="false" />
 
       <!-- If needed, broadcast static tf for robot root -->
-      <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames
-      <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 world map 50"/>
-      <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 50"/>
-      <node pkg="tf" type="static_transform_publisher" name="odom_to_foot" args="0 0 0 0 0 0 odom robot_footprint 50"/>
-      <node pkg="tf" type="static_transform_publisher" name="base_foot_broadcaster" args="0 0 0.075 0 0 0 robot_footprint base_chassis 50" />-->
-    <!--   <node pkg="tf" type="static_transform_publisher" name="base_link_broadcaster" args="0 0 0.075 0 0 0 base_chassis arm_base_link 50" />
+      <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames-->
+     <!-- <node pkg="tf" type="static_tf_broadcaster" name="world_to_map" args="0 0 0 0 0 0 world map 50"/>
+      <node pkg="tf" type="static_tf_broadcaster" name="map_to_odom" args="0 0 0 0 0 0 map odom 50"/>
+        <node pkg="tf_tutorial_demo" type="dynamic_tf_broadcaster" name="odom_to_foot" args="0 0 0 0 0 0 odom robot_footprint 50"/>
+     <node pkg="tf" type="dynamic_tf_broadcaster" name="base_foot_broadcaster" args="0 0 0.075 0 0 0 robot_footprint base_chassis 50" />
+      <node pkg="tf" type="dynamic_tf_broadcaster" name="base_link_broadcaster" args="0 0 0.075 0 0 0 base_chassis arm_base_link 50" />
     -->
 
       <group if="$(eval arg('moveit_controller_manager') == 'fake')">

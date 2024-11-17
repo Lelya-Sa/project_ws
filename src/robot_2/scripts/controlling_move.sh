@@ -7,8 +7,6 @@ xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.
 sleep 5
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; rosrun teleop_twist_keyboard teleop_twist_keyboard.py" & 
 sleep 3
-xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 4_move_group_moveit.launch " &
-sleep 5
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 5_slam_gmapping.launch " &
 sleep 3
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 6_view_navigation.launch" &
