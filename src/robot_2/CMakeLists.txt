@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.1.3)
 project(robot_2)
 
+## Compile as C++11, supported in ROS Kinetic and newer
+add_compile_options(-std=c++11)
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages rospack depends robot_2
@@ -126,7 +129,6 @@ COMPONENTS
 	joint_limits_interface
 	gazebo_ros_control
 	class_loader
-	warehouse_ros_mongo
  )
 catkin_package()
 
@@ -142,14 +144,28 @@ include_directories(${catkin_INCLUDE_DIRS}
 
 
  # https://wiki.ros.org/octomap
-find_package(octomap REQUIRED)
-include_directories(${OCTOMAP_INCLUDE_DIRS})
+#find_package(octomap REQUIRED)
+#include_directories(${OCTOMAP_INCLUDE_DIRS})
 # target_link_libraries(robot_2 ${OCTOMAP_LIBRARIES})
 
-# target_link_libraries(robot_2 ${catkin_LIBRARIES} Threads::Threads)
 
 find_package(Threads REQUIRED)
 
 
-# add_executable()
+#############
+## Testing ##
+#############
+
+## Add gtest based cpp test target and link libraries
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_warehouse-robot-simulation.cpp)
+# if(TARGET ${PROJECT_NAME}-test)
+#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
+# endif()
+
+## Add folders to be run by python nosetests
+# catkin_add_nosetests(test)
+
+add_executable(robot_2 src/WarehouseSimulation.cpp src/ModelController.cpp src/Product.cpp src/Storage.cpp src/Dispatch.cpp src/WarehouseObject.cpp src/Order.cpp src/OrderController.cpp src/Robot.cpp)
+target_link_libraries(robot_2 ${catkin_LIBRARIES} Threads::Threads)
+#add_dependencies(WarehouseSimulation warehouse_robot_simulator_generate_messages_cpp)
 

@@ -99,6 +99,21 @@
         <turnGravityOff>false</turnGravityOff>
         <material>Gazebo/White</material>
     </gazebo>
+        <!--################################### p3d_base_controller ###################################-->
+    <!--    -->
+    <gazebo>
+        <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+            <alwaysOn>true</alwaysOn>
+            <updateRate>50.0</updateRate>
+            <bodyName>robot_footprint</bodyName>
+            <topicName>odom</topicName>
+            <gaussianNoise>0.01</gaussianNoise>
+            <frameName>world</frameName>
+            <xyzOffsets>0 0 0</xyzOffsets>
+            <rpyOffsets>0 0 0</rpyOffsets>
+        </plugin>
+    </gazebo>
+
     <!-- ........................ base ........................ -->
     <gazebo reference="base_chassis">
         <material>Gazebo/DarkGrey</material>
@@ -210,7 +225,7 @@
                 </noise>
             </ray>
             <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_head_hokuyo_controller">
-                <topicName>/scan</topicName>
+                <topicName>scan</topicName>
                 <frameName>hokuyo</frameName>
             </plugin>
         </sensor>

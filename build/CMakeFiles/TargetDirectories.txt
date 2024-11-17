@@ -48,6 +48,7 @@
 /home/lelyasa/project_ws/build/robot_2/CMakeFiles/list_install_components.dir
 /home/lelyasa/project_ws/build/robot_2/CMakeFiles/rebuild_cache.dir
 /home/lelyasa/project_ws/build/robot_2/CMakeFiles/edit_cache.dir
+/home/lelyasa/project_ws/build/robot_2/CMakeFiles/robot_2.dir
 /home/lelyasa/project_ws/build/robot_2/CMakeFiles/controller_manager_msgs_generate_messages_py.dir
 /home/lelyasa/project_ws/build/robot_2/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir
 /home/lelyasa/project_ws/build/robot_2/CMakeFiles/control_toolbox_generate_messages_py.dir

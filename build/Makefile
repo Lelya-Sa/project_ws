@@ -298,6 +298,19 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named robot_2
+
+# Build rule for target.
+robot_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_2
+.PHONY : robot_2
+
+# fast build rule for target.
+robot_2/fast:
+	$(MAKE) -f robot_2/CMakeFiles/robot_2.dir/build.make robot_2/CMakeFiles/robot_2.dir/build
+.PHONY : robot_2/fast
+
+#=============================================================================
 # Target rules for targets named controller_manager_msgs_generate_messages_py
 
 # Build rule for target.
@@ -2504,6 +2517,7 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... robot_2"
 	@echo "... controller_manager_msgs_generate_messages_py"
 	@echo "... controller_manager_msgs_generate_messages_eus"
 	@echo "... control_toolbox_generate_messages_py"
