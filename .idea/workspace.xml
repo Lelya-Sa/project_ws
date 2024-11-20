@@ -6,43 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers work!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/my_simulations/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/my_simulations/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/slam_gmapping/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/slam_gmapping/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/meshes/hokuyo.dae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mixed_robot_copy.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/arm.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/arm.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/delivery_robot.gazebo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/delivery_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/delivery_robot.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urdf/mixed_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouse/warehouse/model.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouse/warehouse/model.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/Dispatch.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/DispatchB.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/ProductB.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/ProductG.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/ProductR.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/StorageB.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/StorageG.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/StorageR.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_zip.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/simple_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/simple_moveit_controller_manager.launch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/notes for modeling" beforeDir="false" afterPath="$PROJECT_DIR$/notes/notes for modeling" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +159,7 @@
       <workItem from="1731830022711" duration="24798000" />
       <workItem from="1732019422964" duration="4443000" />
       <workItem from="1732035743181" duration="4307000" />
+      <workItem from="1732099085874" duration="934000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

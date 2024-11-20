@@ -16,13 +16,15 @@ suggested point cloud topic:
 -----------------------------------------------------
 catkin_create_pkg diff_drive roscpp rospy urdf rviz xacro std_msgs sensor_msgs tf
 -----------------------------------------------------
-sudo apt install ros-noetic-tf2-tools
+
 -----------------------------------------------------
 roswtf plugin
 roswtf tf comes with a plugin for roswtf that automatically runs whenever you run roswtf. This plugin will analyze your current tf configuration and attempt to find common problems. To run, just invoke roswtf normally:
 $ roswtf
 ------------------------------------------------------
-sudo apt-get install ros-kinetic-trac-ik-kinematics-plugin
+rosrun rqt_reconfigure rqt_reconfigure
+-----------------------------------------------------
+
 --------------------------------------------------------
 rosrun rqt_gui rqt_gui
 ----------------------------------------------------------------------

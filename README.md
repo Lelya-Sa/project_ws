@@ -43,46 +43,30 @@ sudo apt-get install ros-noetic-map-server
       
 sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
         ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
-        ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
+        ros-noetic-rgbd-launch \
         ros-noetic-rosserial-python ros-noetic-rosserial-client \
-        ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
+        ros-noetic-rosserial-msgs ros-noetic-amcl \
         ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
         ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
-        ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
+        ros-noetic-navigation ros-noetic-interactive-markers
         
 sudo apt install ros-noetic-dynamixel-sdk
       
 sudo apt install ros-noetic-turtlebot3-msgs
       
 sudo apt install ros-noetic-turtlebot3
-      
-sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
-      
-sudo apt-get install \
-          ros-noetic-gazebo-ros \
-          ros-noetic-eigen-conversions \
-          ros-noetic-object-recognition-msgs \
-          ros-noetic-roslint
-          
-sudo apt-get install ros-noetic-amcl
-	
-sudo apt-get install ros-noetic-move-base
-	
+                                		
 sudo apt-get install ros-noetic-dwa-local-planner
-	
-sudo apt-get install ros-noetic-map-server
-	
-sudo apt-get install ros-noetic-teleop-twist-keyboard 
-	
-sudo apt-get install ros-noetic-gmapping
-	
+			
 sudo apt-get install ros-noetic-slam-gmapping
-	
-sudo apt install ros-noetic-moveit ros-noetic-ros-control ros-noetic-joint-trajectory-controller
-	
+		
 sudo apt-get install ros-noetic-scan-tools
-  
+
+sudo apt install python3-rosmake
+
 sudo apt-get install ros-noetic-trac-ik-kinematics-plugin
+
+sudo apt install ros-noetic-tf2-tools
           
 rosdep update
       
