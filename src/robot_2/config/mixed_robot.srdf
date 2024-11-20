@@ -114,6 +114,14 @@
         <joint name="joint5" value="0.82"/>
         <joint name="joint6" value="0"/>
     </group_state>
+    <group_state name="shelf_front" group="arm">
+        <joint name="joint1" value="0"/>
+        <joint name="joint2" value="1.16"/>
+        <joint name="joint3" value="0"/>
+        <joint name="joint4" value="0"/>
+        <joint name="joint5" value="0.4"/>
+        <joint name="joint6" value="0"/>
+    </group_state>
     <group_state name="rand" group="mobile">
         <joint name="left_wheel_hinge" value="1"/>
         <joint name="right_wheel_hinge" value="1"/>

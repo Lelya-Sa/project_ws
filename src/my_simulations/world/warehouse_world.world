@@ -8092,7 +8092,7 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>0.502 0.314314 6e-06 6e-06 -4.8e-05 0.476497</pose>
     </model>
-    <model name='item2'>
+    <model name='blue2'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
@@ -8173,7 +8173,7 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>0.5515 0.1946 6e-06 6e-06 -4.8e-05 0.32</pose>
     </model>
-    <model name='item4'>
+    <model name='blue4'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
@@ -8596,60 +8596,6 @@
     </spherical_coordinates>
 
     <state world_name='default'>
-      <sim_time>3627 810000000</sim_time>
-      <real_time>458 781783901</real_time>
-      <wall_time>1728680925 624152667</wall_time>
-      <iterations>403090</iterations>
-      <model name='destination_1'>
-        <pose>-9 9 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-9 9 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='destination_2'>
-        <pose>9 9 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>9 9 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='destination_3'>
-        <pose>9 -9 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>9 -9 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='destination_4'>
-        <pose>-9 -9 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-9 -9 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='ground_plane'>
-        <pose>0 0 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='item1'>
         <pose>0.583331 0.006986 0.033998 4.2e-05 0 -0.001098</pose>
         <scale>1 1 1</scale>
@@ -8709,26 +8655,6 @@
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 -0 -0 -2e-06</acceleration>
           <wrench>0 0 -0.98 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='pallet_set0_clone_1_0'>
-        <pose>1 -13.5 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='warehouse_pallet::warehouse_pallet::link'>
-          <pose>1 -13.5 0 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='pallet_set0_clone_1_1'>
-        <pose>1 -11.5 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='warehouse_pallet::warehouse_pallet::link'>
-          <pose>1 -11.5 0 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='pallet_set0_clone_2'>

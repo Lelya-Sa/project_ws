@@ -142,6 +142,7 @@
         </plugin>
     </gazebo>
         <!-- ........................RGBD Camera........................ -->
+    <gazebo reference="camera_link_optical" />
     <gazebo reference="camera_link">
         <sensor name="camera1" type="depth">
             <always_on>1</always_on>
@@ -266,7 +267,6 @@
             <publishWheelJointState>false</publishWheelJointState>
 <!-- Set to true to swap right and left wheels, defaults to true -->
             <legacyMode>false</legacyMode>
-            <frameName>robot_footprint</frameName>
             <alwaysOn>true</alwaysOn>
             <rosDebugLevel>na</rosDebugLevel>
             <publishTf>0</publishTf>

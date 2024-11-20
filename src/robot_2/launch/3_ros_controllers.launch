@@ -21,7 +21,8 @@
     arm_controller_pos
     joint_state_controller
     diff_drive_controller
-    " />
+    ">
+    </node>
 
 
    <!-- Load the controllers
@@ -42,6 +43,7 @@
     joint_4_controller_effort
     joint_5_controller_effort
     joint_6_controller_effort
+
     " />
      -->
 

@@ -200,7 +200,7 @@ diff_drive_controller:
      #Top level frame (link) of the robot description
     base_frame_id: robot_footprint
     odom_frame_id: odom
-#    open_loop: true
+    open_loop: true
 #    enable_odom_tf: true
 
      #Velocity and acceleration limits for the robot

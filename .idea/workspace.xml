@@ -6,27 +6,43 @@
   <component name="ChangeListManager">
     <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="controllers work!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/my_simulations/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/my_simulations/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/robot_2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/catkin_generated/package.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/catkin_generated/stamps/robot_2/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/catkin_generated/stamps/robot_2/package.xml.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/installspace/teleop_twist_keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/installspace/teleop_twist_keyboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/stamps/teleop_twist_keyboard/teleop_twist_keyboard.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/stamps/teleop_twist_keyboard/teleop_twist_keyboard.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frames.png" beforeDir="false" afterPath="$PROJECT_DIR$/frames.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/slam_gmapping/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/slam_gmapping/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/meshes/hokuyo.dae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mixed_robot_copy.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/arm.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/arm.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/delivery_robot.gazebo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/delivery_robot.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/delivery_robot.xacro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/urdf/mixed_robot.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouse/warehouse/model.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouse/warehouse/model.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/Dispatch.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/DispatchB.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/ProductB.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/ProductG.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/ProductR.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/StorageB.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/StorageG.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouseObjects/StorageR.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_zip.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my_simulations/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/simple_moveit_controller_manager.launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/simple_moveit_controller_manager.launch.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,21 +87,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.dynamic_tf_broadcaster.executor": "Run",
-    "Python.dynamic_tf_broadcaster.py..executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "detached3",
-    "last_opened_file_path": "/home/lelyasa/project_ws/src/robot_2/scripts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.dynamic_tf_broadcaster.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dynamic_tf_broadcaster.py..executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;detached3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lelyasa/project_ws/src/robot_2/scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/robot_2/scripts" />
@@ -125,6 +141,9 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -172,7 +191,9 @@
       <workItem from="1731660651746" duration="14968000" />
       <workItem from="1731691081126" duration="25155000" />
       <workItem from="1731759954666" duration="18840000" />
-      <workItem from="1731830022711" duration="24144000" />
+      <workItem from="1731830022711" duration="24798000" />
+      <workItem from="1732019422964" duration="4443000" />
+      <workItem from="1732035743181" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -294,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731846827758</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="controllers work!">
+      <option name="closed" value="true" />
+      <created>1731859115639</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731859115639</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
