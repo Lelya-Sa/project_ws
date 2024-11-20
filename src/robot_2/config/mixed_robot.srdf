@@ -10,6 +10,7 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
 
+<!--
     <group name="finger_1">
     <chain base_link="link6" tip_link="finger1" />
     </group>
@@ -17,8 +18,15 @@
     <chain base_link="link6" tip_link="finger2" />
     </group>
     <group name="gripper">
-        <group name="finger_1" />
-        <group name="finger_2" />
+        <group name="finger1" />
+        <group name="finger2" />
+    </group>
+-->
+
+    <group name="gripper">
+        <joint name="finger1" />
+        <joint name="finger2" />
+        <joint name="link6" />
     </group>
 
     <group name="joint1">
@@ -78,7 +86,7 @@
         <joint name="left_wheel_hinge"/>
         <joint name="right_wheel_hinge"/>
     </group>
-    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)
+<!--    VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)
     <virtual_joint name="virtual_foot_joint" type="planar" parent_frame="robot_footprint" child_link="base_chassis"/>-->
     <!--<joint_property joint_name="planar_joint" property_name="motion_model" value="diff_drive"/>
     <joint_property joint_name="planar_joint" property_name="min_translational_distance" value="0.01" />
@@ -116,8 +124,8 @@
     </group_state>
     <group_state name="shelf_front" group="arm">
         <joint name="joint1" value="0"/>
-        <joint name="joint2" value="1.16"/>
-        <joint name="joint3" value="0"/>
+        <joint name="joint2" value="0"/>
+        <joint name="joint3" value="1.16"/>
         <joint name="joint4" value="0"/>
         <joint name="joint5" value="0.4"/>
         <joint name="joint6" value="0"/>

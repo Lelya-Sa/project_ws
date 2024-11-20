@@ -76,7 +76,7 @@
       </link>
     </model>
     <physics type='ode'>
-      <real_time_update_rate>1000</real_time_update_rate>
+      <real_time_update_rate>100</real_time_update_rate>
       <max_step_size>0.009</max_step_size>
       <real_time_factor>1</real_time_factor>
       <ode>
@@ -8596,7 +8596,7 @@
     </spherical_coordinates>
 
     <state world_name='default'>
-      <model name='item1'>
+      <model name='blue1'>
         <pose>0.583331 0.006986 0.033998 4.2e-05 0 -0.001098</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -8606,7 +8606,7 @@
           <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='item2'>
+      <model name='blue2'>
         <pose>0.551327 0.194528 0.033998 4.2e-05 0 0.318925</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -8616,7 +8616,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='item3'>
+      <model name='blue3'>
         <pose>0.50184 0.314216 0.033998 4.2e-05 -0 0.475421</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -8626,7 +8626,7 @@
           <wrench>0 0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='item4'>
+      <model name='blue4'>
         <pose>0.326427 0.475072 0.033998 4.2e-05 -0 0.9453</pose>
         <scale>1 1 1</scale>
         <link name='link'>

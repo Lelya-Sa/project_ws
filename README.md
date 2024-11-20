@@ -101,6 +101,11 @@ chmod +x *.sh
 
 To run the simulation, there are options:
 
+```
+	source ~/.bashrc
+	roscore
+```
+
 - to run all the simulation (not done yet)  Open a terminal in the `scripts` folder and run `warehouse_simulation.sh`:
 
 ```
@@ -144,8 +149,8 @@ to load the robot controllers:
 # 5
 **not necessary** , if you want to move the robot in space manually:
 ```
-	source ~/.bashrc
-	rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+``	source ~/.bashrc
+	rosrun teleop_twist_keyboard teleop_twist_keyboard.py``
 ```
 # 6
 mapping the map or moving base in an existing map.

@@ -16,8 +16,8 @@
 	    -J joint6 0
 	    "
 	    doc="Initial joint configuration of the robot"/>
-    <arg name="use_sim_time" value="false" />
-    <arg name="use_clock_frequency" default="false"/>
+    <arg name="use_sim_time" value="true" />
+    <arg name="use_clock_frequency" default="true"/>
     <arg name="pub_clock_frequency" default="100"/>
 
        <!-- include gazebo_ros launcher -->

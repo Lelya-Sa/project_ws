@@ -3,3 +3,56 @@
 joint_state_controller:
     type: joint_state_controller/JointStateController
     publish_rate: 50
+
+#gazebo_ros_control:
+#    pid_gains:
+#            f_joint1:
+#                p: 100
+#                d: 1
+#                i: 1
+#                i_clamp: 1
+#            f_joint2:
+#                p: 100
+#                d: 1
+#                i: 1
+#                i_clamp: 1
+#            joint1:
+#                p: 1.0
+#                d: 1.0
+#                i: 0.0
+#                i_clamp: 1
+#            joint2:
+#                p: 1.0
+#                d: 1.0
+#                i: 0.0
+#                i_clamp: 1
+#            joint3:
+#                p: 1.0
+#                d: 1.0
+#                i: 0.0
+#                i_clamp: 1
+#            joint4:
+#                p: 1.0
+#                d: 1.0
+#                i: 0.0
+#                i_clamp: 1
+#            joint5:
+#                p: 1.0
+#                d: 1.0
+#                i: 0.0
+#                i_clamp: 1
+#            joint6:
+#                p: 1.0
+#                d: 1.0
+#                i: 0.0
+#                i_clamp: 1
+#            left_wheel_hinge:
+#                p: 100
+#                d: 1
+#                i: 1
+#                i_clamp: 1
+#            right_wheel_hinge:
+#                p: 100
+#                d: 1
+#                i: 1
+#                i_clamp: 1

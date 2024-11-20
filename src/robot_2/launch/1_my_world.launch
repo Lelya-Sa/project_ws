@@ -19,18 +19,22 @@
 	    "
 	    doc="Initial joint configuration of the robot"/>
     <arg name="use_ekf" default="false"/>
-    <arg name="use_sim_time" value="false" />
-    <arg name="use_clock_frequency" default="false"/>
+    <arg name="use_sim_time" value="true" />
+    <arg name="use_clock_frequency" default="true"/>
     <arg name="pub_clock_frequency" default="100"/>
 
         <!-- Start Gazebo paused to allow the controllers to pickup the initial pose-->
 	<include file="$(find gazebo_ros)/launch/empty_world.launch" pass_all_args="true">
 		<arg name="paused" value="true"/>
-                <arg name="world_name" value="worlds/empty_world.world" />
+                <arg name="world_name" value="$(arg world_name)" />
                 <arg name="debug" value="$(arg debug)" />
                 <arg name="gui" value="$(arg gazebo_gui)" />
                 <arg name="paused" value="$(arg paused)" />
                 <arg name="use_sim_time" value="$(arg use_sim_time)" />
+                <arg name="verbose" value="true"/>
+
+<!--                 <arg name="use_clock_frequency" = value="$(arg use_clock_frequency)" -->
+<!--                 <arg name="pub_clock_frequency" = value="$(arg pub_clock_frequency)" -->
 	</include>
 
 	        <!-- Start Gazebo paused to allow the controllers to pickup the initial pose
