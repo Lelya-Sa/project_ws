@@ -131,11 +131,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/lelyasa/project_ws/build/gtest/cmake_install.cmake")
-  include("/home/lelyasa/project_ws/build/my_simulations/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/robot_2/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/slam_gmapping/slam_gmapping/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/teleop_twist_keyboard/cmake_install.cmake")
-  include("/home/lelyasa/project_ws/build/arm_description/cmake_install.cmake")
   include("/home/lelyasa/project_ws/build/slam_gmapping/gmapping/cmake_install.cmake")
 
 endif()

@@ -1,11 +1,14 @@
 <?xml version="1.0"?>
 <launch>
+    <param name="use_sim_time" value="true" />
+
+
 <!-- Load joint controller configurations from YAML file to parameter server-->
   <rosparam file="$(find robot_2)/config/gazebo_controllers.yaml"  command="load" />
   <rosparam file="$(find robot_2)/config/ros_controllers.yaml" command="load"/>
 
 <!-- Set the robot urdf on the parameter server -->
-	<param name="robot_description" textfile="$(find my_simulations)/models/urdf/mixed_robot.urdf" />
+	<param name="robot_description" textfile="$(find robot_2)/models/urdf/mixed_robot.urdf" />
 
   <!-- Load Joint State Publisher-->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"

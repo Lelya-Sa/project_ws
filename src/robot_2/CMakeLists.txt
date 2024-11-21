@@ -9,6 +9,8 @@ add_compile_options(-std=c++11)
 ## is used, also find other catkin packages rospack depends robot_2
 find_package(catkin REQUIRED
 COMPONENTS
+    my_simulations
+    gazebo_plugins
 	roscpp
 	rospy
 	std_msgs

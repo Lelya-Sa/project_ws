@@ -24,9 +24,9 @@
 -->
 
     <group name="gripper">
-        <joint name="finger1" />
-        <joint name="finger2" />
-        <joint name="link6" />
+        <joint name="f_joint1" />
+        <joint name="f_joint2" />
+        <link name="link6" />
     </group>
 
     <group name="joint1">
