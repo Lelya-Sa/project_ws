@@ -33,10 +33,38 @@
         <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="finger1">
+          <kp>1000000.0</kp>
+          <kd>1.0</kd>
+          <mu1>1000.0</mu1>
+          <mu2>1000.0</mu2>
+          <slip1>0</slip1>
+          <slip2>0</slip2>
+          <minDepth>0.001</minDepth>
+        <maxVel>0</maxVel>
+        <torsional>
+            <ode>
+                <coefficient>1000</coefficient>
+                <slip>0</slip>
+            </ode>
+        </torsional>
         <material>Gazebo/White</material>
         <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="finger2">
+          <kp>1000000.0</kp>
+          <kd>1.0</kd>
+          <mu1>1000.0</mu1>
+          <mu2>1000.0</mu2>
+           <slip1>0</slip1>
+          <slip2>0</slip2>
+          <minDepth>0.001</minDepth>
+        <maxVel>0</maxVel>
+        <torsional>
+            <ode>
+                <coefficient>1000</coefficient>
+                <slip>0</slip>
+            </ode>
+        </torsional>
         <material>Gazebo/White</material>
         <turnGravityOff>false</turnGravityOff>
     </gazebo>
@@ -116,6 +144,11 @@
 
     <!-- ........................ base ........................ -->
     <gazebo reference="base_chassis">
+      <kp>1000000.0</kp>
+      <kd>1.0</kd>
+      <mu1>1.0</mu1>
+      <mu2>1.0</mu2>
+      <minDepth>0.001</minDepth>
         <material>Gazebo/DarkGrey</material>
     </gazebo>
     <gazebo reference="robot_footprint" />
@@ -125,7 +158,7 @@
     <!-- ........................ grasp ........................ -->
     <gazebo>
         <plugin name="gazebo_grasp_fix" filename="libgazebo_grasp_fix.so">
-            <frameId>/GRASP</frameId>
+            <frameId>link6</frameId>
             <arm>
                 <arm_name>arm</arm_name>
                 <palm_link>link6</palm_link>
@@ -211,7 +244,7 @@
                     </horizontal>
                 </scan>
                 <range>
-                    <min>0.10</min>
+                    <min>0.075</min>
                     <max>30.0</max>
                     <resolution>0.01</resolution>
                 </range>
@@ -387,7 +420,7 @@
         <child link="front_left_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-	<dynamics damping="0.0" friction="0.0001"/>
+	<dynamics damping="0.001" friction="0.0001"/>
 
     </joint>
     <link name="front_right_caster">
@@ -414,7 +447,7 @@
         <child link="front_right_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-	<dynamics damping="0.0" friction="0.0001"/>
+	<dynamics damping="0.001" friction="0.0001"/>
     </joint>
     <link name="back_left_caster">
         <inertial>
@@ -440,7 +473,7 @@
         <child link="back_left_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0.0" friction="0.0001" />
+        <dynamics damping="0.001" friction="0.0001" />
     </joint>
     <link name="back_right_caster">
         <inertial>
@@ -466,7 +499,7 @@
         <child link="back_right_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0.0" friction="0.0001" />
+        <dynamics damping="0.001" friction="0.0001" />
     </joint>
     <link name="left_container_side">
         <pose>0 0 0 0 0 0</pose>
@@ -667,13 +700,14 @@
     </link>
 
     <!-- .....................JOINT 1..................... -->
-    <joint name="joint1" type="continuous">
+    <joint name="joint1" type="revolute">
         <origin rpy="0 0 0" xyz="0 0 0.05 " />
         <!--parent linknte distance -->
         <parent link="arm_base_link" />
         <child link="link1" />
         <axis xyz="0 0 1" />
-        <dynamics damping="0.01" friction="0.01"/>
+        <limit lower="-6.28319" upper="6.28319" effort="100" velocity="1" />
+        <dynamics damping="0.01" friction="0.01" />
     </joint>
     <!-- .....................LINK 2..................... -->
     <link name="link2">
@@ -701,7 +735,7 @@
 
     <!-- .....................JOINT 2 ..................... -->
     <joint name="joint2" type="revolute">
-        <origin rpy="0 0 0" xyz="0 0 0.08" />
+        <origin rpy="0 0 0" xyz="0 0 0.125" />
         <parent link="link1" />
         <child link="link2" />
         <axis xyz="0 1 0" />
@@ -845,7 +879,7 @@
     <link name="finger1">
         <visual>
             <geometry>
-                <box size="0.01 0.01 .05" />
+                <box size="0.06 0.01 .07" />
             </geometry>
             <material name="silver">
                 <color rgba="0.75 0.75 0.75 1" />
@@ -854,7 +888,7 @@
         </visual>
         <collision>
             <geometry>
-                <box size="0.01 0.01 .05" />
+                <box size="0.06 0.01 .07" />
             </geometry>
             <origin rpy="0 0 0" xyz="0.005 0.005 0.025" />
         </collision>
@@ -867,17 +901,17 @@
 
     <joint name="f_joint1" type="prismatic">
         <axis xyz="0 1 0" />
-        <limit effort="20" lower="0.0" upper="0.020" velocity="0.2" />
+        <limit effort="20" lower="-0.005" upper="0.020" velocity="1.0" />
         <parent link="link6" />
         <child link="finger1" />
-        <origin rpy="0 0 0" xyz="0 -0.025 0.1" />
-        <dynamics damping="0.0001" friction="0.0001"/>
+        <origin rpy="0 0 0" xyz="0 -0.025 0.11" />
+        <dynamics damping="0.1" friction="1.0"/>
     </joint>
     <!-- ..................... finger2 ..................... -->
     <link name="finger2">
         <visual>
             <geometry>
-                <box size="0.01 0.01 .05" />
+                <box size="0.06 0.01 .07" />
             </geometry>
             <material name="silver">
                 <color rgba="0.75 0.75 0.75 1" />
@@ -886,7 +920,7 @@
         </visual>
         <collision>
             <geometry>
-                <box size="0.01 0.01 .05" />
+                <box size="0.06 0.01 .07" />
             </geometry>
             <origin rpy="0 0 0" xyz="0.005 0.005 0.025 " />
         </collision>
@@ -899,11 +933,11 @@
 
     <joint name="f_joint2" type="prismatic">
         <axis xyz="0 1 0" />
-        <limit effort="20" lower="-0.020" upper="0" velocity="0.2" />
+        <limit effort="20" lower="-0.020" upper="0.005" velocity="1.0" />
         <parent link="link6" />
         <child link="finger2" />
-        <origin rpy="0 0 0" xyz="0 0.025 0.1" />
-        <dynamics damping="0.0001" friction="0.0001"/>
+        <origin rpy="0 0 0" xyz="0 0.025 0.11" />
+        <dynamics damping="0.1" friction="1.0"/>
     </joint>
     <!--########################## TRANSMISSIONS ############################################-->
     <!-- ...................................... grip Effort ...................................... -->

@@ -4,123 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="just check world">
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="works without errors!!! and warehouse ready">
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/boxes_pos" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/dispatches" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/storages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.jupyter/desktop-workspaces/default-37a8.jupyterlab-workspace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_make.cache" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_make.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/CMakeFiles/robot_2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/CMakeFiles/robot_2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/CMakeFiles/robot_2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/CMakeFiles/robot_2.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robot_2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/robot_2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/slam_gmapping/slam_gmapping/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/slam_gmapping/slam_gmapping/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/installspace/teleop_twist_keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/installspace/teleop_twist_keyboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/stamps/teleop_twist_keyboard/teleop_twist_keyboard.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/teleop_twist_keyboard/catkin_generated/stamps/teleop_twist_keyboard/teleop_twist_keyboard.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/package.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/delivery_robot.gazebo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/delivery_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/delivery_robot.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/mixed_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/mixed_robot_2/model.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/mixed_robot_2/model.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/myrobo.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_mimic2.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/.setup_assistant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/chomp_planning.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/fake_controllers.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/joint_limits.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/kinematics.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/manipulator.srdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/ompl_planning.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/ros_controllers.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/config/sensors_3d.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/chomp_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/default_warehouse_db.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/demo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/demo_gazebo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/fake_moveit_controller_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/gazebo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/joystick_control.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/manipulator_moveit_controller_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/manipulator_moveit_sensor_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/move_group.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/moveit.rviz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/moveit_rviz.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/ompl_planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/planning_context.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/planning_pipeline.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/ros_controllers.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/run_benchmark_ompl.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/sensor_manager.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/setup_assistant.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/trajectory_execution.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/warehouse.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/launch/warehouse_settings.launch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/package.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arm_description/urdf/urdf_arm_moveit2/scripts/move_to_point.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/launch/my_world.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/launch/view_demo.launch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/meshes/hokuyo.dae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/arm-Copy1-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/arm-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/delivary_robot-Copy1-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/delivary_robot-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/delivery_robot-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/delivery_robot-checkpoint.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/mixed_robot-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/mixed_robot_1-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/mixed_robot_2-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/.ipynb_checkpoints/robot_4-checkpoint.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/arm-Copy1.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/arm.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/arm.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/delivary_robot-Copy1.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/delivary_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/delivery_robot.gazebo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/delivery_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/delivery_robot.xacro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot (copy).urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot-Copy1.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/mixed_robot.urdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/urdf/worl_odom_joints.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouse/warehouse/model.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouse/warehouse/model.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/Dispatch.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/DispatchB.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/ProductB.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/ProductG.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/ProductR.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/StorageB.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/StorageG.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/StorageR.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/red_2_5_r/model.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/models/warehouseObjects/red_2_5_r/model.sdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/package.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/world/.ipynb_checkpoints/warehouse_world-checkpoint.world" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world (copy).world" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_simulations/world/warehouse_world.world" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frames.png" beforeDir="false" afterPath="$PROJECT_DIR$/frames.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/boxes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/boxes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/rosgraph.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/2_spawn_robot.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/4_move_group_moveit.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/5_amcl.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/6_RViz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/6_RViz.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/6_view_navigation.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/6_view_navigation.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/demo_gazebo.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/demo_gazebo.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/gazebo.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/gazebo.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/planning_context.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/planning_context.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teleop_twist_keyboard/teleop_twist_keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teleop_twist_keyboard/teleop_twist_keyboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/.ipynb_checkpoints/delivary_robot-Copy1-checkpoint.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/.ipynb_checkpoints/mixed_robot-checkpoint.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/urdf/.ipynb_checkpoints/mixed_robot-checkpoint.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/delivary_robot-Copy1.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/delivery_robot.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/mixed_robot (copy).urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/mixed_robot-Copy1.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/urdf/mixed_robot.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/rvizConfig/navigation.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/rvizConfig/navigation.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/world/warehouse_world.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/world/warehouse_world.world" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,25 +84,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.dynamic_tf_broadcaster.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dynamic_tf_broadcaster.py..executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;detached3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lelyasa/project_ws/src/robot_2/scripts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.dynamic_tf_broadcaster.executor": "Run",
+    "Python.dynamic_tf_broadcaster.py..executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "detached3",
+    "last_opened_file_path": "/home/lelyasa/project_ws/src/robot_2/configs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/robot_2/scripts" />
+      <recent name="$PROJECT_DIR$/src/robot_2/configs" />
       <recent name="$PROJECT_DIR$/src/robot_2" />
+      <recent name="$PROJECT_DIR$/src/robot_2/scripts" />
       <recent name="$PROJECT_DIR$/src/robot_2/launch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -287,7 +194,7 @@
       <workItem from="1732035743181" duration="4307000" />
       <workItem from="1732099085874" duration="7900000" />
       <workItem from="1732109912079" duration="2118000" />
-      <workItem from="1732178967685" duration="15969000" />
+      <workItem from="1732178967685" duration="32222000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -433,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732112045340</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="works without errors!!! and warehouse ready">
+      <option name="closed" value="true" />
+      <created>1732226327877</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732226327877</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +387,8 @@
     <MESSAGE value="controllers work but diff not!" />
     <MESSAGE value="controllers work!" />
     <MESSAGE value="just check world" />
-    <option name="LAST_COMMIT_MESSAGE" value="just check world" />
+    <MESSAGE value="works without errors!!! and warehouse ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="works without errors!!! and warehouse ready" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_ws$dynamic_tf_broadcaster.coverage" NAME="dynamic_tf_broadcaster Coverage Results" MODIFIED="1731836976692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

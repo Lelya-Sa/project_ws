@@ -797,9 +797,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -817,7 +817,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -878,9 +880,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -898,7 +900,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -959,9 +963,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -979,7 +983,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1040,9 +1046,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -1060,7 +1066,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1121,9 +1129,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -1141,7 +1149,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1202,9 +1212,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -1222,7 +1232,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1283,9 +1295,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -1303,7 +1315,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1364,9 +1378,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -1384,7 +1398,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7704,9 +7720,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7724,7 +7740,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7785,9 +7803,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7805,7 +7823,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7866,9 +7886,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7886,7 +7906,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7948,9 +7970,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7968,7 +7990,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8028,9 +8052,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8048,7 +8072,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8109,9 +8135,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8129,7 +8155,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8190,9 +8218,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8210,7 +8238,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8271,9 +8301,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8291,7 +8321,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8353,9 +8385,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8373,7 +8405,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8433,9 +8467,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8453,7 +8487,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8514,9 +8550,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8534,7 +8570,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8595,9 +8633,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8615,7 +8653,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8676,9 +8716,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8696,7 +8736,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8757,9 +8799,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8777,7 +8819,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8838,9 +8882,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8858,7 +8902,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8919,9 +8965,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8939,7 +8985,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9000,9 +9048,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9020,7 +9068,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9081,9 +9131,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9101,7 +9151,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9162,9 +9214,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9182,7 +9234,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9243,9 +9297,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9263,7 +9317,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9324,9 +9380,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9344,7 +9400,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9405,9 +9463,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9425,7 +9483,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9486,9 +9546,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9506,7 +9566,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9567,9 +9629,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9587,7 +9649,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9648,9 +9712,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9668,7 +9732,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9729,9 +9795,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9749,7 +9815,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9810,9 +9878,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9830,7 +9898,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9891,9 +9961,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9911,7 +9981,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9972,9 +10044,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9992,7 +10064,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10053,9 +10127,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10073,7 +10147,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10134,9 +10210,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10154,7 +10230,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10215,9 +10293,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10235,7 +10313,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10296,9 +10376,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10316,7 +10396,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10377,9 +10459,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10397,7 +10479,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10458,9 +10542,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10478,7 +10562,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10539,9 +10625,9 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.998</mu>
-                <mu2>0.998</mu2>
-                <fdir1>0 0 0</fdir1>
+                <mu>1000.0</mu>
+                <mu2>1000.0</mu2>
+                <fdir1>0 1 1</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10559,7 +10645,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>1</max_vel> 
+           <mu1>1.0</mu1>
+          <mu2>1.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>

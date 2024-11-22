@@ -26,13 +26,13 @@ gripper_controller_effort:
       - f_joint2
     gains:
       f_joint1:
-        p: 100
-        d: 1
+        p: 1000
+        d: 10
         i: 1
         i_clamp: 1
       f_joint2:
-        p: 100
-        d: 1
+        p: 1000
+        d: 10
         i: 1
         i_clamp: 1
 

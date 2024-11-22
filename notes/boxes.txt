@@ -69,7 +69,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -150,7 +152,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -231,7 +235,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -312,7 +318,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -393,7 +401,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -474,7 +484,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -555,7 +567,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -636,7 +650,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -717,7 +733,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -804,7 +822,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -885,7 +905,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -966,7 +988,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1047,7 +1071,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1128,7 +1154,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1209,7 +1237,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1290,7 +1320,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1371,7 +1403,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1452,7 +1486,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1534,7 +1570,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1619,7 +1657,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1703,7 +1743,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1787,7 +1829,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1871,7 +1915,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -1955,7 +2001,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -2037,7 +2085,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -2119,7 +2169,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -2200,7 +2252,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -2282,7 +2336,9 @@
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
                 <kd>1</kd>
-                <max_vel>100</max_vel>
+                <max_vel>100</max_vel> 
+           <mu1>100.0</mu1>
+          <mu2>100.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
