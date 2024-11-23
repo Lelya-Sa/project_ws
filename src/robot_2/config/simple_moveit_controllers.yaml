@@ -8,55 +8,98 @@ controller_list:
         - f_joint2
       gains:
         f_joint1:
-          p: 100
-          d: 1
+          p: 1000
+          d: 10
           i: 1
           i_clamp: 1
         f_joint2:
-          p: 100
-          d: 1
+          p: 1000
+          d: 10
           i: 1
           i_clamp: 1
-    - name: arm_controller_pos
+#    - name: arm_controller_pos
+#      action_ns: follow_joint_trajectory
+#      type: FollowJointTrajectory
+#      default: True
+#      joints:
+#        - joint1
+#        - joint2
+#        - joint3
+#        - joint4
+#        - joint5
+#        - joint6
+#      gains:
+#        joint1:
+#          p: 1.0
+#          d: 1.0
+#          i: 0.0
+#          i_clamp: 1
+#        joint2:
+#          p: 1.0
+#          d: 1.0
+#          i: 0.0
+#          i_clamp: 1
+#        joint3:
+#          p: 1.0
+#          d: 1.0
+#          i: 0.0
+#          i_clamp: 1
+#        joint4:
+#          p: 1.0
+#          d: 1.0
+#          i: 0.0
+#          i_clamp: 1
+#        joint5:
+#          p: 1.0
+#          d: 1.0
+#          i: 0.0
+#          i_clamp: 1
+#        joint6:
+#          p: 1.0
+#          d: 1.0
+#          i: 0.0
+#          i_clamp: 1
+    - name: arm_controller_effort
       action_ns: follow_joint_trajectory
       type: FollowJointTrajectory
       default: True
-      joints:
-        - joint1
-        - joint2
-        - joint3
-        - joint4
-        - joint5
-        - joint6
       gains:
+        joints:
+          - joint1
+          - joint2
+          - joint3
+          - joint4
+          - joint5
+          - joint6
+        gains:
         joint1:
-          p: 1.0
+          p: 100.0
           d: 1.0
           i: 0.0
           i_clamp: 1
         joint2:
-          p: 1.0
+          p: 100.0
           d: 1.0
           i: 0.0
           i_clamp: 1
         joint3:
-          p: 1.0
+          p: 100.0
           d: 1.0
           i: 0.0
           i_clamp: 1
         joint4:
-          p: 1.0
+          p: 100.0
           d: 1.0
           i: 0.0
           i_clamp: 1
         joint5:
-          p: 1.0
+          p: 100.0
           d: 1.0
           i: 0.0
           i_clamp: 1
         joint6:
-          p: 1.0
-          d: 1.0
+          p: 100.0
+          d: 2.0
           i: 0.0
           i_clamp: 1
     - name: mobile_controller_velocity

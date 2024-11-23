@@ -2,7 +2,7 @@
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 1_my_world.launch" &
 sleep 7
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 2_spawn_robot.launch" &
-sleep 5
+sleep 1
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 3_ros_controllers.launch" &
 sleep 5
 xterm  -e  " source /opt/ros/noetic/setup.bash; source ~/project_ws/devel/setup.bash; roslaunch robot_2 5_amcl.launch" &

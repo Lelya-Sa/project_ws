@@ -19,9 +19,9 @@
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
     output="screen"
     ns="/"
-    args="--timeout 50
+    args="
+    arm_controller_effort
     gripper_controller_effort
-    arm_controller_pos
     joint_state_controller
     diff_drive_controller
     ">
@@ -33,6 +33,7 @@
     output="screen"
     ns="/"
     args="
+    arm_controller_effort
     gripper_controller_effort
     arm_controller_pos
     joint_state_controller

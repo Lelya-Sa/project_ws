@@ -149,8 +149,8 @@ to load the robot controllers:
 # 5
 **not necessary** , if you want to move the robot in space manually:
 ```
-``	source ~/.bashrc
-	rosrun teleop_twist_keyboard teleop_twist_keyboard.py``
+	source ~/.bashrc
+	rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 # 6
 mapping the map or moving base in an existing map.
@@ -189,6 +189,8 @@ mapping the map or moving base in an existing map.
 
 ---------------------------
 # notes:
+- used onshape CAD to tune inertia. 
+
 if you encounter gazebo initiation problems type in terminal:
 ```
     killall gzserver

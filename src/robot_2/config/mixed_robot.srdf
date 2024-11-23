@@ -74,6 +74,25 @@
         <joint name="joint6"/>
     </group>
 
+    <group name="arm_grip">
+        <link name="link1"/>
+        <link name="link2"/>
+        <link name="link3"/>
+        <link name="link4"/>
+        <link name="link5"/>
+        <link name="link6"/>
+        <link name="arm_base_link"/>
+        <joint name="base_to_arm_joint"/>
+        <joint name="joint1"/>
+        <joint name="joint2"/>
+        <joint name="joint3"/>
+        <joint name="joint4"/>
+        <joint name="joint5"/>
+        <joint name="joint6"/>
+        <joint name="f_joint1" />
+        <joint name="f_joint2" />
+    </group>
+
 <!--
     <group name="left_wheel">
         <joint name="left_wheel_hinge"/>
@@ -140,11 +159,13 @@
         <joint name="left_wheel_hinge" value="1"/>
         <joint name="right_wheel_hinge" value="1"/>
     </group_state>
-    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated
     <passive_joint name="front_right_caster_hinge"/>
     <passive_joint name="front_left_caster_hinge"/>
     <passive_joint name="back_right_caster_hinge"/>
     <passive_joint name="back_left_caster_hinge"/>
+    -->
+
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="grip" parent_link="link6" group="gripper" parent_group="arm"/>
     <end_effector name="mobile" parent_link="robot_footprint" group="mobile" parent_group="footprint_group"/>

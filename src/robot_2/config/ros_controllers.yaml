@@ -19,6 +19,7 @@
 #        d: 1
 #        i: 1
 #        i_clamp: 1
+
 gripper_controller_effort:
     type: effort_controllers/JointTrajectoryController
     joints:
@@ -26,14 +27,14 @@ gripper_controller_effort:
       - f_joint2
     gains:
       f_joint1:
-        p: 1000
-        d: 10
-        i: 1
+        p: 350.0
+        d: 0.005
+        i: 0.01
         i_clamp: 1
       f_joint2:
-        p: 1000
-        d: 10
-        i: 1
+        p: 270.0
+        d: 0.005
+        i: 0.01
         i_clamp: 1
 
 #joint_1_controller_effort:
@@ -96,8 +97,50 @@ gripper_controller_effort:
 #        d: 1
 #        i: 1
 #        i_clamp: 1
-arm_controller_pos:
-    type: position_controllers/JointTrajectoryController
+
+#arm_controller_pos:
+#    type: position_controllers/JointTrajectoryController
+#    joints:
+#      - joint1
+#      - joint2
+#      - joint3
+#      - joint4
+#      - joint5
+#      - joint6
+#    gains:
+#      joint1:
+#        p: 200.0
+#        d: 2.0
+#        i: 0.0
+#        i_clamp: 1
+#      joint2:
+#        p: 200.0
+#        d: 2.0
+#        i: 0.0
+#        i_clamp: 1
+#      joint3:
+#        p: 200.0
+#        d: 2.0
+#        i: 0.0
+#        i_clamp: 1
+#      joint4:
+#        p: 200.0
+#        d: 2.0
+#        i: 0.0
+#        i_clamp: 1
+#      joint5:
+#        p: 200.0
+#        d: 2.0
+#        i: 0.0
+#        i_clamp: 1
+#      joint6:
+#        p: 200.0
+#        d: 2.0
+#        i: 0.0
+#        i_clamp: 1
+
+arm_controller_effort:
+    type: effort_controllers/JointTrajectoryController
     joints:
       - joint1
       - joint2
@@ -107,36 +150,35 @@ arm_controller_pos:
       - joint6
     gains:
       joint1:
-        p: 200.0
-        d: 2.0
-        i: 0.0
+        p: 150.0
+        d: 0.0000001
+        i: 0.00001
         i_clamp: 1
       joint2:
-        p: 200.0
-        d: 2.0
-        i: 0.0
+        p: 150.0
+        d: 0.0000001
+        i: 0.00001
         i_clamp: 1
       joint3:
-        p: 200.0
-        d: 2.0
-        i: 0.0
+        p: 150.0
+        d: 0.0000001
+        i: 0.02
         i_clamp: 1
       joint4:
-        p: 200.0
-        d: 2.0
-        i: 0.0
+        p: 150.0
+        d: 0.0000001
+        i: 0.00001
         i_clamp: 1
       joint5:
-        p: 200.0
-        d: 2.0
-        i: 0.0
+        p: 150.0
+        d: 0.0000001
+        i: 0.00001
         i_clamp: 1
       joint6:
-        p: 200.0
-        d: 2.0
-        i: 0.0
+        p: 220.0
+        d: 0.000001
+        i: 0.0001
         i_clamp: 1
-
 #l_wheel_controller_velocity:
 #    type: velocity_controllers/JointTrajectoryController
 #    joints:

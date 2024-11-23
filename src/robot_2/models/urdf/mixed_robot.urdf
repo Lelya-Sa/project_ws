@@ -79,7 +79,7 @@
         <mu2 value="1.0" />
         <kp value="10000000.0" />
         <kd value="1.0" />
-        <fdir1 value="1 0 0" />
+        <fdir1 value="0 1 0" />
         <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="right_wheel">
@@ -88,7 +88,7 @@
         <mu2 value="1.0" />
         <kp value="10000000.0" />
         <kd value="1.0" />
-        <fdir1 value="1 0 0" />
+        <fdir1 value="0 1 0" />
         <turnGravityOff>false</turnGravityOff>
     </gazebo>
     <gazebo reference="front_left_caster">
@@ -96,7 +96,7 @@
         <mu2 value="1.0" />
         <kp value="10000000.0" />
         <kd value="1.0" />
-        <fdir1 value="1 0 0" />
+        <fdir1 value="0 0 0" />
         <turnGravityOff>false</turnGravityOff>
         <material>Gazebo/White</material>
     </gazebo>
@@ -105,7 +105,7 @@
         <mu2 value="1.0" />
         <kp value="10000000.0" />
         <kd value="1.0" />
-        <fdir1 value="1 0 0" />
+        <fdir1 value="0 0 0" />
         <turnGravityOff>false</turnGravityOff>
         <material>Gazebo/White</material>
     </gazebo>
@@ -114,7 +114,7 @@
         <mu2 value="1.0" />
         <kp value="10000000.0" />
         <kd value="1.0" />
-        <fdir1 value="1 0 0" />
+        <fdir1 value="0 0 0" />
         <turnGravityOff>false</turnGravityOff>
         <material>Gazebo/White</material>
     </gazebo>
@@ -123,7 +123,7 @@
         <mu2 value="1.0" />
         <kp value="10000000.0" />
         <kd value="1.0" />
-        <fdir1 value="1 0 0" />
+        <fdir1 value="0 0 0" />
         <turnGravityOff>false</turnGravityOff>
         <material>Gazebo/White</material>
     </gazebo>
@@ -400,7 +400,7 @@
         <inertial>
             <mass value="0.1" />
             <origin rpy=" 0 0 0" xyz="0 0 0" />
-            <inertia ixx="1.8062500000000002e-05" ixy="0" ixz="0" iyy="1.8062500000000002e-05" iyz="0" izz="1.8062500000000002e-05" />
+            <inertia ixx="0.00001806" ixy="0" ixz="0" iyy="0.00001806" iyz="0" izz="0.00001806" />
         </inertial>
         <collision name="collision">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
@@ -420,14 +420,14 @@
         <child link="front_left_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-	<dynamics damping="0.001" friction="0.0001"/>
+	<dynamics damping="1.0" friction="1.0"/>
 
     </joint>
     <link name="front_right_caster">
         <inertial>
             <mass value="0.1" />
-            <origin rpy=" 0 0 0" xyz="0 0 0" />
-            <inertia ixx="1.8062500000000002e-05" ixy="0" ixz="0" iyy="1.8062500000000002e-05" iyz="0" izz="1.8062500000000002e-05" />
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <inertia ixx="0.00001806" ixy="0" ixz="0" iyy="0.00001806" iyz="0" izz="0.00001806" />
         </inertial>
         <collision name="collision">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
@@ -447,7 +447,7 @@
         <child link="front_right_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-	<dynamics damping="0.001" friction="0.0001"/>
+	<dynamics damping="1.0" friction="1.0"/>
     </joint>
     <link name="back_left_caster">
         <inertial>
@@ -473,13 +473,13 @@
         <child link="back_left_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0.001" friction="0.0001" />
+        <dynamics damping="1.0" friction="1.0" />
     </joint>
     <link name="back_right_caster">
         <inertial>
             <mass value="0.1" />
             <origin rpy=" 0 0 0" xyz="0 0 0" />
-            <inertia ixx="1.8062500000000002e-05" ixy="0" ixz="0" iyy="1.8062500000000002e-05" iyz="0" izz="1.8062500000000002e-05" />
+            <inertia ixx="0.00001806" ixy="0" ixz="0" iyy="0.00001806" iyz="0" izz="0.00001806" />
         </inertial>
         <collision name="collision">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
@@ -499,7 +499,7 @@
         <child link="back_right_caster" />
         <parent link="base_chassis" />
         <axis rpy="0 0 0" xyz="1 1 1" />
-        <dynamics damping="0.001" friction="0.0001" />
+        <dynamics damping="1.0" friction="1.0" />
     </joint>
     <link name="left_container_side">
         <pose>0 0 0 0 0 0</pose>
@@ -556,7 +556,7 @@
         <inertial>
             <mass value="0.01" />
             <origin rpy=" 0 0 0" xyz="0 0 0" />
-            <inertia ixx="0.0001416666666666667" ixy="0" ixz="0" iyy="1.666666666666667e-05" iyz="0" izz="0.0001416666666666667" />
+            <inertia ixx="0.00014167" ixy="0" ixz="0" iyy="0.00001042" iyz="0" izz="0.00013542" />
         </inertial>
         <collision name="collision">
             <origin rpy=" 0 0 0" xyz="0 0 0" />
@@ -694,8 +694,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.00014583" iyy="0.00014583" izz="0.000125" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0.075" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -728,8 +728,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0007725" iyy="0.0007725" izz="0.000045" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0.15" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -761,8 +761,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.0007725" iyy="0.0007725" izz="0.000045" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0.15" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -794,8 +794,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.00009083" iyy="0.00009083" izz="0.000015" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -827,8 +827,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.00009083" iyy="0.00009083" izz="0.000015" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -861,8 +861,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.00012333" iyy="0.00012333" izz="0.00008" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -884,7 +884,7 @@
             <material name="silver">
                 <color rgba="0.75 0.75 0.75 1" />
             </material>
-            <origin rpy="0 0 0" xyz="0.005 0.005 0.025 " />
+            <origin rpy="0 0 0" xyz="0.005 0.005 0.025" />
         </visual>
         <collision>
             <geometry>
@@ -894,8 +894,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.00004167" iyy="0.00007083" izz="0.00003083" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0.005 0.005 0.025" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -916,7 +916,7 @@
             <material name="silver">
                 <color rgba="0.75 0.75 0.75 1" />
             </material>
-            <origin rpy="0 0 0" xyz="0.005 0.005 0.025 " />
+            <origin rpy="0 0 0" xyz="0.005 0.005 0.025" />
         </visual>
         <collision>
             <geometry>
@@ -926,8 +926,8 @@
         </collision>
         <inertial>
             <mass value="0.1" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.00004167" iyy="0.00007083" izz="0.00003083" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin xyz="0.005 0.005 0.025" rpy="0 0 0" />
         </inertial>
     </link>
 
@@ -961,7 +961,68 @@
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <!-- ...................................... arm Position ...................................... -->
+        <!-- ...................................... arm Position ...................................... -->
+    <transmission name="trans_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint3">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint3_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint4">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint4_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint5">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint5_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint6">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint6_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <!-- ...................................... arm Position ......................................
     <transmission name="trans_joint1">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="joint1">
@@ -1022,6 +1083,8 @@
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
+    -->
+
     <!-- ...................................... MOBILE velocity ...................................... -->
     <transmission name="trans_left_wheel_hinge">
         <type>transmission_interface/SimpleTransmission</type>
