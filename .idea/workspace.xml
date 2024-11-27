@@ -3,29 +3,55 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="fingers inertia needs correction">
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/Bstorages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/Rstorages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/boxes_in_delivery_box" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/1_WarehouseSimulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/2_Robot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/2_Storage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/3_WarehouseObject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/world/warehouse_world copy.world" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rosgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/rosgraph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/simple_moveit_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/stomp_planning.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/stomp_planning.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/dispatches" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/configs/dispatches" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/storages" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/3_ros_controllers.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/urdf/mixed_robot.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/urdf/mixed_robot.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/red_2_5_r/model.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/red_2_5_r/model.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/Dispatch.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/Dispatch.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/DispatchB.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/DispatchB.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductB.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductB.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductR.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductR.sdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouse_pallet/model.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouse_pallet/model.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/controlling_move.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/mapping_slam.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/mapping_slam.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/scripts/warehouse_simulation.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/scripts/warehouse_simulation.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/world/warehouse_world.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/world/warehouse_world.world" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,20 +108,26 @@
   &quot;keyToString&quot;: {
     &quot;Python.dynamic_tf_broadcaster.executor&quot;: &quot;Run&quot;,
     &quot;Python.dynamic_tf_broadcaster.py..executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;detached3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lelyasa/project_ws/src/robot_2/configs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lelyasa/project_ws&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/robot_2/configs" />
+      <recent name="$PROJECT_DIR$/src/robot_2/world" />
       <recent name="$PROJECT_DIR$/src/robot_2" />
       <recent name="$PROJECT_DIR$/src/robot_2/scripts" />
       <recent name="$PROJECT_DIR$/src/robot_2/launch" />
@@ -137,7 +169,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -189,7 +220,13 @@
       <workItem from="1732099085874" duration="7900000" />
       <workItem from="1732109912079" duration="2118000" />
       <workItem from="1732178967685" duration="32352000" />
-      <workItem from="1732284866570" duration="24638000" />
+      <workItem from="1732284866570" duration="25487000" />
+      <workItem from="1732380310431" duration="10120000" />
+      <workItem from="1732462866382" duration="707000" />
+      <workItem from="1732472395764" duration="9229000" />
+      <workItem from="1732544264858" duration="10373000" />
+      <workItem from="1732601467497" duration="21719000" />
+      <workItem from="1732718087316" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -351,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732254671068</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
+      <option name="closed" value="true" />
+      <created>1732336434909</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1732336434909</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +437,8 @@
     <MESSAGE value="just check world" />
     <MESSAGE value="works without errors!!! and warehouse ready" />
     <MESSAGE value="fingers inertia needs correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="fingers inertia needs correction" />
+    <MESSAGE value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
+    <option name="LAST_COMMIT_MESSAGE" value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_ws$dynamic_tf_broadcaster.coverage" NAME="dynamic_tf_broadcaster Coverage Results" MODIFIED="1731836976692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

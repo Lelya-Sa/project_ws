@@ -42,7 +42,7 @@
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
-      <visual name='front_left_leg'>
+      <visual name='front_left_leg_visual'>
         <pose>0.70 0.38 0.5 0 -0 0</pose>
         <geometry>
           <cylinder>
@@ -66,7 +66,7 @@
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
-      <visual name='front_right_leg'>
+      <visual name='front_right_leg_visual'>
         <pose>0.70 -0.38 0.5 0 -0 0</pose>
         <geometry>
           <cylinder>
@@ -90,7 +90,7 @@
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
-      <visual name='back_right_leg'>
+      <visual name='back_right_leg_visual'>
         <pose>-0.70 -0.38 0.5 0 -0 0</pose>
         <geometry>
           <cylinder>
@@ -114,7 +114,7 @@
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
-      <visual name='back_left_leg'>
+      <visual name='back_left_leg_visual'>
         <pose>-0.70 0.38 0.5 0 -0 0</pose>
         <geometry>
           <cylinder>
@@ -276,7 +276,7 @@
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
       </visual>
-      <collision name='surface1'>
+      <collision name='surface1_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>0 0 0.45 0 -0 0</pose>
@@ -551,7 +551,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='surface3'>
+      <collision name='surface3_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>0 0 1 0 -0 0</pose>
@@ -606,7 +606,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='surface2'>
+      <collision name='surface2_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>0 0 0.6 0 -0 0</pose>
@@ -661,7 +661,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='front_right_leg'>
+      <collision name='front_right_leg_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>0.70 -0.38 0.5 0 -0 0</pose>
@@ -717,7 +717,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='back_right_leg'>
+      <collision name='back_right_leg_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>-0.70 -0.38 0.5 0 -0 0</pose>
@@ -773,7 +773,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='front_left_leg'>
+      <collision name='front_left_leg_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>0.70 0.38 0.5 0 -0 0</pose>
@@ -829,7 +829,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='back_left_leg'>
+      <collision name='back_left_leg_collision'>
         <laser_retro>0</laser_retro>
         <max_contacts>10</max_contacts>
         <pose>-0.70 0.38 0.5 0 -0 0</pose>

@@ -189,12 +189,48 @@ mapping the map or moving base in an existing map.
 
 ---------------------------
 # notes:
-- used onshape CAD to tune inertia. 
+- link to a video of my robot picking and placing a box from the shelf: 
+- used Onshape CAD to calculate inertia. 
+- used move group for pick and place poses.
+- will use ``` ~/get_model_state ``` : ```gazebo_msgs/GetModelState``` - This service returns the states of a model in simulation.
+- rosservice call gazebo/get_joint_properties '{joint_name: joint1}'
+type: 0
+damping: []
+position: [0.403249745392813]
+rate: [0.014711402265945629]
+success: True
+status_message: "GetJointProperties: got properties"
+- rosservice call gazebo/get_model_state '{model_name: mixed_robot}'
+header: 
+  seq: 1
+  stamp: 
+    secs: 1370
+    nsecs: 639000000
+  frame_id: ''
+pose: 
+  position: 
+    x: 0.00020166388125387514
+    y: -0.00016675479282465442
+    z: -4.7395556354856705e-06
+  orientation: 
+    x: -6.658904667255289e-06
+    y: 5.322692176398447e-08
+    z: -0.0007139137125695
+    w: 0.9999997451414011
+twist: 
+  linear: 
+    x: -1.1541245281820859e-05
+    y: 0.0001841961922394613
+    z: 0.0030772001310822574
+  angular: 
+    x: 0.01265736766702449
+    y: -6.15374216035987e-05
+    z: -5.8696718001216e-07
+success: True
+status_message: "GetModelState: got properties"
 
-if you encounter gazebo initiation problems type in terminal:
-```
-    killall gzserver
-    
-    killall gzclient
-```
+
+
+
+
 

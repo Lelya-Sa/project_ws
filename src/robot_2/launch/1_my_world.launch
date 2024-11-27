@@ -26,7 +26,7 @@
         <!-- Start Gazebo paused to allow the controllers to pickup the initial pose-->
 	<include file="$(find gazebo_ros)/launch/empty_world.launch" pass_all_args="true">
 		<arg name="paused" value="true"/>
-                <arg name="world_name" value="worlds/empty_world.world"  />
+                <arg name="world_name" value="$(arg world_name)"  />
                 <arg name="debug" value="$(arg debug)" />
                 <arg name="gui" value="$(arg gazebo_gui)" />
                 <arg name="paused" value="$(arg paused)" />

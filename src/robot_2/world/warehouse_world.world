@@ -747,338 +747,7 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    <model name='red1'>
-      <link name='link'>
-        <inertial>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.16667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.16667</iyy>
-            <iyz>0</iyz>
-            <izz>0.16667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-        <pose>0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <pose>0 0 0 0 -0 0</pose>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>50</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1000.0</mu>
-                <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>100000</threshold>
-            </bounce>
-            <contact>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>100000</kp>
-                <kd>1</kd>
-                <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>0</allow_auto_disable>
-      <pose>0.583518 0.007 6e-06 6e-06 -4.8e-05 -2.1e-05</pose>
-    </model>
-    <model name='red3'>
-      <link name='link'>
-        <inertial>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.16667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.16667</iyy>
-            <iyz>0</iyz>
-            <izz>0.16667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-        <pose>0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <pose>0 0 0 0 -0 0</pose>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>50</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1000.0</mu>
-                <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>100000</threshold>
-            </bounce>
-            <contact>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>100000</kp>
-                <kd>1</kd>
-                <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>0</allow_auto_disable>
-      <pose>0.502 0.314314 6e-06 6e-06 -4.8e-05 0.476497</pose>
-    </model>
-    <model name='blue2'>
-      <link name='link'>
-        <inertial>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.16667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.16667</iyy>
-            <iyz>0</iyz>
-            <izz>0.16667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-        <pose>0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <pose>0 0 0 0 -0 0</pose>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>50</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1000.0</mu>
-                <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>100000</threshold>
-            </bounce>
-            <contact>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>100000</kp>
-                <kd>1</kd>
-                <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>0</allow_auto_disable>
-      <pose>0.5515 0.1946 6e-06 6e-06 -4.8e-05 0.32</pose>
-    </model>
-    <model name='blue4'>
-      <link name='link'>
-        <inertial>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.16667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.16667</iyy>
-            <iyz>0</iyz>
-            <izz>0.16667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-        <pose>0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-            <shader type='vertex'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <pose>0 0 0 0 -0 0</pose>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>50</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.09433 0.024 0.07</size>
-            </box>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1000.0</mu>
-                <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>100000</threshold>
-            </bounce>
-            <contact>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>100000</kp>
-                <kd>1</kd>
-                <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>0</allow_auto_disable>
-      <pose>0.326525 0.475232 6e-06 6e-06 -4.8e-05 0.94638</pose>
-    </model>
+
     <model name='blue_destination_1'>
       <link name='link'>
         <inertial>
@@ -1245,7 +914,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>9 9 0 0 -0 0</pose>
     </model>
-    <model name='destination_3'>
+    <model name='blue_destination_3'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
@@ -1328,7 +997,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>9 -9 0 0 -0 0</pose>
     </model>
-    <model name='destination_4'>
+    <model name='red_destination_4'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
@@ -2309,7 +1978,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -3203,7 +2872,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -4097,7 +3766,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -4991,7 +4660,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -5886,7 +5555,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -6780,7 +6449,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -7670,24 +7339,24 @@
     </model>
     
     <!--  .................................... boxes .................................... -->
-    <model name='blue_2_2_right'>
+    <model name='blue_2_2_left'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-          <pose> 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <gravity>1</gravity>
         <visual name='visual'>
           <geometry>
@@ -7704,14 +7373,14 @@
               <normal_map>__default__</normal_map>
             </shader>
           </material>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>50</max_contacts>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.09433 0.024 0.07</size>
@@ -7722,7 +7391,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7739,10 +7408,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7758,19 +7427,19 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
-          <pose> 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 -0 0</pose>
         <gravity>1</gravity>
         <visual name='visual'>
           <geometry>
@@ -7787,14 +7456,14 @@
               <normal_map>__default__</normal_map>
             </shader>
           </material>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>50</max_contacts>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.09433 0.024 0.07</size>
@@ -7805,7 +7474,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7822,10 +7491,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7841,12 +7510,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -7888,7 +7557,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7905,10 +7574,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -7920,17 +7589,17 @@
       <pose>5.84 -6.4 0.65 0 -0 0</pose>
     </model>
     <model name='blue_1_2_left'>
-          <pose>1.84 -6.4 0.65 0 -0 0</pose>
+      <pose>1.84 -6.4 0.65 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -7954,14 +7623,14 @@
               <normal_map>__default__</normal_map>
             </shader>
           </material>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <transparency>0</transparency>
           <cast_shadows>1</cast_shadows>
         </visual>
         <collision name='collision'>
           <laser_retro>0</laser_retro>
           <max_contacts>50</max_contacts>
-          <pose> 0 0 0 -0 0</pose>
+          <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.09433 0.024 0.07</size>
@@ -7972,7 +7641,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -7989,10 +7658,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8007,12 +7676,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8054,7 +7723,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8071,10 +7740,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8090,12 +7759,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8137,7 +7806,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8154,10 +7823,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8173,12 +7842,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8220,7 +7889,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8237,10 +7906,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8256,12 +7925,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8303,7 +7972,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8320,10 +7989,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8340,12 +8009,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8387,7 +8056,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8404,10 +8073,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8417,17 +8086,17 @@
       <static>0</static>
       <allow_auto_disable>0</allow_auto_disable>
     </model>
-    <model name='blue_5_2_right'>
+    <model name='blue_5_2_left'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8469,7 +8138,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8486,10 +8155,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8500,17 +8169,17 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>8.845 3.5 0.65 0 -0 0</pose>
     </model>
-    <model name='blue_5_1_right'>
+    <model name='blue_5_1_left'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8552,7 +8221,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8569,10 +8238,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8583,17 +8252,17 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>7.35 3.5 0.65 0 -0 0</pose>
     </model>
-    <model name='blue_5_0_right'>
+    <model name='blue_5_0_left'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8635,7 +8304,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8652,10 +8321,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8666,17 +8335,17 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>5.84 3.5 0.65 0 -0 0</pose>
     </model>
-    <model name='blue_4_2_right'>
+    <model name='blue_4_2_left'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8718,7 +8387,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8735,10 +8404,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8749,17 +8418,17 @@
       <allow_auto_disable>0</allow_auto_disable>
       <pose>1.84 3.5 0.65 0 -0 0</pose>
     </model>
-    <model name='blue_4_1_right'>
+    <model name='blue_4_1_left'>
       <link name='link'>
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8801,7 +8470,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8818,10 +8487,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8837,12 +8506,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8884,7 +8553,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8901,10 +8570,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -8920,12 +8589,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -8967,7 +8636,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -8984,10 +8653,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9003,12 +8672,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9050,7 +8719,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9067,10 +8736,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9086,12 +8755,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9133,7 +8802,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9150,10 +8819,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9169,12 +8838,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9216,7 +8885,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9233,10 +8902,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9252,12 +8921,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9299,7 +8968,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9316,10 +8985,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9335,12 +9004,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9382,7 +9051,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9399,10 +9068,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9418,12 +9087,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9465,7 +9134,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9482,10 +9151,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9501,12 +9170,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9548,7 +9217,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9565,10 +9234,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9584,12 +9253,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9631,7 +9300,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9648,10 +9317,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9667,12 +9336,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9714,7 +9383,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9731,10 +9400,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9750,12 +9419,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9797,7 +9466,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9814,10 +9483,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9833,12 +9502,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9880,7 +9549,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9897,10 +9566,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9916,12 +9585,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -9963,7 +9632,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -9980,10 +9649,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -9999,12 +9668,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10046,7 +9715,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10063,10 +9732,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10082,12 +9751,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10129,7 +9798,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10146,10 +9815,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10165,12 +9834,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10212,7 +9881,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10229,10 +9898,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10248,12 +9917,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10295,7 +9964,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10312,10 +9981,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10331,12 +10000,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10378,7 +10047,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10395,10 +10064,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10414,12 +10083,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10461,7 +10130,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10478,10 +10147,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10497,12 +10166,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10544,7 +10213,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10561,10 +10230,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10580,12 +10249,12 @@
         <inertial>
           <mass>0.1</mass>
           <inertia>
-            <ixx>0.16667</ixx>
+            <ixx>0.00004563</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.16667</iyy>
+            <iyy>0.00011498</iyy>
             <iyz>0</iyz>
-            <izz>0.16667</izz>
+            <izz>0.00007895</izz>
           </inertia>
           <pose>0 0 0 0 -0 0</pose>
         </inertial>
@@ -10627,7 +10296,7 @@
               <ode>
                 <mu>1000.0</mu>
                 <mu2>1000.0</mu2>
-                <fdir1>1 1 0</fdir1>
+                <fdir1>0 0 0</fdir1>
                 <slip1>0</slip1>
                 <slip2>0</slip2>
               </ode>
@@ -10644,10 +10313,10 @@
                 <soft_cfm>0</soft_cfm>
                 <soft_erp>0.2</soft_erp>
                 <kp>100000</kp>
-                <kd>1</kd>
+                <kd>100</kd>
                 <max_vel>1</max_vel> 
-           <mu1>1.0</mu1>
-          <mu2>1.0</mu2>
+		   <mu1>10.0</mu1>
+		  <mu2>10.0</mu2>
                 <min_depth>0.001</min_depth>
               </ode>
             </contact>
@@ -10666,7 +10335,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -11560,7 +11229,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -12454,7 +12123,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -13348,7 +13017,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -14241,7 +13910,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -15135,7 +14804,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -16029,7 +15698,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -16923,7 +16592,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -17817,7 +17486,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -18711,7 +18380,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -19605,7 +19274,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -20499,7 +20168,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -21393,7 +21062,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -22287,7 +21956,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -23181,7 +22850,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -24075,7 +23744,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -26754,7 +26423,7 @@
       <frame name='warehouse_pallet::__model__' attached_to='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
       </frame>
-      <link name='warehouse_pallet::warehouse_pallet::link_#_2'>
+      <link name='warehouse_pallet::warehouse_pallet::link'>
         <pose relative_to='warehouse_pallet::__model__'>0 0 -0 0 -0 1.57</pose>
         <self_collide>0</self_collide>
         <inertial>
@@ -43728,26 +43397,6 @@
       <real_time>1213 546095382</real_time>
       <wall_time>1732191229 76261289</wall_time>
       <iterations>529748</iterations>
-      <model name='blue2'>
-        <pose>0.551327 0.194529 0.033998 0 -0 0.318925</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.551327 0.194529 0.033998 0 -0 0.318925</pose>
-          <velocity>-0 0 1.9e-05 0 -0 0</velocity>
-          <acceleration>-0 0 -0 0 -0 0</acceleration>
-          <wrench>-0 0 -0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='blue4'>
-        <pose>0.326426 0.475073 0.033998 0 -0 0.9453</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.326426 0.475073 0.033998 0 -0 0.9453</pose>
-          <velocity>-0 0 1.9e-05 0 -0 0</velocity>
-          <acceleration>-0 0 -0 0 -0 0</acceleration>
-          <wrench>-0 0 -0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='blue_0_0_left'>
         <pose>-8.14 -6.4 0.65 0 0 0</pose>
         <scale>1 1 1</scale>
@@ -43828,7 +43477,7 @@
           <wrench>0 -0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='blue_2_2_right'>
+      <model name='blue_2_2_left'>
         <pose>8.845 -6.4 0.65 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43878,7 +43527,7 @@
           <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='blue_4_1_right'>
+      <model name='blue_4_1_left'>
         <pose>0.34 3.5 0.648998 -0 -0 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43888,7 +43537,7 @@
           <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='blue_4_2_right'>
+      <model name='blue_4_2_left'>
         <pose>1.84 3.5 0.648998 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43898,7 +43547,7 @@
           <wrench>0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='blue_5_0_right'>
+      <model name='blue_5_0_left'>
         <pose>5.84 3.5 0.648998 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43908,7 +43557,7 @@
           <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='blue_5_1_right'>
+      <model name='blue_5_1_left'>
         <pose>7.35 3.5 0.648998 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43918,7 +43567,7 @@
           <wrench>-0 0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='blue_5_2_right'>
+      <model name='blue_5_2_left'>
         <pose>8.845 3.5 0.648998 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43948,7 +43597,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='destination_3'>
+      <model name='blue_destination_3'>
         <pose>9 -9 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -43958,7 +43607,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='destination_4'>
+      <model name='red_destination_4'>
         <pose>-9 -9 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -44403,26 +44052,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='red1'>
-        <pose>0.583331 0.006987 0.033998 0 0 -0.001098</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.583331 0.006987 0.033998 0 0 -0.001098</pose>
-          <velocity>0 -0 1.9e-05 0 -0 0</velocity>
-          <acceleration>0 -0 -0 0 -0 0</acceleration>
-          <wrench>0 -0 -0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='red3'>
-        <pose>0.501839 0.314217 0.033998 0 -0 0.475421</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.501839 0.314217 0.033998 0 -0 0.475421</pose>
-          <velocity>0 -0 1.9e-05 0 -0 0</velocity>
-          <acceleration>-0 -0 0 0 -0 0</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
-        </link>
-      </model>
+
       <model name='red_0_3_right'>
         <pose>-8.14 -3.5 0.65 0 0 0</pose>
         <scale>1 1 1</scale>

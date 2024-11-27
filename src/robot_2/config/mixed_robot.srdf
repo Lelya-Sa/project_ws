@@ -113,9 +113,11 @@
     </group>
 <!--    VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)
     <virtual_joint name="virtual_foot_joint" type="planar" parent_frame="robot_footprint" child_link="base_chassis"/>-->
-    <!--<joint_property joint_name="planar_joint" property_name="motion_model" value="diff_drive"/>
+    <!--
+    <joint_property joint_name="planar_joint" property_name="motion_model" value="diff_drive"/>
     <joint_property joint_name="planar_joint" property_name="min_translational_distance" value="0.01" />
-    <joint_property joint_name="planar_joint" property_name="angular_distance_weight" value="0.5" />-->
+    <joint_property joint_name="planar_joint" property_name="angular_distance_weight" value="0.5" />
+    -->
 
     <group name="footprint_group">
         <link name="robot_footprint"/>
@@ -123,42 +125,284 @@
     </group>
 
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <group_state name="open" group="gripper">
-        <joint name="f_joint1" value="0"/>
-        <joint name="f_joint2" value="0"/>
+    <group_state name="open_grip" group="gripper">
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
     </group_state>
-    <group_state name="close" group="gripper">
-        <joint name="f_joint1" value="0.0137"/>
-        <joint name="f_joint2" value="-0.0137"/>
+    <group_state name="close_grip" group="gripper">
+        <joint name="f_joint1" value="0.010"/>
+        <joint name="f_joint2" value="-0.010"/>
     </group_state>
-    <group_state name="init" group="arm">
+
+    <group_state name="init" group="arm_grip">
         <joint name="joint1" value="0"/>
         <joint name="joint2" value="0"/>
         <joint name="joint3" value="0"/>
         <joint name="joint4" value="0"/>
         <joint name="joint5" value="0"/>
         <joint name="joint6" value="0"/>
+        <joint name="f_joint1" value="0.0"/>
+        <joint name="f_joint2" value="-0.0"/>
     </group_state>
-    <group_state name="pick" group="arm">
-        <joint name="joint1" value="0"/>
-        <joint name="joint2" value="-3"/>
-        <joint name="joint3" value="72"/>
-        <joint name="joint4" value="0"/>
-        <joint name="joint5" value="19"/>
+    <group_state name="before_pick" group="arm_grip">
+        <joint name="joint1" value="0.0"/>
+        <joint name="joint2" value="-0.858"/>
+        <joint name="joint3" value="1.746"/>
+        <joint name="joint4" value="0.0"/>
+        <joint name="joint5" value="0.727"/>
+        <joint name="joint6" value="0.0"/>
+        <joint name="f_joint1" value="0.0"/>
+        <joint name="f_joint2" value="-0.0"/>
+    </group_state>
+    <group_state name="pick_open" group="arm_grip">
+        <joint name="joint1" value="0.0"/>
+        <joint name="joint2" value="-0.581"/>
+        <joint name="joint3" value="1.678"/>
+        <joint name="joint4" value="0.0"/>
+        <joint name="joint5" value="0.619"/>
         <joint name="joint6" value="0"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
     </group_state>
-    <group_state name="shelf_front" group="arm">
-        <joint name="joint1" value="0"/>
-        <joint name="joint2" value="-10"/>
-        <joint name="joint3" value="75"/>
-        <joint name="joint4" value="0"/>
-        <joint name="joint5" value="27"/>
+        <group_state name="pick_close" group="arm_grip">
+        <joint name="joint1" value="0.0"/>
+        <joint name="joint2" value="-0.581"/>
+        <joint name="joint3" value="1.678"/>
+        <joint name="joint4" value="0.0"/>
+        <joint name="joint5" value="0.619"/>
         <joint name="joint6" value="0"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
     </group_state>
-    <group_state name="rand" group="mobile">
-        <joint name="left_wheel_hinge" value="1"/>
-        <joint name="right_wheel_hinge" value="1"/>
+    <group_state name="pick_up" group="arm_grip">
+        <joint name="joint1" value="0.0"/>
+        <joint name="joint2" value="-0.542"/>
+        <joint name="joint3" value="1.712"/>
+        <joint name="joint4" value="-1.546"/>
+        <joint name="joint5" value="0.0"/>
+        <joint name="joint6" value="-0.428"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
     </group_state>
+    <group_state name="above_robot" group="arm_grip">
+        <joint name="joint1" value="0.022"/>
+        <joint name="joint2" value="-1.419"/>
+        <joint name="joint3" value="1.963"/>
+        <joint name="joint4" value="-1.570"/>
+        <joint name="joint5" value="0.026"/>
+        <joint name="joint6" value="-1.060"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+
+    <!--  ............................. front_right ..............................  -->
+    <group_state name="place_front_right_up_close" group="arm_grip">
+        <joint name="joint1" value="-0.733"/>
+        <joint name="joint2" value="-0.838"/>
+        <joint name="joint3" value="2.181"/>
+        <joint name="joint4" value="0.048"/>
+        <joint name="joint5" value="1.754"/>
+        <joint name="joint6" value="0.030"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+    <group_state name="place_front_right_down_open" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.870"/>
+        <joint name="joint3" value="2.359"/>
+        <joint name="joint4" value="0.007"/>
+        <joint name="joint5" value="1.600"/>
+        <joint name="joint6" value="0.040"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_front_right_up_open" group="arm_grip">
+        <joint name="joint1" value="-0.733"/>
+        <joint name="joint2" value="-0.838"/>
+        <joint name="joint3" value="2.181"/>
+        <joint name="joint4" value="0.048"/>
+        <joint name="joint5" value="1.754"/>
+        <joint name="joint6" value="0.030"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_front_left_down_pick_open" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.866"/>
+        <joint name="joint3" value="2.450"/>
+        <joint name="joint4" value="-0.006"/>
+        <joint name="joint5" value="1.512"/>
+        <joint name="joint6" value="0.027"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_front_left_down_pick_close" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.866"/>
+        <joint name="joint3" value="2.450"/>
+        <joint name="joint4" value="-0.006"/>
+        <joint name="joint5" value="1.512"/>
+        <joint name="joint6" value="0.027"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+
+    <!--  ............................. front_left ..............................  -->
+    <group_state name="place_front_left_up_close" group="arm_grip">
+        <joint name="joint1" value="-5.599"/>
+        <joint name="joint2" value="-0.824"/>
+        <joint name="joint3" value="2.102"/>
+        <joint name="joint4" value="0.089"/>
+        <joint name="joint5" value="1.855"/>
+        <joint name="joint6" value="0.108"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+    <group_state name="place_front_left_down_open" group="arm_grip">
+        <joint name="joint1" value="-5.580"/>
+        <joint name="joint2" value="-0.878"/>
+        <joint name="joint3" value="2.297"/>
+        <joint name="joint4" value="0.033"/>
+        <joint name="joint5" value="1.720"/>
+        <joint name="joint6" value="0.056"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_front_left_up_open" group="arm_grip">
+        <joint name="joint1" value="-5.599"/>
+        <joint name="joint2" value="-0.824"/>
+        <joint name="joint3" value="2.102"/>
+        <joint name="joint4" value="0.089"/>
+        <joint name="joint5" value="1.855"/>
+        <joint name="joint6" value="0.108"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_front_left_down_pick_open" group="arm_grip">
+        <joint name="joint1" value="-5.574"/>
+        <joint name="joint2" value="-0.898"/>
+        <joint name="joint3" value="2.456"/>
+        <joint name="joint4" value="0.011"/>
+        <joint name="joint5" value="1.599"/>
+        <joint name="joint6" value="0.034"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_front_left_down_pick_close" group="arm_grip">
+        <joint name="joint1" value="-5.574"/>
+        <joint name="joint2" value="-0.898"/>
+        <joint name="joint3" value="2.456"/>
+        <joint name="joint4" value="0.011"/>
+        <joint name="joint5" value="1.599"/>
+        <joint name="joint6" value="0.034"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+
+    <!--  ............................. back_right ..............................
+    <group_state name="place_back_right_up_close" group="arm_grip">
+        <joint name="joint1" value="-0.733"/>
+        <joint name="joint2" value="-0.838"/>
+        <joint name="joint3" value="2.181"/>
+        <joint name="joint4" value="0.048"/>
+        <joint name="joint5" value="1.754"/>
+        <joint name="joint6" value="0.030"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+    <group_state name="place_back_right_down_open" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.870"/>
+        <joint name="joint3" value="2.359"/>
+        <joint name="joint4" value="0.007"/>
+        <joint name="joint5" value="1.600"/>
+        <joint name="joint6" value="0.040"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_back_right_up_open" group="arm_grip">
+        <joint name="joint1" value="-0.733"/>
+        <joint name="joint2" value="-0.838"/>
+        <joint name="joint3" value="2.181"/>
+        <joint name="joint4" value="0.048"/>
+        <joint name="joint5" value="1.754"/>
+        <joint name="joint6" value="0.030"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+        <group_state name="place_back_right_down_pick_open" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.866"/>
+        <joint name="joint3" value="2.450"/>
+        <joint name="joint4" value="-0.006"/>
+        <joint name="joint5" value="1.512"/>
+        <joint name="joint6" value="0.027"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_back_right_down_pick_close" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.866"/>
+        <joint name="joint3" value="2.450"/>
+        <joint name="joint4" value="-0.006"/>
+        <joint name="joint5" value="1.512"/>
+        <joint name="joint6" value="0.027"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+  -->
+    <!--  ............................. back_left ..............................
+    <group_state name="place_back_left_up_close" group="arm_grip">
+        <joint name="joint1" value="-0.733"/>
+        <joint name="joint2" value="-0.838"/>
+        <joint name="joint3" value="2.181"/>
+        <joint name="joint4" value="0.048"/>
+        <joint name="joint5" value="1.754"/>
+        <joint name="joint6" value="0.030"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+    <group_state name="place_back_left_down_open" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.870"/>
+        <joint name="joint3" value="2.359"/>
+        <joint name="joint4" value="0.007"/>
+        <joint name="joint5" value="1.600"/>
+        <joint name="joint6" value="0.040"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_back_left_up_open" group="arm_grip">
+        <joint name="joint1" value="-0.733"/>
+        <joint name="joint2" value="-0.838"/>
+        <joint name="joint3" value="2.181"/>
+        <joint name="joint4" value="0.048"/>
+        <joint name="joint5" value="1.754"/>
+        <joint name="joint6" value="0.030"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+        <group_state name="place_back_left_down_pick_open" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.866"/>
+        <joint name="joint3" value="2.450"/>
+        <joint name="joint4" value="-0.006"/>
+        <joint name="joint5" value="1.512"/>
+        <joint name="joint6" value="0.027"/>
+        <joint name="f_joint1" value="-0.005"/>
+        <joint name="f_joint2" value="0.005"/>
+    </group_state>
+    <group_state name="place_back_left_down_pick_close" group="arm_grip">
+        <joint name="joint1" value="-0.722"/>
+        <joint name="joint2" value="-0.866"/>
+        <joint name="joint3" value="2.450"/>
+        <joint name="joint4" value="-0.006"/>
+        <joint name="joint5" value="1.512"/>
+        <joint name="joint6" value="0.027"/>
+        <joint name="f_joint1" value="0.01"/>
+        <joint name="f_joint2" value="-0.01"/>
+    </group_state>
+  -->
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated
     <passive_joint name="front_right_caster_hinge"/>
     <passive_joint name="front_left_caster_hinge"/>

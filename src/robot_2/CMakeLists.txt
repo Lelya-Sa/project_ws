@@ -132,6 +132,15 @@ COMPONENTS
 	gazebo_ros_control
 	class_loader
  )
+
+## Declare ROS messages and services
+## add_message_files(DIRECTORY msg FILES Num.msg)
+## add_service_files(DIRECTORY srv FILES AddTwoInts.srv)
+
+## Generate added messages and services
+## generate_messages(DEPENDENCIES std_msgs)
+
+## Declare a catkin package
 catkin_package()
 
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
@@ -153,6 +162,10 @@ include_directories(${catkin_INCLUDE_DIRS}
 
 find_package(Threads REQUIRED)
 
+## find_package(gazebo REQUIRED)
+## include_directories(${GAZEBO_INCLUDE_DIRS})
+## list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
+
 
 #############
 ## Testing ##
@@ -168,6 +181,8 @@ find_package(Threads REQUIRED)
 # catkin_add_nosetests(test)
 
 add_executable(robot_2 src/WarehouseSimulation.cpp src/ModelController.cpp src/Product.cpp src/Storage.cpp src/Dispatch.cpp src/WarehouseObject.cpp src/Order.cpp src/OrderController.cpp src/Robot.cpp)
-target_link_libraries(robot_2 ${catkin_LIBRARIES} Threads::Threads)
+target_link_libraries(robot_2 ${catkin_LIBRARIES} Threads::Threads )
 #add_dependencies(WarehouseSimulation warehouse_robot_simulator_generate_messages_cpp)
 
+## target_link_libraries(robot_2 ${GAZEBO_LIBRARIES})
+##  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")

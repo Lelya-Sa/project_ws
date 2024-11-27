@@ -1,3 +1,5 @@
 # dispatch_model_name dispatch_pose_xyz dispatch_pick_pose_XYZ
-DispatchA   3.0 2.3 0.4 0.0 0.0 -1.570796   3.0 1.5 0.0 0.0 0.0 0.0
-DispatchB   -3.0 2.3 0.4 0.0 0.0 -1.570796  -3.0 1.5 0.0 0.0 0.0 0.0
+DispatchA   -9 9 0 0 -0 0   -9 9 0 0 -0 0
+DispatchB   9 9 0 0 -0 0  9 9 0 0 -0 0
+# DispatchC   9 -9 0 0 -0 0  9 -9 0 0 -0 0
+# DispatchD   -9 -9 0 0 -0 0  -9 -9 0 0 -0 0

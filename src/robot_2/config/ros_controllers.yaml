@@ -27,14 +27,14 @@ gripper_controller_effort:
       - f_joint2
     gains:
       f_joint1:
-        p: 350.0
-        d: 0.005
-        i: 0.01
+        p: 450.0
+        d: 0.00001
+        i: 0.001
         i_clamp: 1
       f_joint2:
-        p: 270.0
-        d: 0.005
-        i: 0.01
+        p: 450.0
+        d: 0.00001
+        i: 0.001
         i_clamp: 1
 
 #joint_1_controller_effort:
@@ -150,34 +150,34 @@ arm_controller_effort:
       - joint6
     gains:
       joint1:
-        p: 150.0
-        d: 0.0000001
-        i: 0.00001
+        p: 350.0
+        d: 0.000001
+        i: 0.0001
         i_clamp: 1
       joint2:
-        p: 150.0
-        d: 0.0000001
-        i: 0.00001
+        p: 350.0
+        d: 0.000001
+        i: 0.0001
         i_clamp: 1
       joint3:
-        p: 150.0
-        d: 0.0000001
-        i: 0.02
+        p: 350.0
+        d: 0.000001
+        i: 0.0001
         i_clamp: 1
       joint4:
-        p: 150.0
-        d: 0.0000001
+        p: 250.0
+        d: 0.000001
         i: 0.00001
         i_clamp: 1
       joint5:
-        p: 150.0
-        d: 0.0000001
+        p: 250.0
+        d: 0.000001
         i: 0.00001
         i_clamp: 1
       joint6:
-        p: 220.0
+        p: 350.0
         d: 0.000001
-        i: 0.0001
+        i: 0.00001
         i_clamp: 1
 #l_wheel_controller_velocity:
 #    type: velocity_controllers/JointTrajectoryController

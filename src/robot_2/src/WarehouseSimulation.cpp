@@ -15,6 +15,10 @@
 #include <gazebo_msgs/SpawnModel.h>
 #include <tf2/LinearMath/Quaternion.h>
 
+// Includes a core set of basic Gazebo functions
+#include <gazebo/gazebo.hh>
+#include <gz/msgs.hh>
+
 #include "ModelController.h"
 #include "Storage.h"
 #include "Dispatch.h"
@@ -66,21 +70,89 @@ geometry_msgs::Pose GetPoseFromString(float x, float y, float z, float roll, flo
 void LoadModels(std::shared_ptr<ModelController> &modelController, std::string projectDirectory)
 {
     modelController->Add("ProductR", projectDirectory + "/models/warehouseObjects/ProductR.sdf");
-    modelController->Add("ProductG", projectDirectory + "/models/warehouseObjects/ProductG.sdf");
+//    modelController->Add("ProductG", projectDirectory + "/models/warehouseObjects/ProductG.sdf");
     modelController->Add("ProductB", projectDirectory + "/models/warehouseObjects/ProductB.sdf");
 
-    modelController->Add("StorageR", projectDirectory + "/models/warehouseObjects/StorageR.sdf");
-    modelController->Add("StorageG", projectDirectory + "/models/warehouseObjects/StorageG.sdf");
-    modelController->Add("StorageB", projectDirectory + "/models/warehouseObjects/StorageB.sdf");
+    modelController->Add("Storage", projectDirectory + "/models/warehouse_pallet/model.sdf");
 
     modelController->Add("DispatchA", projectDirectory + "/models/warehouseObjects/Dispatch.sdf");
-    modelController->Add("DispatchB", projectDirectory + "/models/warehouseObjects/Dispatch.sdf");
+    modelController->Add("DispatchB", projectDirectory + "/models/warehouseObjects/DispatchB.sdf");
 }
 
 // Read the configuration files and instantiate the warehouse objects
-bool InstatiateWarehouseObjects(std::vector<std::shared_ptr<Storage>> &storages, std::vector<std::shared_ptr<Dispatch>> &dispatches, std::shared_ptr<ModelController> modelController, std::string projectDirectory)
+bool InstantiateWarehouseObjects(std::vector<std::shared_ptr<Storage>> &storages,
+                                std::vector<std::shared_ptr<Dispatch>> &dispatches,
+                                 std::shared_ptr<ModelController> modelController,
+                                  std::string projectDirectory)
 {
     std::string line;
+
+    // Add Storages from storages configuration file
+//    try
+//    {
+//        // Read Storages configuration file
+//        std::ifstream storagesConfigFs(projectDirectory + "/configs/storages");
+//        if (storagesConfigFs.is_open())
+//        {
+//            while (std::getline(storagesConfigFs, line))
+//            {
+//                // if line started with #, then discard this line
+//                // # is used as user configuration description
+//                if (line[0] == '#')
+//                {
+//                    continue;
+//                }
+//                std::istringstream linestream(line);
+//                std::string storageModel{};
+//                std::string productionModel{};
+//                geometry_msgs::Pose storagePose{};
+//                geometry_msgs::Pose productPickPose{};
+//                std::string psx{};
+//                std::string psy{};
+//                std::string psz{};
+//                std::string osx{};
+//                std::string osy{};
+//                std::string osz{};
+//                std::string ppx{};
+//                std::string ppy{};
+//                std::string ppz{};
+//                std::string opx{};
+//                std::string opy{};
+//                std::string opz{};
+//                std::string maxCapacity{};
+//
+//                // Get the Storage model name
+//                linestream >> storageModel;
+//
+//                // Get the Storage's Product name that will be used in Production
+//                linestream >> productionModel;
+//
+//                // Get the Storage's max capacity of stored Product
+//                linestream >> maxCapacity;
+//
+//                // Get the X, Y and Z position and orientation coordinates of the Storage
+//                linestream >> psx >> psy >> psz >> osx >> osy >> osz;
+//                storagePose = GetPoseFromString(std::stof(psx), std::stof(psy), std::stof(psz), std::stof(osx), std::stof(osy), std::stof(osz));
+//
+//                // Get the X, Y and Z position and orientation coordinates where the produced Products will be spawned when requested
+//                linestream >> ppx >> ppy >> ppz >> opx >> opy >> opz;
+//                productPickPose = GetPoseFromString(std::stof(ppx), std::stof(ppy), std::stof(ppz), std::stof(opx), std::stof(opy), std::stof(opz));
+//
+//                // Add a new Storage to the Storages Vector
+//                storages.push_back(std::make_shared<Storage>(storageModel, productionModel, std::stoi(maxCapacity), storagePose, productPickPose, modelController));
+//            }
+//        }
+//        storagesConfigFs.close();
+//    }
+//    // If any problem/exception happened, then return false to abort the simulation
+//    catch (const std::exception &e)
+//    {
+//        // Convert exception to a readable string and print a message
+//        std::ostringstream s;
+//        s << e.what();
+//        Print("Error while instantiating a Dispatch: " + s.str());
+//        return false;
+//    }
 
     // Add Storages from storages configuration file
     try
@@ -101,7 +173,7 @@ bool InstatiateWarehouseObjects(std::vector<std::shared_ptr<Storage>> &storages,
                 std::string storageModel{};
                 std::string productionModel{};
                 geometry_msgs::Pose storagePose{};
-                geometry_msgs::Pose productOutputPose{};
+                geometry_msgs::Pose productPickPose{};
                 std::string psx{};
                 std::string psy{};
                 std::string psz{};
@@ -114,7 +186,6 @@ bool InstatiateWarehouseObjects(std::vector<std::shared_ptr<Storage>> &storages,
                 std::string opx{};
                 std::string opy{};
                 std::string opz{};
-                std::string maxCapacity{};
 
                 // Get the Storage model name
                 linestream >> storageModel;
@@ -122,19 +193,16 @@ bool InstatiateWarehouseObjects(std::vector<std::shared_ptr<Storage>> &storages,
                 // Get the Storage's Product name that will be used in Production
                 linestream >> productionModel;
 
-                // Get the Storage's max capacity of stored Product
-                linestream >> maxCapacity;
-
                 // Get the X, Y and Z position and orientation coordinates of the Storage
                 linestream >> psx >> psy >> psz >> osx >> osy >> osz;
                 storagePose = GetPoseFromString(std::stof(psx), std::stof(psy), std::stof(psz), std::stof(osx), std::stof(osy), std::stof(osz));
 
                 // Get the X, Y and Z position and orientation coordinates where the produced Products will be spawned when requested
                 linestream >> ppx >> ppy >> ppz >> opx >> opy >> opz;
-                productOutputPose = GetPoseFromString(std::stof(ppx), std::stof(ppy), std::stof(ppz), std::stof(opx), std::stof(opy), std::stof(opz));
+                productPickPose = GetPoseFromString(std::stof(ppx), std::stof(ppy), std::stof(ppz), std::stof(opx), std::stof(opy), std::stof(opz));
 
                 // Add a new Storage to the Storages Vector
-                storages.push_back(std::make_shared<Storage>(storageModel, productionModel, std::stoi(maxCapacity), storagePose, productOutputPose, modelController));
+                storages.push_back(std::make_shared<Storage>(storageModel, productionModel, storagePose, productPickPose, modelController));
             }
         }
         storagesConfigFs.close();
@@ -149,7 +217,7 @@ bool InstatiateWarehouseObjects(std::vector<std::shared_ptr<Storage>> &storages,
         return false;
     }
 
-    // Add Dispatches from dispatches configuration file
+    /*  Add Dispatches from dispatches configuration file  */
     try
     {
         // Read Dispatches configuration file
@@ -224,7 +292,7 @@ int main(int argc, char **argv)
     ros::NodeHandle n;
 
     // Set the project directory
-    std::string projectDirectory{"../catkin_ws/src/warehouse_robot_simulation"};
+    std::string projectDirectory{"../project_ws/src/robot_2"};
 
     // Create an instance of the modelController
     std::shared_ptr<ModelController> modelController = std::make_shared<ModelController>("ModelController");
@@ -242,7 +310,7 @@ int main(int argc, char **argv)
 
     // Instantiate Storage and Dispatch objects from config file
     // If any exception happened, end this simulation
-    bool readConfigFiles = InstatiateWarehouseObjects(storages, dispatches, modelController, projectDirectory);
+    bool readConfigFiles = InstantiateWarehouseObjects(storages, dispatches, modelController, projectDirectory);
     if (!readConfigFiles)
     {
         Print("Please, check your configuration files and try again");
