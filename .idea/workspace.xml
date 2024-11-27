@@ -18,32 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
-      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/Bstorages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/Rstorages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/boxes_in_delivery_box" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/1_WarehouseSimulation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/2_Robot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/2_Storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/3_WarehouseObject.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/world/warehouse_world copy.world" afterDir="false" />
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rosgraph.png" beforeDir="false" afterPath="$PROJECT_DIR$/rosgraph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/mixed_robot.srdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/config/ros_controllers.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/dispatches" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/configs/dispatches" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/storages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/launch/1_my_world.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/Dispatch.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/Dispatch.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/DispatchB.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/DispatchB.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductB.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductB.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductR.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouseObjects/ProductR.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/models/warehouse_pallet/model.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/models/warehouse_pallet/model.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/world/warehouse_world.world" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/world/warehouse_world.world" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +202,7 @@
       <workItem from="1732472395764" duration="9229000" />
       <workItem from="1732544264858" duration="10373000" />
       <workItem from="1732601467497" duration="21719000" />
-      <workItem from="1732718087316" duration="1103000" />
+      <workItem from="1732718087316" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -438,7 +414,8 @@
     <MESSAGE value="works without errors!!! and warehouse ready" />
     <MESSAGE value="fingers inertia needs correction" />
     <MESSAGE value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
-    <option name="LAST_COMMIT_MESSAGE" value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
+    <MESSAGE value="TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_ws$dynamic_tf_broadcaster.coverage" NAME="dynamic_tf_broadcaster Coverage Results" MODIFIED="1731836976692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
