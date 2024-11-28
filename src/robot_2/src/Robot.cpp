@@ -23,11 +23,17 @@
 #include "WarehouseObject.h"
 
 // Define an unique robot name, set the respective move_base action serve name and others warehouse objects shared pointers
-Robot::Robot(std::string robotName, std::string actionName, std::vector<std::shared_ptr<Storage>> &storages, std::vector<std::shared_ptr<Dispatch>> &dispatches, std::shared_ptr<OrderController> orderController)
+Robot::Robot(std::string robotName,
+             std::string actionName,
+             std::vector<std::shared_ptr<Storage>> &Bstorages,
+             std::vector<std::shared_ptr<Storage>> &Rstorages,
+             std::vector<std::shared_ptr<Dispatch>> &dispatches,
+             std::shared_ptr<OrderController> orderController)
 {
     _objectName = robotName + "#" + std::to_string(_id);
     _type = ObjectType::objectRobot;
-    _storages = storages;
+    _Bstorages = Bstorages;
+    _Rstorages = Rstorages;
     _dispatches = dispatches;
     _orderController = orderController;
     _actionName = actionName;
@@ -158,7 +164,7 @@ void Robot::Operate()
 
         // Request OrderController for an Order
         case RobotStatus::requestOrder:
-
+            // TODO
             _order = _orderController->RequestNextOrderWithTimeout(_objectName, 1000);
 
             if (_order != nullptr)
@@ -178,7 +184,7 @@ void Robot::Operate()
             storagesToGo.clear();
 
             // Get a queue of storages that has order's products
-            storagesToGo = this->GetStoragesToGo();
+            storagesToGo = this->GetStoragesToGo(); // TODO
 
             // Check if valid Storages were found to collect products, otherwise discard current order
             if (storagesToGo.empty())
@@ -188,6 +194,21 @@ void Robot::Operate()
                 break;
             }
 
+
+
+//            // Check if Dispatch was found, otherwise discard current order
+//            if(targetDispatch == nullptr){
+//                Print("Could not find any Dispatch of type "+_order->GetGoalDispatchName()+", discarding " + _order->GetName() + " order");
+//                _status = RobotStatus::closeOrder;
+//                break;
+//            }
+
+            _status = RobotStatus::plan;
+            break;
+
+        // Plan and set the next robot task
+        case RobotStatus::plan:
+            // TODO optimize plan
             // Set targetDispatch by dispatch modelName
             for (std::shared_ptr<Dispatch> &d : _dispatches)
             {
@@ -196,19 +217,6 @@ void Robot::Operate()
                     targetDispatch = d;
                 }
             }
-
-            // Check if Dispatch was found, otherwise discard current order
-            if(targetDispatch == nullptr){
-                Print("Could not find any Dispatch of type "+_order->GetGoalDispatchName()+", discarding " + _order->GetName() + " order");
-                _status = RobotStatus::closeOrder;
-                break;
-            }
-
-            _status = RobotStatus::plan;
-            break;
-
-        // Plan and set the next robot task
-        case RobotStatus::plan:
 
             // Move to the storages one by one to get the products
             if (storagesToGo.size() > 0)
@@ -225,15 +233,15 @@ void Robot::Operate()
             // When all storages were visited, then go to the dispatch area
             else
             {
-                if (targetDispatch != nullptr)
-                {
-                    _status = RobotStatus::moveToDispatch;
-                }
-                else
-                {
+//                if (targetDispatch != nullptr)
+//                {
+//                    _status = RobotStatus::moveToDispatch;
+//                }
+//                else
+//                {
                     // In case of operational variable set as nullptr, request a new order
                     _status = RobotStatus::requestOrder;
-                }
+//                }
             }
             break;
 
@@ -241,9 +249,9 @@ void Robot::Operate()
         case RobotStatus::moveToStorage:
 
             Print("Moving to " + targetStorage->GetName());
-            if (Move(ac, targetStorage->GetProductOutputPose()))
+            if (Move(ac, targetStorage->GetProductPickPose()))
             {
-                Print("Arrive at " + targetStorage->GetName() + ", requesting products");
+                Print("Arrive at " + targetStorage->GetName() + ", picking products");
                 _status = RobotStatus::requestProduct;
             }
 
