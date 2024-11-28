@@ -26,7 +26,7 @@ OrderController::~OrderController()
     Print("Shutting down");
 }
 
-// Process an Order received from ros and add it to _queue
+// Process an Order received from ros and add it to _map
 void OrderController::AddOrder(const std_msgs::String &str)
 {
     // Create and empty Order
@@ -41,11 +41,8 @@ void OrderController::AddOrder(const std_msgs::String &str)
         if (stream)
         {
             stream >> val;
-
-            // Set first val as TargetDispatchName
-            order->SetGoalDispatchName(val);
-
-            // Then parse all following listed Products
+            int overall_products = 0;
+            // Then parse all following listed Products, Blue then Red
             while (!stream.eof())
             {
                 std::string product;
@@ -55,9 +52,17 @@ void OrderController::AddOrder(const std_msgs::String &str)
                 int productQuantity = stoi(productQuantityStr);
 
                 // If quantity is greater than zero, then add this product to the order
-                if (productQuantity > 0)
+                if (productQuantity > 0 && productQuantity < 5)
                 {
-                    order->AddProduct(product, productQuantity);
+                    overall_products += productQuantity
+                    if (overall_products < 5)
+                    {
+                        order->AddProduct(product, productQuantity);
+                    }
+                    else
+                    {
+                        throw runtime_error("cannot take more than 4 products in 1 order!");
+                    }
                 }
             }
         }
@@ -69,15 +74,15 @@ void OrderController::AddOrder(const std_msgs::String &str)
         return;
     }
 
-    // If the parsed order has more than one product, then add it to the end of queue
-    if (order->GetProductList().bucket_count() > 0)
-    {
-        std::lock_guard<std::mutex> lck(_queueMtx);
-        _queue.push_back(std::move(order));
-        _queueCond.notify_one();
+//    // If the parsed order has more than one order, then add it to the end of map
+//    if (order->GetProductList().bucket_count() > 0)
+//    {
+        std::lock_guard<std::mutex> lck(_mapMtx);
+        _map.push_back(std::move(order));
+        _mapCond.notify_one();
 
-        Print(_queue.back()->GetName() + "|" + _queue.back()->GetGoalDispatchName() + " was added to queue[" + std::to_string(_queue.size()) + "]");
-    }
+        Print(_map.back()->GetName() + "|" + _map.back()->GetGoalDispatchName() + " was added to map[" + std::to_string(_map.size()) + "]");
+//    }
 }
 
 // Remove the order from _ordersTracking
@@ -99,19 +104,29 @@ std::vector<std::shared_ptr<Order>> OrderController::GetOrdersTracking()
     return _ordersTracking;
 }
 
-// Return the next Order in the queue
+// Return the next Order in the map
 std::shared_ptr<Order> OrderController::RequestNextOrder(std::string robotName)
 {
     Print(robotName + " is requesting an Order");
 
-    // Use a condition variable to wait until the queue is not empty
-    std::unique_lock<std::mutex> uLck(_queueMtx);
-    _queueCond.wait(uLck, [this]
-                    { return !_queue.empty(); });
+    // Use a condition variable to wait until for 10 sec
+    std::unique_lock<std::mutex> uLck(_mapMtx);
+    auto cv = _mapCond.wait_for(uLck, std::chrono::milliseconds(10000));
 
-    // Get the first Order from queue and release the lock
-    std::shared_ptr<Order> order = std::move(_queue.front());
-    _queue.pop_front();
+    // Get the first Order from map and release the lock
+    std::shared_ptr<Order> order = std::move(_map);
+    int min_duration = 0;
+//    int max_value;
+    std::shared_ptr<Order> selected_order;
+    for (auto i : _map){
+        if (i.second <= min_duration)
+        {
+            selected_order = i.first
+        }
+    }
+    order = selected_order;
+    _map.erase(selected_order);
+
     uLck.unlock();
 
     // Set the robotName that is requesting the order
@@ -125,22 +140,34 @@ std::shared_ptr<Order> OrderController::RequestNextOrder(std::string robotName)
     return order;
 }
 
-// Return the next Order in the queue with a timeout option that returns a nullptr if _queue still empty
+// Return the next Order in the map with a timeout option that returns a nullptr if _map still empty
 std::shared_ptr<Order> OrderController::RequestNextOrderWithTimeout(std::string robotName, int timeoutMs) // TODO: Usar aqui as condition variables para que os robos facam as requests e aguardem um order chegar
 {
-    // Use a condition variable to wait until the queue is not empty
-    std::unique_lock<std::mutex> uLck(_queueMtx);
-    auto cv = _queueCond.wait_for(uLck, std::chrono::milliseconds(timeoutMs));
+    // Use a condition variable to wait until the map is not empty
+    std::unique_lock<std::mutex> uLck(_mapMtx);
+    auto cv = _mapCond.wait_for(uLck, std::chrono::milliseconds(timeoutMs));
 
-    // If order queue is empty, then return a nullptr
-    if (_queue.empty())
+    // If order map is empty, then return a nullptr
+    if (_map.empty())
     {
         return nullptr;
     }
 
-    // Get the first Order from queue and release the lock
-    std::shared_ptr<Order> order = std::move(_queue.front());
-    _queue.pop_front();
+    // choose the best Order from map and release the lock
+    std::shared_ptr<Order> order = std::move(_map);
+//    _map.pop_front();
+//    std::shared_ptr<Order> current_order;
+    int min_duration = 0;
+//    int max_value;
+    std::shared_ptr<Order> selected_order;
+    for (auto i : _map){
+        if (i.second <= min_duration)
+        {
+            selected_order = i.first
+        }
+    }
+    order = selected_order;
+    _map.erase(selected_order);
     uLck.unlock();
 
     // Set the robotName that is requesting the order

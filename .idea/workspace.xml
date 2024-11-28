@@ -18,8 +18,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/BBoxes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/RBoxes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/Bstorages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/Rstorages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/OrderController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/OrderController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/OrderController.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/OrderController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Robot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Robot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Storage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Storage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Storage.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Storage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +78,15 @@
     &quot;assignee&quot;: &quot;Lelya-Sa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Lelya-Sa/project_ws.git&quot;,
-    &quot;accountId&quot;: &quot;b35f04f4-9f15-4f52-8ad1-33c6512e258a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Lelya-Sa/project_ws.git",
+    "accountId": "aacac047-35bd-4494-a931-31b1a6b664ea"
   }
-}</component>
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/CMakeLists.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -80,26 +96,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.dynamic_tf_broadcaster.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dynamic_tf_broadcaster.py..executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;detached3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lelyasa/project_ws&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.dynamic_tf_broadcaster.executor": "Run",
+    "Python.dynamic_tf_broadcaster.py..executor": "Run",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "local",
+    "last_opened_file_path": "/home/lelyasa/project_ws",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" show_stripe_button="false" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info id="DFA" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Packages" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Vcpkg" show_stripe_button="false" />
+      <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.666419" />
+      <window_info anchor="right" id="make" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Python Console" show_stripe_button="false" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+    </layout>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/robot_2/configs" />
@@ -202,7 +254,8 @@
       <workItem from="1732472395764" duration="9229000" />
       <workItem from="1732544264858" duration="10373000" />
       <workItem from="1732601467497" duration="21719000" />
-      <workItem from="1732718087316" duration="2357000" />
+      <workItem from="1732718087316" duration="1103000" />
+      <workItem from="1732725179975" duration="17434000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -414,8 +467,11 @@
     <MESSAGE value="works without errors!!! and warehouse ready" />
     <MESSAGE value="fingers inertia needs correction" />
     <MESSAGE value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
-    <MESSAGE value="TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
+    <option name="LAST_COMMIT_MESSAGE" value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_ws$dynamic_tf_broadcaster.coverage" NAME="dynamic_tf_broadcaster Coverage Results" MODIFIED="1731836976692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

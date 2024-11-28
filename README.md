@@ -189,7 +189,8 @@ mapping the map or moving base in an existing map.
 
 ---------------------------
 # notes:
-- link to a video of my robot picking and placing a box from the shelf: 
+- link to a video of my robot picking and placing a box from the shelf:
+  https://technionmail-my.sharepoint.com/:v:/r/personal/sa_lelya_campus_technion_ac_il/Documents/97244%20-%20%D7%A8%D7%95%D7%91%D7%95%D7%98%D7%99%D7%9D%20%D7%A7%D7%95%D7%92%D7%A0%D7%99%D7%98%D7%99%D7%91%D7%99%D7%99%D7%9D/vid/pick_and_place.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tX3Ffj
 - used Onshape CAD to calculate inertia. 
 - used move group for pick and place poses.
 - will use ``` ~/get_model_state ``` : ```gazebo_msgs/GetModelState``` - This service returns the states of a model in simulation.

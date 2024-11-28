@@ -20,17 +20,15 @@ public:
     std::string GetModelName();
     std::string GetProductionModelName();
     geometry_msgs::Pose GetPose();
-    geometry_msgs::Pose GetProductOutputPose();
+    geometry_msgs::Pose GetProductPickPose();
     std::unique_ptr<Product> RequestProduct();
     void StartOperation();
 
 private:
-    std::string _storageModelName{};                       // Storage model name
-    std::string _productionModelName{};                    // Product model name that will be produced
+    std::string _productionModelName{};                    // Product model name that will be picked
     geometry_msgs::Pose _storagePose;                      // Storage Pose
-    geometry_msgs::Pose _productOutputPose;                // Pose that Products will be delivered on RequestProduct call
+    geometry_msgs::Pose _productPickPose;                // Pose that Products will be picked on RequestProduct call
     std::shared_ptr<ModelController> _modelController;     // Gazebo model controller
-    int _maxCapacity;                                      // Maximum number of Products stored in this Storage
     std::mutex _storageMtx;                                // Mutex to access _storedProducts vector
     std::vector<std::unique_ptr<Product>> _storedProducts; // Store all produced Products
 

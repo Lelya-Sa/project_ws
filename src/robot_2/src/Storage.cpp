@@ -1,15 +1,14 @@
 #include "Storage.h"
 
 // Define an unique Storage name and set class attributes
-Storage::Storage(std::string modelName, std::string productModelName, int maxCapacity, geometry_msgs::Pose storagePose, geometry_msgs::Pose productOutputPose, std::shared_ptr<ModelController> modelController)
+Storage::Storage(std::string modelName, std::string productModelName, int maxCapacity, geometry_msgs::Pose storagePose, geometry_msgs::Pose productPickPose, std::shared_ptr<ModelController> modelController)
 {
     _objectName = modelName + "#" + std::to_string(_id); // Create a unique storage name
     _type = ObjectType::objectStorage;                   // Set its object type
-    _storageModelName = modelName;                       // Set its model Name
-    _productionModelName = productModelName;             // Set the product model name to be in production
+    _productionModelName = productModelName;             // Set the product model name to be in picked
     _storagePose = storagePose;                          // Set the storage Pose
     _maxCapacity = maxCapacity;                          // Set the storage max capacity of stored Products
-    _productOutputPose = productOutputPose;              // Set the product output Pose
+    _productPickPose = productPickPose;              // Set the product pick Pose
     _modelController = modelController;                  // Set the modelController shared pointer
 }
 
@@ -19,12 +18,6 @@ Storage::~Storage()
 
     // Clear _productionModelName to safely finish production thread
     _productionModelName.clear();
-}
-
-// Return the Storage model name
-std::string Storage::GetModelName()
-{
-    return _storageModelName;
 }
 
 // Return the Storage's Product model name that is set to be produced
@@ -39,10 +32,10 @@ geometry_msgs::Pose Storage::GetPose()
     return _storagePose;
 }
 
-// Return Storage's Product output pose
-geometry_msgs::Pose Storage::GetProductOutputPose()
+// Return Storage's Product pick pose
+geometry_msgs::Pose Storage::GetProductPickPose()
 {
-    return _productOutputPose;
+    return _productPickPose;
 }
 
 // Spawn the Product model in Gazebo and return it's unique pointer
@@ -56,7 +49,7 @@ std::unique_ptr<Product> Storage::RequestProduct()
         // Get a Product from _storedProducts, Spawn it in simulation and return it
         std::unique_ptr<Product> product = std::move(_storedProducts.back());
         _storedProducts.pop_back();
-        _modelController->Spawn(product->GetName(), product->GetModelName(), _productOutputPose);
+        _modelController->Spawn(product->GetName(), product->GetModelName(), _productPickPose);
         return std::move(product);
     }
     else

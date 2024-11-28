@@ -27,9 +27,10 @@ public:
     std::shared_ptr<Order> RequestNextOrderWithTimeout(std::string robotName, int timeoutMs);
 
 private:
-    std::deque<std::shared_ptr<Order>> _queue;           // Double ended queue that keep received Orders
-    std::condition_variable _queueCond;                  // Condition variable to handle Order requests
-    std::mutex _queueMtx;                                // Queue mutex
+    // Double ended map that keep received Orders and their processing time
+    std::unordered_map<std::shared_ptr<Order>, int > _map;
+    std::condition_variable _mapCond;                  // Condition variable to handle Order requests
+    std::mutex _mapMtx;                                // Map mutex
     std::mutex _ordersTrackingMtx;                       // Orders tracking mutex
     std::vector<std::shared_ptr<Order>> _ordersTracking; // Vector of Orders that are being executed by robots
 };

@@ -40,7 +40,12 @@ enum RobotStatus
 class Robot : public WarehouseObject
 {
 public:
-    Robot(std::string robotName, std::string actionName, std::vector<std::shared_ptr<Storage>> &storages, std::vector<std::shared_ptr<Dispatch>> &dispatches, std::shared_ptr<OrderController> orderController);
+    Robot(std::string robotName,
+          std::string actionName,
+          std::vector<std::shared_ptr<Storage>> &Bstorages,
+          std::vector<std::shared_ptr<Storage>> &Rstorages,
+          std::vector<std::shared_ptr<Dispatch>> &dispatches,
+          std::shared_ptr<OrderController> orderController);
     ~Robot();
     void SetStatus(RobotStatus status);
     RobotStatus GetStatus();
@@ -49,7 +54,8 @@ public:
 
 private:
     std::string _actionName{};                               // SimpleActionClient name
-    std::vector<std::shared_ptr<Storage>> _storages;         // Vector of available Storage
+    std::vector<std::shared_ptr<Storage>> _Bstorages;         // Vector of available BStorage
+    std::vector<std::shared_ptr<Storage>> _Rstorages;         // Vector of available RStorage
     std::vector<std::shared_ptr<Dispatch>> _dispatches;      // Vector of available Dispatch
     std::shared_ptr<OrderController> _orderController;       // OrderController
     RobotStatus _status{RobotStatus::offline};               // Current RobotStatus
@@ -59,6 +65,7 @@ private:
 
     std::deque<std::shared_ptr<Storage>> GetStoragesToGo();
     bool Move(actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> &ac, geometry_msgs::Pose goal);
+    bool Move_arm(actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> &ac, geometry_msgs::Pose goal);
     void Operate();
 };
 
