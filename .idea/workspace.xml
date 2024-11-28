@@ -18,19 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="TODO: &#10;writing teh relevant code. ongoing...">
-      <change afterPath="$PROJECT_DIR$/.idea/project_ws2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Dijkstra.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Dijkstra.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Floyd_Warshall.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Floyd_Warshall.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/dispatches" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/configs/dispatches" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/OrderController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/OrderController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/OrderController.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/OrderController.h" afterDir="false" />
-    </list>
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="TODO: &#10;writing teh relevant code. ongoing..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,12 +50,11 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="0c5e88a6b0911b8ee91dbf370f2728cc8fa81fee" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -75,12 +62,12 @@
     &quot;assignee&quot;: &quot;Lelya-Sa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lelya-Sa/project_ws.git",
-    "accountId": "aacac047-35bd-4494-a931-31b1a6b664ea"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lelya-Sa/project_ws.git&quot;,
+    &quot;accountId&quot;: &quot;aacac047-35bd-4494-a931-31b1a6b664ea&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/CMakeLists.txt" root0="SKIP_INSPECTION" />
   </component>
@@ -105,7 +92,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "local",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/lelyasa/project_ws",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -123,8 +110,9 @@
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="DFA" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21428572" />
       <window_info id="Commit" order="1" weight="0.21428572" />
+      <window_info id="VcsChanges" order="2" weight="0.21428572" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -134,7 +122,7 @@
       <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="Vcpkg" show_stripe_button="false" />
       <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.666419" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.3306092" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
@@ -470,7 +458,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/detached3" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
