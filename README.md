@@ -5,8 +5,18 @@
 5. clone the project:
 ``` git clone https://github.com/Lelya-Sa/project_ws.git```
 ---------------------------
----------------------------
 
+###  link to a video of my robot picking and placing a box from the shelf:
+  https://technionmail-my.sharepoint.com/:v:/r/personal/sa_lelya_campus_technion_ac_il/Documents/97244%20-%20%D7%A8%D7%95%D7%91%D7%95%D7%98%D7%99%D7%9D%20%D7%A7%D7%95%D7%92%D7%A0%D7%99%D7%98%D7%99%D7%91%D7%99%D7%99%D7%9D/vid/pick_and_place.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tX3Ffj
+.
+
+note: 
+- I wrote every possible position and the amcl is ready but the code isn't ready yet it 
+needs more work to do, but I will finish the project even if the submission day is due ( it is really an interesting 
+project).
+
+---------------------------
+### steps:
 after cloning source ROS in bash:
 ```
     source /opt/ros/noetic/setup.bash 
@@ -106,13 +116,14 @@ To run the simulation, there are options:
 	roscore
 ```
 
-- to run all the simulation (not done yet)  Open a terminal in the `scripts` folder and run `warehouse_simulation.sh`:
+- to run all the simulation (**not done yet**)  Open a terminal in the `scripts` folder and run `warehouse_simulation.sh`:
 
 ```
 ./warehouse_simulation.sh
     
 ```
-# option 1
+# run the environment:
+# option 1 
 
 - to run the controlling for development Open a terminal in the `scripts` folder and run `controlling_move.sh`:
 ```
@@ -189,8 +200,6 @@ mapping the map or moving base in an existing map.
 
 ---------------------------
 # notes:
-- link to a video of my robot picking and placing a box from the shelf:
-  https://technionmail-my.sharepoint.com/:v:/r/personal/sa_lelya_campus_technion_ac_il/Documents/97244%20-%20%D7%A8%D7%95%D7%91%D7%95%D7%98%D7%99%D7%9D%20%D7%A7%D7%95%D7%92%D7%A0%D7%99%D7%98%D7%99%D7%91%D7%99%D7%99%D7%9D/vid/pick_and_place.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tX3Ffj
 - used Onshape CAD to calculate inertia. 
 - used move group for pick and place poses.
 - will use ``` ~/get_model_state ``` : ```gazebo_msgs/GetModelState``` - This service returns the states of a model in simulation.
