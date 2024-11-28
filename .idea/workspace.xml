@@ -18,21 +18,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code.">
-      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/BBoxes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/robot_2/configs/RBoxes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f70608d0-ba65-4cd7-9e51-18934404274b" name="Changes" comment="TODO: &#10;writing teh relevant code. ongoing...">
+      <change afterPath="$PROJECT_DIR$/.idea/project_ws2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Dijkstra.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Dijkstra.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Floyd_Warshall.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/robot_2/src/Floyd_Warshall.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/Bstorages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/Rstorages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robot_2/configs/dispatches" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/configs/dispatches" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/src/OrderController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/OrderController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/robot_2/src/OrderController.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/OrderController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Robot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Robot.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Storage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Storage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/Storage.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/Storage.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/robot_2/src/WarehouseSimulation.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +95,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C/C++ File.Dijikstra.cpp.executor": "Run",
     "Python.dynamic_tf_broadcaster.executor": "Run",
     "Python.dynamic_tf_broadcaster.py..executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "local",
@@ -125,21 +124,23 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="DFA" show_stripe_button="false" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
-      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Commit" order="1" weight="0.21428572" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Packages" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="Vcpkg" show_stripe_button="false" />
       <window_info anchor="bottom" id="clangd" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.666419" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.3306092" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.666419" />
       <window_info anchor="right" id="make" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
@@ -164,7 +165,13 @@
       <recent name="$PROJECT_DIR$/src/robot_2/rvizConfig" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="C/C++ File.Dijikstra.cpp">
+    <configuration name="Dijikstra.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project_ws" TARGET_NAME="Dijikstra.cpp" CONFIG_NAME="Dijikstra.cpp">
+      <option name="sourceFile" value="src/robot_2/src/Dijikstra.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="project_ws" />
       <option name="ENV_FILES" value="" />
@@ -211,6 +218,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.Dijikstra.cpp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -255,7 +267,7 @@
       <workItem from="1732544264858" duration="10373000" />
       <workItem from="1732601467497" duration="21719000" />
       <workItem from="1732718087316" duration="1103000" />
-      <workItem from="1732725179975" duration="17434000" />
+      <workItem from="1732725179975" duration="25661000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -425,7 +437,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732336434909</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="TODO: &#10;writing teh relevant code. ongoing...">
+      <option name="closed" value="true" />
+      <created>1732754693298</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732754693298</updated>
+    </task>
+    <task id="LOCAL-00023" summary="TODO: &#10;writing teh relevant code. ongoing...">
+      <option name="closed" value="true" />
+      <created>1732754796056</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1732754796056</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +470,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="github/master" />
+                        <option value="origin/detached3" />
                       </list>
                     </value>
                   </entry>
@@ -467,7 +495,8 @@
     <MESSAGE value="works without errors!!! and warehouse ready" />
     <MESSAGE value="fingers inertia needs correction" />
     <MESSAGE value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
-    <option name="LAST_COMMIT_MESSAGE" value="inertia corrected.&#10;graped without falling.&#10;TODO: &#10;robot pick and place positions.&#10;writing teh relevant code." />
+    <MESSAGE value="TODO: &#10;writing teh relevant code. ongoing..." />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO: &#10;writing teh relevant code. ongoing..." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

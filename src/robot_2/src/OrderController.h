@@ -29,6 +29,7 @@ public:
 private:
     // Double ended map that keep received Orders and their processing time
     std::unordered_map<std::shared_ptr<Order>, int > _map;
+    std::unordered_map<std::shared_ptr<Order>, int > _Rgraph; // graph of distances
     std::condition_variable _mapCond;                  // Condition variable to handle Order requests
     std::mutex _mapMtx;                                // Map mutex
     std::mutex _ordersTrackingMtx;                       // Orders tracking mutex
